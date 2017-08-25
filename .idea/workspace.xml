@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54ff4807-a8bb-4c56-9439-dc904f03feb0" name="Default" comment="导入marked&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/Game.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/NewsInfo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/Player.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/Game.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/NewsInfo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/Player.css" />
+    <list default="true" id="54ff4807-a8bb-4c56-9439-dc904f03feb0" name="Default" comment="news完成&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/Group 6@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/Group.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/Group@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/Group@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/Line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/Line@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/Line@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/Rectangle 4@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/Shape@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/返回图标.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/返回图标@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/返回图标@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/金牌-3@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/铜牌@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/银牌@2x.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pages/Game.js" afterPath="$PROJECT_DIR$/src/pages/GameInfo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pages/Player.js" afterPath="$PROJECT_DIR$/src/pages/PlayerInfo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/styles/Game.css" afterPath="$PROJECT_DIR$/src/styles/GameInfo.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/styles/Player.css" afterPath="$PROJECT_DIR$/src/styles/PlayerInfo.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/RaceInfo.js" afterPath="$PROJECT_DIR$/src/pages/RaceInfo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/Api.js" afterPath="$PROJECT_DIR$/src/service/Api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/HttpUtil.js" afterPath="$PROJECT_DIR$/src/service/HttpUtil.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/RaceDao.js" afterPath="$PROJECT_DIR$/src/service/RaceDao.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/RaceInfo.css" afterPath="$PROJECT_DIR$/src/styles/RaceInfo.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,11 +42,10 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="61" lean-forward="false" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="61" />
+            <state relative-caret-position="119">
+              <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#813#1506#0" expanded="false" />
+                <element signature="e#974#1667#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -45,8 +54,8 @@
       <file leaf-file-name="Api.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/service/Api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="408">
+              <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -54,21 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpUtil.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/service/HttpUtil.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="106" column="50" lean-forward="false" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RaceDao.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/service/RaceDao.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+            <state relative-caret-position="320">
+              <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
               <folding>
                 <element signature="e#42#66#0" expanded="true" />
               </folding>
@@ -89,8 +88,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/Game.js">
+      <file leaf-file-name="GameInfo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/GameInfo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-758">
+              <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerInfo.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/PlayerInfo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="58" column="22" lean-forward="true" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameInfo.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/GameInfo.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -99,31 +120,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/Player.js">
+      <file leaf-file-name="PlayerInfo.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/PlayerInfo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/Game.css">
+      <file leaf-file-name="NewsInfo.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/NewsInfo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/styles/Player.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="134">
+              <caret line="88" column="58" lean-forward="false" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -132,8 +143,8 @@
       <file leaf-file-name="NewsInfo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/NewsInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="272">
+              <caret line="50" column="41" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="50" selection-end-column="41" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -161,6 +172,8 @@
       <find>gameActive</find>
       <find>getRaceInfo</find>
       <find>race_info</find>
+      <find>PlayerInfo</find>
+      <find>NewsInfo</find>
       <find>RaceInfo</find>
     </findStrings>
   </component>
@@ -174,13 +187,17 @@
         <option value="$PROJECT_DIR$/src/pages/RaceInfo.jsx" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/styles/RaceInfo.css" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/service/Api.js" />
         <option value="$PROJECT_DIR$/src/service/HttpUtil.js" />
-        <option value="$PROJECT_DIR$/src/service/RaceDao.js" />
         <option value="$PROJECT_DIR$/src/styles/NewsInfo.css" />
         <option value="$PROJECT_DIR$/src/pages/NewsInfo.js" />
         <option value="$PROJECT_DIR$/src/pages/RaceInfo.js" />
+        <option value="$PROJECT_DIR$/src/pages/Game.js" />
+        <option value="$PROJECT_DIR$/src/pages/GameInfo.js" />
+        <option value="$PROJECT_DIR$/src/service/RaceDao.js" />
+        <option value="$PROJECT_DIR$/src/service/Api.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/pages/PlayerInfo.js" />
+        <option value="$PROJECT_DIR$/src/styles/PlayerInfo.css" />
       </list>
     </option>
   </component>
@@ -194,8 +211,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="193" />
-    <option name="y" value="67" />
+    <option name="x" value="455" />
+    <option name="y" value="33" />
     <option name="width" value="1697" />
     <option name="height" value="977" />
   </component>
@@ -296,24 +313,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desh_react-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desh_react-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -328,6 +327,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/images" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
@@ -504,7 +504,7 @@
       <workItem from="1503555713287" duration="2174000" />
       <workItem from="1503558574813" duration="11055000" />
       <workItem from="1503571983034" duration="266000" />
-      <workItem from="1503625070652" duration="18511000" />
+      <workItem from="1503625070652" duration="22135000" />
     </task>
     <task id="LOCAL-00001" summary="merge&#10;">
       <created>1503625184368</created>
@@ -520,14 +520,21 @@
       <option name="project" value="LOCAL" />
       <updated>1503631765109</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="news完成&#10;">
+      <created>1503650036770</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1503650036770</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32006000" />
+    <option name="totallyTimeSpent" value="35630000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="193" y="67" width="1697" height="977" extended-state="0" />
+    <frame x="455" y="33" width="1697" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16495468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -578,54 +585,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="merge&#10;" />
     <MESSAGE value="导入marked&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="导入marked&#10;" />
+    <MESSAGE value="news完成&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="news完成&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#813#1506#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/Api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/RaceDao.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding>
-            <element signature="e#42#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -674,8 +641,7 @@
         <state relative-caret-position="323">
           <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#813#1506#0" expanded="false" />
+            <element signature="e#974#1667#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -705,7 +671,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -758,8 +724,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#813#1506#0" expanded="false" />
+            <element signature="e#974#1667#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -803,7 +768,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1471,7 +1436,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1481,83 +1446,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/NewsInfo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/HttpUtil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="106" column="50" lean-forward="false" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/RaceDao.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="e#42#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/NewsInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="61" lean-forward="false" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#813#1506#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/Api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/RaceInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#42#81#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1583,6 +1472,115 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/HttpUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="106" column="50" lean-forward="false" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/NewsInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="50" column="41" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="50" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/RaceDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding>
+            <element signature="e#42#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/Api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/GameInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-758">
+          <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="e#974#1667#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/NewsInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="88" column="58" lean-forward="false" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/GameInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/RaceInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#42#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/PlayerInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/PlayerInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="58" column="22" lean-forward="true" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

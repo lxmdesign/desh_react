@@ -1,0 +1,12 @@
+.Player{
+    margin:0;
+    padding:0;
+}
+
+.Player-head-top h2{
+    text-align: center;
+    color:#FFE9AD;
+    font-size: 18px;
+    font-family: PingFangSC-Light;
+    line-height: 25px;
+}

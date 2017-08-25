@@ -9,6 +9,8 @@ import {
 
 import RaceInfo from './pages/RaceInfo';
 import NewsInfo from './pages/NewsInfo';
+import PlayerInfo from './pages/PlayerInfo';
+import GameInfo from './pages/GameInfo';
 
 class App extends Component {
     render() {
@@ -17,7 +19,8 @@ class App extends Component {
                 <div>
                     <Route exact path="/" component={RaceInfo}/>
                     <Route path="/news" component={NewsInfo}/>
-                    <Route path="/topics" component={Topics}/>
+                    <Route path="/rankPlayer" component={PlayerInfo}/>
+                    <Route path="/rankGame" component={GameInfo}/>
                 </div>
             </Router>
         );
