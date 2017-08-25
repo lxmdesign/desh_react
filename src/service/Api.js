@@ -3,11 +3,16 @@
  */
 export default {
     race_list:'u/0/recent_races',
-    race_info:race_info
+    race_info:race_info,
+    news_info:news_info
 }
 
 
 function race_info(body){
     const {raceId} = body;
     return 'u/0/races/'+raceId;
+}
+function news_info(body){
+    const {newsId} = body;
+    return 'news/infos/'+newsId;
 }

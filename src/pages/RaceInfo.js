@@ -3,7 +3,7 @@
  */
 import React, {Component} from 'react';
 import markdown from 'marked';
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 import {getRaceInfo} from '../service/RaceDao';
 import '../styles/RaceInfo.css';
 
@@ -33,24 +33,33 @@ export default class RaceInfo extends Component {
             return !1;
         return !0
     }
-
+    //html to markDown
     desc = (description) => {
         var des = markdown(description)
         return {__html:des}
     }
+    //click事件
 
 
     content = () => {
         if (!this.isEmptyObject(this.state.data.race)) {
-            const navs = [
-                {name: '简介', path: "/"},
-                {name: '主赛信息', path: "/"},
-                {name: '边塞信息', path: "/"}
-            ];
             const {
-                name, location, status, ticket_status, begin_date, end_date, logo, RaceIntro, MainInformation, SideInformation
-                , mainMark, description, Blind, Ranks
+                name, location, status, ticket_status, begin_date, end_date, logo,
+                schedules, description, Blind, Ranks
             } = this.state.data.race;
+            const navs = [{
+                exact: true,
+                name: "简介",
+                path: "/"
+
+            }, {
+                name: "主赛信息",
+                path: "/"
+            }, {
+                name: "边赛信息",
+                path: "/"
+            }];
+
             return (
                 <div className='content'>
                     {/*Head*/}
@@ -68,30 +77,22 @@ export default class RaceInfo extends Component {
                             {
                                 navs.map((value, key) =>
                                     (<li key={key}>
-                                        <Link className="gameActive" to={value.path}>
+                                        <NavLink className="navLink" activeClassName="active" to={value.path} >
                                             {value.name}
-                                        </Link>
+                                        </NavLink>
                                     </li>))
                             }
-                            {/*<li onClick="changeClass(0)" >简介</li>*/}
-                            {/*<li onClick='changeClass(1)' >主赛信息</li>*/}
-                            {/*<li onClick='changeClass(2)' >边塞信息</li>*/}
+                            {/*<li onClick={this.changeClass(0)} >简介</li>*/}
+                            {/*<li onClick={this.changeClass(1)} >主赛信息</li>*/}
+                            {/*<li onClick={this.changeClass(2)} >边塞信息</li>*/}
                         </ul>
                     </div>
 
-                    <div class="introduceGame"  dangerouslySetInnerHTML={this.desc(description)}></div>
-                    {/**/}
-                    {/*<div className="mainGame">*/}
-                    {/*<ul className="gameList">*/}
-                    {/*<li onClick='gameClass(0)' >{description}</li>*/}
-                    {/*<li onClick='gameClass(1)' >{Blind} </li>*/}
-                    {/*<li onClick='gameClass(2)' >{Ranks}</li>*/}
-                    {/*</ul>*/}
-                    {/*</div>*/}
-                    {/*info*/}
-                    <div in>
+                    <div className="introduceGame"  dangerouslySetInnerHTML={this.desc(description)}></div>
+                    {/*<div className="mainGame"  dangerouslySetInnerHTML={this.desc(schedules)}></div>*/}
 
-                    </div>
+                    {/*info*/}
+
                 </div>
 
             );

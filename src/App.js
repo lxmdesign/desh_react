@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 
 import RaceInfo from './pages/RaceInfo';
+import NewsInfo from './pages/NewsInfo';
 
 class App extends Component {
     render() {
@@ -15,7 +16,7 @@ class App extends Component {
             <Router>
                 <div>
                     <Route exact path="/" component={RaceInfo}/>
-                    <Route path="/about" component={About}/>
+                    <Route path="/news" component={NewsInfo}/>
                     <Route path="/topics" component={Topics}/>
                 </div>
             </Router>
