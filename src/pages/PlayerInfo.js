@@ -3,6 +3,9 @@ import markdown from 'marked';
 import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 import {getPlayerInfo} from '../service/RaceDao';
 import '../styles/PlayerInfo.css';
+import 返回图标 from '../assets/images/返回图标.png';
+import Group2x from '../assets/images/Group@2x.png';
+import Group from '../assets/images/Group.png';
 
 export default class PlayerInfo extends Component {
 
@@ -11,7 +14,7 @@ export default class PlayerInfo extends Component {
     };
 
     componentDidMount() {
-        const body = {playerId: 91};
+        const body = {playerId: '2bd77416'};
         document.title = '扑客';
         getPlayerInfo(body, data => {
             console.log('PlayerInfo', data)
@@ -44,16 +47,38 @@ export default class PlayerInfo extends Component {
                 name, ranking
             } = this.state.player;
             return (
-                <div className="Player">
-                    <div className='Player-head'>
-                        <div className='Player-head-top'>
-                            <img alt='' src='../assets/images/返回图标.png'/>
-                            <img alt='' src='../assets/images/Group@2x.png'/>
+                <div className="player">
+                    <div className='player-head'>
+                        <div className='player-head-top'>
+                            {/*<img alt='' src={返回图标}/>*/}
+                            {/*<img alt='' src={Group2x}/>*/}
                             <h2>国内排行</h2>
-                            <img alt='' src='../assets/images/Group.png'/>
+                            {/*<img alt='' src={Group}/>*/}
+                        </div>
+                        <img className='personImg' src=''/>
+                        <span className="personName">{name}</span><br/>
+                        <span className="country">{country}</span>
+
+                        <div className="player-head-nav">
+                            <div class="nav-rank">
+
+                                <span>{ranking}</span>
+                                <span>名次</span>
+                            </div>
+                            <div class="nav-score">
+
+                                <span>{dpi_total_score}</span>
+                                <span>积分</span>
+                            </div>
+                            <div class="nav-prize">
+
+                                <span>¥{dpi_total_earning}</span>
+                                <span>奖金</span>
+                            </div>
                         </div>
                     </div>
-                    <div className='Player-body'>
+
+                    <div className='player-body'>
 
                     </div>
                 </div>
