@@ -7,14 +7,19 @@
     "i18next": "^8.4.3",
     "marked": "^0.3.6",
     "react": "^15.6.1",
+    "react-datetime": "^2.9.0",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.2.0",
-    "react-scripts": "1.0.11"
+    "react-scripts": "1.0.11",
+    "react-time": "^4.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-time-format": "^0.0.5"
   }
 }

@@ -4,7 +4,7 @@
 
 }
 .player-head{
-    height:260px;
+    height:200px;
     background: url('../assets/images/background.png') no-repeat center;
     background-size: 100% 100%;
     padding: 32px 0 0 20px;
@@ -53,18 +53,21 @@
 }
 .player-head-nav{
     display: flex;
-    margin-top: 80px;
+    margin-top: 30px;
 
 }
-.nav-rank{
+.nav-rank,.nav-score,.nav-prize{
     flex: 1;
+    padding-left: 18px;
+    text-align: center;
 }
 .nav-rank span:nth-child(1){
     display: block;
     font-size:17px;
     color:#CCC;
-    padding-left: 18px;
     height: 24px;
+    width:50px;
+    margin-bottom: 8px;
 }
 .nav-rank span:nth-child(2){
     display: block;
@@ -77,19 +80,15 @@
     border-radius: 18px;
     text-align: center;
     line-height: 21px;
-    margin-left: 10px;
-}
-.nav-score{
-    flex: 1;
+
 }
 .nav-score span:nth-child(1){
     display: block;
     font-size:17px;
     color:#CCC;
     height: 24px;
-
-    text-align: center;
-    padding-left:15px;
+    width: 50px;
+    margin-bottom: 8px;
 
 }
 .nav-score span:nth-child(2){
@@ -104,14 +103,13 @@
     text-align: center;
     line-height: 21px;
 }
-.nav-prize{
-    flex: 1;
-}
 .nav-prize span:nth-child(1){
     display: block;
     font-size:17px;
     color:#CCC;
     height: 24px;
+    width: 50px;
+    margin-bottom: 8px;
 }
 .nav-prize span:nth-child(2){
     display: block;
@@ -125,3 +123,73 @@
     text-align: center;
     line-height: 21px;
 }
+player-body table{
+    width:100%;
+}
+table tbody tr{
+    background-color:#fff;
+}
+table tbody tr td{
+    padding:12px 18px 19px 19px;
+}
+table tbody tr td a{
+    text-decoration: none;
+}
+/*table*/
+.table-header{
+    overflow: hidden;
+    zoom: 1;
+}
+.table-header span:nth-child(1){
+    font-size: 17px;
+    color: #333;
+    line-height: 24px;
+    float:left;
+}
+.table-header span:nth-child(2){
+    float: right;
+    width: 58px;
+    height: 23px;
+    background: #F34A4A;
+    border-radius: 32px;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    line-height: 23px;
+}
+.table-detail{
+    display: flex;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #ECECEE;
+}
+.table-detail div{
+    flex: 1;
+}
+.table-detail div span{
+    display: block;
+    text-align: center;
+}
+.table-detail div span:nth-child(1){
+    font-size: 12px;
+    color: #AAA;
+}
+.table-detail div span:nth-child(2){
+    font-size: 15px;
+    color: #888;
+}
+.table-time{
+    margin-top: 11px;
+    background: url('../assets/images/home_clock.png') no-repeat left center;
+    background-size: 10px 10px;
+    padding-left: 18px;
+    color: #666;
+    font-size: 13px;
+}
+.table-location{
+    background: url('../assets/images/home_adr.png') no-repeat left center;
+    background-size: 8px 11px;
+    padding-left: 18px;
+    color: #666;
+    font-size: 13px;
+}
+
