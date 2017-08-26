@@ -7,7 +7,6 @@
     height:200px;
     background: url('../assets/images/background.png') no-repeat center;
     background-size: 100% 100%;
-    padding: 32px 0 0 20px;
 }
 
 .player-head-top h2{
@@ -16,13 +15,15 @@
     font-size: 18px;
     font-family: PingFangSC-Light;
     line-height: 25px;
-    margin-top:5px;
+    margin-top:0px;
+    padding-top: 10px;
 }
 .player-head .personImg{
     float: left;
     width:74px;
     height:74px;
     border-radius: 36.5px;
+    margin-left: 25px;
 }
 .player-head .personName{
     overflow: hidden;
@@ -34,7 +35,7 @@
     font-family: PingFangSC-Medium;
     line-height: 21px;
     margin-bottom: -8px;
-    margin-left:90px;
+    margin-left:120px;
     text-overflow:ellipsis;
     white-space: nowrap;
 
@@ -47,27 +48,30 @@
     font-size: 14px;
     font-family: PingFangSC-Medium;
     line-height: 20px;
-    margin-left:90px;
+    margin-left:120px;
     text-overflow:ellipsis;
     white-space: nowrap;
 }
 .player-head-nav{
-    display: flex;
-    margin-top: 30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:60px;
 
 }
 .nav-rank,.nav-score,.nav-prize{
     flex: 1;
-    padding-left: 18px;
     text-align: center;
+    width:30%;
+
 }
 .nav-rank span:nth-child(1){
     display: block;
     font-size:17px;
     color:#CCC;
-    height: 24px;
-    width:50px;
-    margin-bottom: 8px;
+    text-align: center;
+
 }
 .nav-rank span:nth-child(2){
     display: block;
@@ -78,7 +82,6 @@
     height: 21px;
     width: 50px;
     border-radius: 18px;
-    text-align: center;
     line-height: 21px;
 
 }
@@ -88,7 +91,7 @@
     color:#CCC;
     height: 24px;
     width: 50px;
-    margin-bottom: 8px;
+    text-align: center;
 
 }
 .nav-score span:nth-child(2){
@@ -100,7 +103,6 @@
     height: 21px;
     width: 50px;
     border-radius: 18px;
-    text-align: center;
     line-height: 21px;
 }
 .nav-prize span:nth-child(1){
@@ -108,8 +110,8 @@
     font-size:17px;
     color:#CCC;
     height: 24px;
-    width: 50px;
-    margin-bottom: 8px;
+    width: 60px;
+    text-align: center;
 }
 .nav-prize span:nth-child(2){
     display: block;
@@ -120,17 +122,20 @@
     height: 21px;
     width: 50px;
     border-radius: 18px;
-    text-align: center;
     line-height: 21px;
 }
-player-body table{
+player-body{
     width:100%;
+}
+table{
+    width:400px;
+    height:170px;
 }
 table tbody tr{
     background-color:#fff;
 }
 table tbody tr td{
-    padding:12px 18px 19px 19px;
+    padding:12px 18px 10px 19px;
 }
 table tbody tr td a{
     text-decoration: none;
@@ -139,23 +144,25 @@ table tbody tr td a{
 .table-header{
     overflow: hidden;
     zoom: 1;
+    width:380px;
+    height:24px;
 }
 .table-header span:nth-child(1){
     font-size: 17px;
     color: #333;
     line-height: 24px;
-    float:left;
+    float: left;
 }
 .table-header span:nth-child(2){
     float: right;
     width: 58px;
-    height: 23px;
+    height: 24px;
     background: #F34A4A;
     border-radius: 32px;
     color: #fff;
     font-size: 13px;
     text-align: center;
-    line-height: 23px;
+    line-height: 24px;
 }
 .table-detail{
     display: flex;
@@ -168,6 +175,7 @@ table tbody tr td a{
 .table-detail div span{
     display: block;
     text-align: center;
+    height:24px;
 }
 .table-detail div span:nth-child(1){
     font-size: 12px;
@@ -178,18 +186,24 @@ table tbody tr td a{
     color: #888;
 }
 .table-time{
+    height:20px;
     margin-top: 11px;
     background: url('../assets/images/home_clock.png') no-repeat left center;
     background-size: 10px 10px;
     padding-left: 18px;
     color: #666;
     font-size: 13px;
+    line-height: 20px;
+    text-align: left;
 }
 .table-location{
+    height:20px;
     background: url('../assets/images/home_adr.png') no-repeat left center;
     background-size: 8px 11px;
     padding-left: 18px;
     color: #666;
     font-size: 13px;
+    line-height: 20px;
+    text-align: left;
 }
 
