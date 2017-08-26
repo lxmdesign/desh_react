@@ -8,15 +8,23 @@ import {
 } from 'react-router-dom';
 
 import RaceInfo from './pages/RaceInfo';
+import NewsInfo from './pages/NewsInfo';
+import PlayerInfo from './pages/PlayerInfo';
+import GameInfo from './pages/GameInfo';
 
 class App extends Component {
     render() {
         return (
             <Router>
                 <div>
+
                     <Route exact path="/race/:id/:lang" component={RaceInfo}/>
                     <Route path="/about" component={About}/>
                     <Route path="/topics" component={Topics}/>
+
+                    <Route path="/news" component={NewsInfo}/>
+                    <Route path="/rankPlayer" component={PlayerInfo}/>
+                    <Route path="/rankGame" component={GameInfo}/>
                 </div>
             </Router>
         );

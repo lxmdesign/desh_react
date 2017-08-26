@@ -79,6 +79,10 @@ table tbody tr td a{
     transform-origin: left top;
     border: 1px solid #161718;
 }
+.ul-2 li a.active{
+    color: #cccccc !important;
+    background: url('../assets/images/Triangle.png') no-repeat center bottom;
+}
 .gameActive{
     color: #cccccc !important;
     background: url('../assets/images/Triangle.png') no-repeat center bottom;

@@ -2,11 +2,10 @@
  * Created by lorne on 2017/8/24.
  */
 import React, {Component} from 'react';
-import ReactMarkdown from 'react-markdown';
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
-import {getRaceInfo, setLang} from '../service/RaceDao';
+import markdown from 'marked';
+import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
+import {getRaceInfo} from '../service/RaceDao';
 import '../styles/RaceInfo.css';
-import I18n from '../service/I18n';
 
 export default class RaceInfo extends Component {
 
@@ -16,20 +15,13 @@ export default class RaceInfo extends Component {
     };
 
     componentDidMount() {
-
-        const {id, lang} = this.props.match.params;
-        console.log('router params', this.props.match);
-        const body = {raceId: id};
-        setLang(lang);
+        const body = {raceId: 91};
+        document.title = '扑客';
         getRaceInfo(body, data => {
             console.log('RaceInfo', data)
-            const {name} = data.race;
-
-            document.title = name;
             this.setState({
                 data: data
-            });
-
+            })
         }, err => {
 
         })
@@ -41,20 +33,33 @@ export default class RaceInfo extends Component {
             return !1;
         return !0
     }
+    //html to markDown
+    desc = (description) => {
+        var des = markdown(description)
+        return {__html:des}
+    }
+    //click事件
 
 
     content = () => {
-
         if (!this.isEmptyObject(this.state.data.race)) {
-            const navs = [
-                {name: I18n.t('load_ipnone'), path: "/"},
-                {name: '主赛信息', path: "/"},
-                {name: '边塞信息', path: "/"}
-            ];
             const {
-                name, location, status, ticket_status, begin_date, end_date, logo, RaceIntro, MainInformation, SideInformation
-                , mainMark, description, Blind, Ranks
+                name, location, status, ticket_status, begin_date, end_date, logo,
+                schedules, description, Blind, Ranks
             } = this.state.data.race;
+            const navs = [{
+                exact: true,
+                name: "简介",
+                path: "/"
+
+            }, {
+                name: "主赛信息",
+                path: "/"
+            }, {
+                name: "边赛信息",
+                path: "/"
+            }];
+
             return (
                 <div className='content'>
                     {/*Head*/}
@@ -72,30 +77,22 @@ export default class RaceInfo extends Component {
                             {
                                 navs.map((value, key) =>
                                     (<li key={key}>
-                                        <Link className="gameActive" activeClassName="active" to={value.path}>
+                                        <NavLink className="navLink" activeClassName="active" to={value.path} >
                                             {value.name}
-                                        </Link>
+                                        </NavLink>
                                     </li>))
                             }
-                            {/*<li onClick="changeClass(0)" >简介</li>*/}
-                            {/*<li onClick='changeClass(1)' >主赛信息</li>*/}
-                            {/*<li onClick='changeClass(2)' >边塞信息</li>*/}
+                            {/*<li onClick={this.changeClass(0)} >简介</li>*/}
+                            {/*<li onClick={this.changeClass(1)} >主赛信息</li>*/}
+                            {/*<li onClick={this.changeClass(2)} >边塞信息</li>*/}
                         </ul>
                     </div>
-                    {/*<div className="introduceGame" >{mainMark}</div>*/}
-                    <ReactMarkdown source={description}/>
-                    {/**/}
-                    {/*<div className="mainGame">*/}
-                    {/*<ul className="gameList">*/}
-                    {/*<li onClick='gameClass(0)' >{description}</li>*/}
-                    {/*<li onClick='gameClass(1)' >{Blind} </li>*/}
-                    {/*<li onClick='gameClass(2)' >{Ranks}</li>*/}
-                    {/*</ul>*/}
-                    {/*</div>*/}
-                    {/*info*/}
-                    <div>
 
-                    </div>
+                    <div className="introduceGame"  dangerouslySetInnerHTML={this.desc(description)}></div>
+                    {/*<div className="mainGame"  dangerouslySetInnerHTML={this.desc(schedules)}></div>*/}
+
+                    {/*info*/}
+
                 </div>
 
             );
