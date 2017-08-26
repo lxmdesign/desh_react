@@ -1,42 +1,28 @@
-/**
- * Created by lorne on 2017/8/26.
- */
-/**
- * i18n.js
- *
- * This will setup the i18n language files and locale data for your app.
- *
- */
-import { addLocaleData } from 'react-intl';
-import enLocaleData from 'react-intl/locale-data/en';
-import deLocaleData from 'react-intl/locale-data/de';
+import i18n from 'i18next';
+import Backend from 'i18next-xhr-backend';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
-import { DEFAULT_LOCALE } from './HttpUtil';
 
-import enTranslationMessages from '../assets/i18n/english.json';
-import deTranslationMessages from '../assets/i18n/zh.json';
+i18n
+    .use(Backend)
+    .use(LanguageDetector)
+    .init({
+        fallbackLng: 'en',
 
-addLocaleData(enLocaleData);
-addLocaleData(deLocaleData);
+        // have a common namespace used around the full app
+        ns: ['translations'],
+        defaultNS: 'translations',
 
-export const appLocales = [
-    'en',
-    'zh',
-];
+        debug: true,
 
-export const formatTranslationMessages = (locale, messages) => {
-    const defaultFormattedMessages = locale !== DEFAULT_LOCALE
-        ? formatTranslationMessages(DEFAULT_LOCALE, enTranslationMessages)
-        : {};
-    return Object.keys(messages).reduce((formattedMessages, key) => {
-        const formattedMessage = !messages[key] && locale !== DEFAULT_LOCALE
-            ? defaultFormattedMessages[key]
-            : messages[key];
-        return Object.assign(formattedMessages, { [key]: formattedMessage });
-    }, {});
-};
+        interpolation: {
+            escapeValue: false, // not needed for react!!
+        },
 
-export const translationMessages = {
-    en: formatTranslationMessages('en', enTranslationMessages),
-    zh: formatTranslationMessages('zh', deTranslationMessages),
-};
+        react: {
+            wait: true
+        }
+    });
+
+
+export default i18n;
