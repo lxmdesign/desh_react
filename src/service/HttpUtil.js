@@ -16,9 +16,12 @@ const client = create({
     timeout: 20000,
 });
 
+
 export function setDpLang(lang) {
     client.setHeader('X-DP-LANG', lang)
 }
+
+export var DEFAULT_LOCALE = client.headers['X-DP-LANG'] ? client.headers['X-DP-LANG'] : 'zh';
 
 
 export function setAccessToken(token) {

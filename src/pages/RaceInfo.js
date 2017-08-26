@@ -4,7 +4,7 @@
 import React, {Component} from 'react';
 import ReactMarkdown from 'react-markdown';
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
-import {getRaceInfo} from '../service/RaceDao';
+import {getRaceInfo, setLang} from '../service/RaceDao';
 import '../styles/RaceInfo.css';
 
 export default class RaceInfo extends Component {
@@ -19,7 +19,7 @@ export default class RaceInfo extends Component {
         const {id, lang} = this.props.match.params;
         console.log('router params', this.props.match);
         const body = {raceId: id};
-
+        setLang(lang);
         getRaceInfo(body, data => {
             console.log('RaceInfo', data)
             const {name} = data.race;
