@@ -2,6 +2,7 @@
  * Created by lorne on 2017/8/24.
  */
 import {create} from 'apisauce';
+import I18n from './I18n';
 
 let TAG = 'PuKeHttp:';
 
@@ -16,8 +17,10 @@ const client = create({
     timeout: 20000,
 });
 
+
 export function setDpLang(lang) {
     client.setHeader('X-DP-LANG', lang)
+    I18n.changeLanguage(lang)
 }
 
 
