@@ -92,46 +92,50 @@ export default class PlayerInfo extends Component {
                     </div>
 
                     <div className='player-body'>
-                        <table >
+                        {items.map(item =>{
+                            const {race,rank} = item;
+                            console.log('list',race,rank)
+                            return<table >
                             <tbody>
-                            {items.map(item =>{
-                                const {race,rank} = item;
-
-                                console.log('list',race,rank)
-                                return <tr>
-                                    <td>
-                                        <a>
-                                            <div className="table-header">
-                                                <span>{race.name}</span>
-                                                <span>{rank.ranking}</span>
-                                            </div>
-                                            <div className="table-detail">
-                                                <div className="table-num">
-                                                    <span>买入</span>
-                                                    <span>¥{race.ticket_price}</span>
+                                 <tr>
+                                        <td colspan="4">
+                                            <a>
+                                                <div className="table-header">
+                                                    <span>{race.name}</span>
+                                                    <span>{rank.ranking}</span>
                                                 </div>
-                                                <div className="table-person">
-                                                    <span>参赛人数</span>
-                                                    <span>{race.participants}</span>
-                                                </div>
-                                                <div className="table-prize">
-                                                    <span>奖金</span>
-                                                    <span>¥{rank.earning}</span>
-                                                </div>
-                                                <div className="table-score">
-                                                    <span>积分</span>
-                                                    <span>{rank.score}</span>
-                                                </div>
-                                            </div>
-                                            <div className="table-time"><Time value={race.begin_date} format="YYYY:MM:DD" />-<Time value={race.end_date} format="YYYY:MM:DD" /></div>
-                                            <div className="table-location">{race.location}</div>
-                                        </a>
-                                    </td>
-                                </tr>
-                            })}
-
-                        </tbody>
-                      </table>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr className="table-detail">
+                                        <td className="table-num">
+                                            <span>买入</span>
+                                            <span>¥{race.ticket_price}</span>
+                                        </td>
+                                        <td className="table-person">
+                                            <span>参赛人数</span>
+                                            <span>{race.participants}</span>
+                                        </td>
+                                        <td className="table-prize">
+                                            <span>奖金</span>
+                                            <span>¥{rank.earning}</span>
+                                        </td>
+                                        <td className="table-score">
+                                            <span>积分</span>
+                                            <span>{rank.score}</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            <a>
+                                                <div className="table-time"><Time value={race.begin_date} format="YYYY:MM:DD" />-<Time value={race.end_date} format="YYYY:MM:DD" /></div>
+                                                <div className="table-location">{race.location}</div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                      })}
                     </div>
 
                 </div>

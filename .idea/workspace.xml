@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="54ff4807-a8bb-4c56-9439-dc904f03feb0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/PlayerInfo.js" afterPath="$PROJECT_DIR$/src/pages/PlayerInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/Api.js" afterPath="$PROJECT_DIR$/src/service/Api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/RaceDao.js" afterPath="$PROJECT_DIR$/src/service/RaceDao.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/PlayerInfo.css" afterPath="$PROJECT_DIR$/src/styles/PlayerInfo.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerInfo.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PlayerInfo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/PlayerInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="103" column="67" lean-forward="false" selection-start-line="103" selection-start-column="67" selection-end-line="103" selection-end-column="67" />
+            <state relative-caret-position="330">
+              <caret line="126" column="41" lean-forward="false" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="41" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -99,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerInfo.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlayerInfo.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/PlayerInfo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="137" column="9" lean-forward="true" selection-start-line="137" selection-start-column="9" selection-end-line="137" selection-end-column="9" />
+            <state relative-caret-position="136">
+              <caret line="133" column="1" lean-forward="true" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -170,8 +165,8 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/service/Api.js" />
         <option value="$PROJECT_DIR$/src/service/RaceDao.js" />
-        <option value="$PROJECT_DIR$/src/pages/PlayerInfo.js" />
         <option value="$PROJECT_DIR$/src/styles/PlayerInfo.css" />
+        <option value="$PROJECT_DIR$/src/pages/PlayerInfo.js" />
       </list>
     </option>
   </component>
@@ -185,7 +180,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="816" />
+    <option name="x" value="248" />
     <option name="y" value="23" />
     <option name="width" value="1697" />
     <option name="height" value="977" />
@@ -497,7 +492,7 @@
       <workItem from="1503558574813" duration="11055000" />
       <workItem from="1503571983034" duration="266000" />
       <workItem from="1503625070652" duration="26542000" />
-      <workItem from="1503718952666" duration="8743000" />
+      <workItem from="1503718952666" duration="9745000" />
     </task>
     <task id="LOCAL-00001" summary="merge&#10;">
       <created>1503625184368</created>
@@ -541,14 +536,21 @@
       <option name="project" value="LOCAL" />
       <updated>1503721197218</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="牌手信息">
+      <created>1503730101504</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1503730101504</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48780000" />
+    <option name="totallyTimeSpent" value="49782000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="816" y="23" width="1697" height="977" extended-state="0" />
+    <frame x="248" y="23" width="1697" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16676737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -883,21 +885,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/PlayerInfo.js">
+    <entry file="file://$PROJECT_DIR$/src/styles/PlayerInfo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="103" column="67" lean-forward="false" selection-start-line="103" selection-start-column="67" selection-end-line="103" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="133" column="1" lean-forward="true" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/PlayerInfo.css">
+    <entry file="file://$PROJECT_DIR$/src/pages/PlayerInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="137" column="9" lean-forward="true" selection-start-line="137" selection-start-column="9" selection-end-line="137" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="330">
+          <caret line="126" column="41" lean-forward="false" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
