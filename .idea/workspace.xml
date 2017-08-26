@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54ff4807-a8bb-4c56-9439-dc904f03feb0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/Colors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/Clamp.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/GameInfo.js" afterPath="$PROJECT_DIR$/src/pages/GameInfo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/I18n.js" afterPath="$PROJECT_DIR$/src/service/I18n.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/GameInfo.css" afterPath="$PROJECT_DIR$/src/styles/GameInfo.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,21 +22,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameInfo.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/GameInfo.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameInfo.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameInfo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/GameInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="507">
+              <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -39,11 +34,75 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RaceInfo.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/RaceInfo.css">
+      <file leaf-file-name="GameInfo.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/styles/GameInfo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1715">
-              <caret line="230" column="21" lean-forward="true" selection-start-line="230" selection-start-column="21" selection-end-line="230" selection-end-column="21" />
+            <state relative-caret-position="286">
+              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Clamp.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/Clamp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Api.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/Api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Colors.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/Colors.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="I18n.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/I18n.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RaceDao.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/RaceDao.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -63,45 +122,36 @@
       <find>react</find>
       <find>ul-2</find>
       <find>.gameActive</find>
-      <find>markdown</find>
-      <find>introduceGame</find>
-      <find>gameList</find>
-      <find>gameActive</find>
-      <find>getRaceInfo</find>
-      <find>race_info</find>
-      <find>PlayerInfo</find>
-      <find>NewsInfo</find>
-      <find>RaceInfo</find>
-      <find>table-prize</find>
-      <find>nav-prize</find>
-      <find>table-detail</find>
-      <find>player-head-nav</find>
-      <find>personImg</find>
+      <find>App</find>
+      <find>App-header</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/service/Api.js" />
         <option value="$PROJECT_DIR$/src/pages/RaceInfo.jsx" />
         <option value="$PROJECT_DIR$/src/styles/RaceInfo.css" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/service/RaceDao.js" />
+        <option value="$PROJECT_DIR$/public/locales/zh/translations.json" />
+        <option value="$PROJECT_DIR$/public/locales/en/translations.json" />
         <option value="$PROJECT_DIR$/src/service/HttpUtil.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/RaceInfo.js" />
         <option value="$PROJECT_DIR$/src/styles/NewsInfo.css" />
         <option value="$PROJECT_DIR$/src/pages/NewsInfo.js" />
-        <option value="$PROJECT_DIR$/src/pages/RaceInfo.js" />
-        <option value="$PROJECT_DIR$/src/pages/Game.js" />
-        <option value="$PROJECT_DIR$/src/pages/GameInfo.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/service/Api.js" />
-        <option value="$PROJECT_DIR$/src/service/RaceDao.js" />
-        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/styles/Colors.js" />
         <option value="$PROJECT_DIR$/src/service/I18n.js" />
-        <option value="$PROJECT_DIR$/src/styles/PlayerInfo.css" />
-        <option value="$PROJECT_DIR$/src/service/utils.js" />
-        <option value="$PROJECT_DIR$/src/pages/PlayerInfo.js" />
+        <option value="$PROJECT_DIR$/src/styles/GameInfo.css" />
+        <option value="$PROJECT_DIR$/src/utils/Clamp.js" />
+        <option value="$PROJECT_DIR$/src/pages/GameInfo.js" />
       </list>
     </option>
   </component>
@@ -115,12 +165,14 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="173" />
+    <option name="x" value="1972" />
     <option name="y" value="23" />
     <option name="width" value="1697" />
     <option name="height" value="977" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -136,25 +188,26 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="desh_react-master" />
+              <option name="myItemId" value="desh_react-1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="desh_react-master" />
+              <option name="myItemId" value="desh_react-1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="desh_react-master" />
+              <option name="myItemId" value="desh_react-1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="desh_react-master" />
+              <option name="myItemId" value="desh_react-1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -164,11 +217,29 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="desh_react-master" />
+              <option name="myItemId" value="desh_react-1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="desh_react-master" />
+              <option name="myItemId" value="desh_react-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desh_react-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desh_react-1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -180,64 +251,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desh_react-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desh_react-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desh_react-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desh_react-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desh_react-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desh_react-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,10 +262,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js.eslint.eslintPackage" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/images" />
+      <recent name="$PROJECT_DIR$/public/locales/en" />
+      <recent name="$PROJECT_DIR$/public/locales/zh" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
@@ -267,49 +285,23 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
-      <envs />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
-    <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
-      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
-      <module name="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
       <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -321,65 +313,20 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
-    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
-      <module name="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -425,102 +372,59 @@
       <updated>1503555711992</updated>
       <workItem from="1503555713287" duration="2174000" />
       <workItem from="1503558574813" duration="11055000" />
-      <workItem from="1503571983034" duration="266000" />
-      <workItem from="1503625070652" duration="26542000" />
-      <workItem from="1503718952666" duration="9745000" />
-      <workItem from="1503731177671" duration="10158000" />
+      <workItem from="1503571983034" duration="121000" />
+      <workItem from="1503721038522" duration="1707000" />
+      <workItem from="1503730972726" duration="8184000" />
     </task>
-    <task id="LOCAL-00001" summary="merge&#10;">
-      <created>1503625184368</created>
+    <task id="LOCAL-00001" summary="路由传参">
+      <created>1503721928372</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1503625184368</updated>
+      <updated>1503721928372</updated>
     </task>
-    <task id="LOCAL-00002" summary="导入marked&#10;">
-      <created>1503631765109</created>
+    <task id="LOCAL-00002" summary="Merge branch 'master' of github.com:lxmdesign/desh_react&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;src/App.js&#10;#&#9;src/pages/RaceInfo.js">
+      <created>1503731030138</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1503631765109</updated>
+      <updated>1503731030138</updated>
     </task>
-    <task id="LOCAL-00003" summary="news完成&#10;">
-      <created>1503650036770</created>
+    <task id="LOCAL-00003" summary="Merge branch 'master' of github.com:lxmdesign/desh_react&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;src/App.js&#10;#&#9;src/pages/RaceInfo.js">
+      <created>1503731046525</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1503650036770</updated>
+      <updated>1503731046525</updated>
     </task>
-    <task id="LOCAL-00004" summary="news完成&#10;">
-      <created>1503653729728</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1503653729728</updated>
-    </task>
-    <task id="LOCAL-00005" summary="news完成&#10;">
-      <created>1503658683139</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1503658683139</updated>
-    </task>
-    <task id="LOCAL-00006" summary="牌手信息">
-      <created>1503721197218</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1503721197218</updated>
-    </task>
-    <task id="LOCAL-00007" summary="牌手信息">
-      <created>1503730101504</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1503730101504</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Merge branch 'master' of github.com:lxmdesign/desh_react&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;">
-      <created>1503731192606</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1503731192606</updated>
-    </task>
-    <task id="LOCAL-00009" summary="排行">
-      <created>1503741582901</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1503741582901</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59940000" />
+    <option name="totallyTimeSpent" value="25678000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="173" y="23" width="1697" height="977" extended-state="0" />
+    <frame x="1972" y="23" width="1697" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16858006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16288783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="ReactNative" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23515716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30616996" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32712457" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="ReactNative" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -539,6 +443,14 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
             </State>
           </value>
         </entry>
@@ -549,520 +461,22 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="merge&#10;" />
-    <MESSAGE value="导入marked&#10;" />
-    <MESSAGE value="news完成&#10;" />
-    <MESSAGE value="牌手信息" />
-    <MESSAGE value="Merge branch 'master' of github.com:lxmdesign/desh_react&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;" />
-    <MESSAGE value="排行" />
-    <option name="LAST_COMMIT_MESSAGE" value="排行" />
+    <MESSAGE value="路由传参" />
+    <MESSAGE value="Merge branch 'master' of github.com:lxmdesign/desh_react&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;src/App.js&#10;#&#9;src/pages/RaceInfo.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of github.com:lxmdesign/desh_react&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;src/App.js&#10;#&#9;src/pages/RaceInfo.js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/Player.js" />
-    <entry file="file://$PROJECT_DIR$/src/styles/Game.css" />
-    <entry file="file://$PROJECT_DIR$/src/styles/Player.css" />
-    <entry file="file://$PROJECT_DIR$/src/pages/Game.js" />
-    <entry file="file://$PROJECT_DIR$/src/pages/NewsInfo.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/RaceInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="50" column="41" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="50" selection-end-column="41" />
+        <state relative-caret-position="38">
+          <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
           <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/NewsInfo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="88" column="58" lean-forward="false" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/返回图标.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/android-load.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/back.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/Group.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/Group 6@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/firstBack.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/background.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/Line.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/Line@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/Line@3x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/load-app.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/load-ios.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/load-logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/match_location.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/match_location@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/match_location@3x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/outline.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/outline@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/pork.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/Rectangle 4@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/stopwatch-icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/stopwatch-icon@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/Triangle.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/Triangle1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/Triangle1@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/组-3@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/金牌-3@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/铜牌@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/银牌@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/Group@3x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/Group@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/HttpUtil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="113" column="16" lean-forward="false" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/Api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/RaceDao.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="18" lean-forward="false" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-          <folding>
-            <element signature="e#42#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1503733524000" expanded="true" signature="211957:212434" ph="{&quot;version&quot;: &quot;4.2.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="212160:212428" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="212197:212420" ph="{&quot;version&quot;: &quot;2.3.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="212460:212653" ph="{&quot;version&quot;: &quot;4.2.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="212676:213109" ph="{&quot;version&quot;: &quot;1.0.11&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="212883:213103" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="212904:213095" ph="{&quot;version&quot;: &quot;8.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="213356:213547" ph="{&quot;version&quot;: &quot;3.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="213565:213742" ph="{&quot;version&quot;: &quot;1.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="213763:214414" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="213964:214408" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="213985:214176" ph="{&quot;version&quot;: &quot;1.1.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="214201:214400" ph="{&quot;version&quot;: &quot;2.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="214439:214874" ph="{&quot;version&quot;: &quot;2.3.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="214648:214868" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="214669:214860" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="214892:215069" ph="{&quot;version&quot;: &quot;2.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="215096:215541" ph="{&quot;version&quot;: &quot;2.2.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="215309:215535" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="215332:215527" ph="{&quot;version&quot;: &quot;3.0.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="215557:215730" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="215755:216211" ph="{&quot;version&quot;: &quot;1.3.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="215964:216205" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="215992:216197" ph="{&quot;version&quot;: &quot;0.4.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="216241:216707" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="216460:216701" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="216488:216693" ph="{&quot;version&quot;: &quot;0.4.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="216727:216908" ph="{&quot;version&quot;: &quot;1.3.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="216937:217138" ph="{&quot;version&quot;: &quot;0.10.5&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="217169:217374" ph="{&quot;version&quot;: &quot;0.9.11&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="217395:217578" ph="{&quot;version&quot;: &quot;0.4.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="217600:217785" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="217814:218013" ph="{&quot;version&quot;: &quot;3.3.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="218035:218220" ph="{&quot;version&quot;: &quot;3.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="218238:218415" ph="{&quot;version&quot;: &quot;0.2.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="218436:218857" ph="{&quot;version&quot;: &quot;0.1.5&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="218637:218851" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="218656:218843" ph="{&quot;version&quot;: &quot;0.5.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="218876:219055" ph="{&quot;version&quot;: &quot;0.2.7&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="219090:219301" ph="{&quot;version&quot;: &quot;1.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="219320:219737" ph="{&quot;version&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="219517:219731" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="219536:219723" ph="{&quot;version&quot;: &quot;0.3.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="219761:219950" ph="{&quot;version&quot;: &quot;1.1.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="219973:220160" ph="{&quot;version&quot;: &quot;1.6.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="220179:220358" ph="{&quot;version&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="220375:220552" ph="{&quot;version&quot;: &quot;2.81.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="220579:220774" ph="{&quot;version&quot;: &quot;2.1.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="220803:221002" ph="{&quot;version&quot;: &quot;1.2.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="221033:221236" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="221262:221455" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="221478:221665" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="221682:221857" ph="{&quot;version&quot;: &quot;1.4.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="221878:222061" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="222083:222268" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="222294:222487" ph="{&quot;version&quot;: &quot;2.2.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="222511:222700" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="222721:222904" ph="{&quot;version&quot;: &quot;0.1.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="222920:223093" ph="{&quot;version&quot;: &quot;2.6.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="223112:223291" ph="{&quot;version&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="223310:223489" ph="{&quot;version&quot;: &quot;2.3.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="223506:223681" ph="{&quot;version&quot;: &quot;4.0.8&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="223709:223906" ph="{&quot;version&quot;: &quot;4.0.8&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="223927:224110" ph="{&quot;version&quot;: &quot;5.1.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="224124:224967" ph="{&quot;version&quot;: &quot;1.6.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="224311:224961" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="224329:224514" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="224539:224738" ph="{&quot;version&quot;: &quot;1.9.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="224760:224953" ph="{&quot;version&quot;: &quot;1.2.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="224980:225147" ph="{&quot;version&quot;: &quot;1.2.4&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="225169:225354" ph="{&quot;version&quot;: &quot;0.3.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="225375:225558" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="225578:225761" ph="{&quot;version&quot;: &quot;1.10.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="225777:225950" ph="{&quot;version&quot;: &quot;5.4.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="225971:226154" ph="{&quot;version&quot;: &quot;2.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="226168:226574" ph="{&quot;version&quot;: &quot;0.15.4&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="226357:226568" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="226375:226560" ph="{&quot;version&quot;: &quot;1.3.4&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="226595:226778" ph="{&quot;version&quot;: &quot;1.9.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="226800:226987" ph="{&quot;version&quot;: &quot;1.12.4&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="227025:227242" ph="{&quot;version&quot;: &quot;4.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="227264:227449" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="227477:227674" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="227696:227881" ph="{&quot;version&quot;: &quot;1.0.5&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="227905:228094" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="228118:228307" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="228323:228496" ph="{&quot;version&quot;: &quot;2.4.8&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="228521:228712" ph="{&quot;version&quot;: &quot;1.2.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="228735:228922" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="228943:229126" ph="{&quot;version&quot;: &quot;1.6.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="229146:229327" ph="{&quot;version&quot;: &quot;0.1.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="229348:229531" ph="{&quot;version&quot;: &quot;3.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="229546:229717" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="229737:229918" ph="{&quot;version&quot;: &quot;0.0.4&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="229933:230104" ph="{&quot;version&quot;: &quot;1.1.6&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="230118:230287" ph="{&quot;version&quot;: &quot;1.0.9&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="230303:230948" ph="{&quot;version&quot;: &quot;0.3.18&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="230496:230942" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="230524:230731" ph="{&quot;version&quot;: &quot;0.10.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="230749:230934" ph="{&quot;version&quot;: &quot;2.0.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="230971:231158" ph="{&quot;version&quot;: &quot;1.1.4&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="231177:231356" ph="{&quot;version&quot;: &quot;1.1.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="231381:231572" ph="{&quot;version&quot;: &quot;0.1.8&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="231592:231773" ph="{&quot;version&quot;: &quot;0.5.7&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="231801:232000" ph="{&quot;version&quot;: &quot;0.4.16&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="232022:232207" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="232238:232441" ph="{&quot;version&quot;: &quot;1.0.4&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="232467:232660" ph="{&quot;version&quot;: &quot;1.2.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="232674:232843" ph="{&quot;version&quot;: &quot;3.4.7&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="232867:233058" ph="{&quot;version&quot;: &quot;2.0.20&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="233078:233259" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="233274:233703" ph="{&quot;version&quot;: &quot;1.13.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="233465:233697" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="233490:233689" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="233721:233898" ph="{&quot;version&quot;: &quot;1.3.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="233925:234120" ph="{&quot;version&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="234141:234324" ph="{&quot;version&quot;: &quot;2.7.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="234351:234546" ph="{&quot;version&quot;: &quot;1.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="234569:234756" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="234778:235437" ph="{&quot;version&quot;: &quot;2.1.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="234981:235431" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="235005:235202" ph="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="235226:235423" ph="{&quot;version&quot;: &quot;4.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="235461:235650" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="235672:235857" ph="{&quot;version&quot;: &quot;0.0.5&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="235877:236058" ph="{&quot;version&quot;: &quot;3.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="236077:236256" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="236275:236454" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="236476:236661" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="236690:236889" ph="{&quot;version&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="236911:237098" ph="{&quot;version&quot;: &quot;0.18.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="237122:237311" ph="{&quot;version&quot;: &quot;4.2.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="237325:237494" ph="{&quot;version&quot;: &quot;0.7.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="237515:237698" ph="{&quot;version&quot;: &quot;5.2.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="237734:237949" ph="{&quot;version&quot;: &quot;0.11.4&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="237969:238150" ph="{&quot;version&quot;: &quot;3.6.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="238171:238354" ph="{&quot;version&quot;: &quot;3.2.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="238369:238774" ph="{&quot;version&quot;: &quot;4.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="238558:238768" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="238575:238760" ph="{&quot;version&quot;: &quot;4.11.8&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="238791:238966" ph="{&quot;version&quot;: &quot;0.2.8&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="238988:239173" ph="{&quot;version&quot;: &quot;4.1.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="239193:239374" ph="{&quot;version&quot;: &quot;0.2.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="239390:239563" ph="{&quot;version&quot;: &quot;3.2.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="239580:239755" ph="{&quot;version&quot;: &quot;2.3.8&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="239771:239944" ph="{&quot;version&quot;: &quot;0.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="239964:240145" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="240164:240343" ph="{&quot;version&quot;: &quot;3.1.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="240370:240565" ph="{&quot;version&quot;: &quot;2.0.4&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="240578:240747" ph="{&quot;version&quot;: &quot;0.0.31&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="240761:240930" ph="{&quot;version&quot;: &quot;1.0.4&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="240954:241143" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="241171:241368" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="241386:241563" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="241585:241770" ph="{&quot;version&quot;: &quot;2.3.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="241784:241953" ph="{&quot;version&quot;: &quot;0.0.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="241976:242163" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="242183:242364" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="242379:242550" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="242574:242763" ph="{&quot;version&quot;: &quot;0.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="242785:242970" ph="{&quot;version&quot;: &quot;0.6.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="242989:243194" ph="{&quot;version&quot;: &quot;0.14.5&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="243214:243395" ph="{&quot;version&quot;: &quot;0.3.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="243412:243589" ph="{&quot;version&quot;: &quot;1.6.15&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="243609:243790" ph="{&quot;version&quot;: &quot;0.0.6&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="243812:243999" ph="{&quot;version&quot;: &quot;0.7.14&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="244018:244199" ph="{&quot;version&quot;: &quot;3.0.28&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="244229:244454" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="244487:245154" ph="{&quot;version&quot;: &quot;0.4.6&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="244712:245148" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="244735:244932" ph="{&quot;version&quot;: &quot;2.8.29&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="244951:245140" ph="{&quot;version&quot;: &quot;3.10.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="245168:245337" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="245353:245526" ph="{&quot;version&quot;: &quot;4.1.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="245541:245712" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="245734:245919" ph="{&quot;version&quot;: &quot;0.1.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="245935:246108" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="246132:246321" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="246346:246537" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="246557:246738" ph="{&quot;version&quot;: &quot;1.1.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="246753:246928" ph="{&quot;version&quot;: &quot;1.18.12&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="246941:247357" ph="{&quot;version&quot;: &quot;0.11.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="247128:247351" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="247150:247343" ph="{&quot;version&quot;: &quot;1.3.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="247377:247558" ph="{&quot;version&quot;: &quot;0.5.9&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="247577:248021" ph="{&quot;version&quot;: &quot;1.1.9&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="247774:248015" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="247802:248007" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="248044:248231" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="248245:248663" ph="{&quot;version&quot;: &quot;0.10.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="248434:248657" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="248456:248649" ph="{&quot;version&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="248687:248876" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="248891:249062" ph="{&quot;version&quot;: &quot;0.4.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="249083:249266" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="249280:249449" ph="{&quot;version&quot;: &quot;3.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="249487:249704" ph="{&quot;version&quot;: &quot;3.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="249725:249908" ph="{&quot;version&quot;: &quot;0.4.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="249922:250091" ph="{&quot;version&quot;: &quot;1.1.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="250108:250283" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="250299:250730" ph="{&quot;version&quot;: &quot;1.10.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="250492:250724" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="250517:250716" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="250753:250940" ph="{&quot;version&quot;: &quot;0.0.4&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="250956:251129" ph="{&quot;version&quot;: &quot;1.0.7&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="251146:251321" ph="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="251336:251509" ph="{&quot;version&quot;: &quot;0.10.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="251528:251707" ph="{&quot;version&quot;: &quot;1.4.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="251721:251890" ph="{&quot;version&quot;: &quot;1.7.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="251918:252115" ph="{&quot;version&quot;: &quot;4.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="252132:255523" ph="{&quot;version&quot;: &quot;3.5.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="252325:255517" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="252351:252552" ph="{&quot;version&quot;: &quot;2.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="252575:252770" ph="{&quot;version&quot;: &quot;4.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="252789:253263" ph="{&quot;version&quot;: &quot;3.2.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="252994:253253" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="253024:253241" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="253300:253523" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="253551:253756" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="253779:253974" ph="{&quot;version&quot;: &quot;2.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="253997:254192" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="254214:254407" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="254432:254631" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="254654:254849" ph="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="254875:255076" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="255095:255282" ph="{&quot;version&quot;: &quot;8.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="255308:255509" ph="{&quot;version&quot;: &quot;7.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="255555:255762" ph="{&quot;version&quot;: &quot;1.12.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="255790:258886" ph="{&quot;version&quot;: &quot;2.7.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="256005:258880" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="256028:256223" ph="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="256242:256429" ph="{&quot;version&quot;: &quot;3.2.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="256446:256629" ph="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="256649:257101" ph="{&quot;version&quot;: &quot;6.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="256856:257091" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="256878:257079" ph="{&quot;version&quot;: &quot;2.3.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="257123:257316" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="257353:257576" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="257593:257776" ph="{&quot;version&quot;: &quot;4.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="257794:257979" ph="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="258005:258206" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="258234:258439" ph="{&quot;version&quot;: &quot;3.2.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="258458:258645" ph="{&quot;version&quot;: &quot;6.6.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="258671:258872" ph="{&quot;version&quot;: &quot;4.2.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="258919:259590" ph="{&quot;version&quot;: &quot;1.2.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="259144:259584" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="259166:259361" ph="{&quot;version&quot;: &quot;0.30.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="259383:259576" ph="{&quot;version&quot;: &quot;2.4.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="259615:260074" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="259824:260068" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="259853:260060" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="260100:260293" ph="{&quot;version&quot;: &quot;0.6.5&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="260323:260524" ph="{&quot;version&quot;: &quot;0.1.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="260549:260995" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="260758:260989" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="260782:260981" ph="{&quot;version&quot;: &quot;0.4.13&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="261017:261202" ph="{&quot;version&quot;: &quot;2.0.3&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="261222:261680" ph="{&quot;version&quot;: &quot;4.8.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="261421:261674" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="261453:261666" ph="{&quot;version&quot;: &quot;3.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="261701:261884" ph="{&quot;version&quot;: &quot;0.9.9&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="261899:262070" ph="{&quot;version&quot;: &quot;1.3.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="262092:262277" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="262298:263000" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="262499:262994" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="262536:262759" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="262785:262986" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="263021:263204" ph="{&quot;version&quot;: &quot;0.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="263222:263399" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="263420:263603" ph="{&quot;version&quot;: &quot;1.5.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="263622:264320" ph="{&quot;version&quot;: &quot;2.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="263819:264314" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="263856:264079" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="264105:264306" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="264336:264509" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="264524:264695" ph="{&quot;version&quot;: &quot;0.2.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="264722:264917" ph="{&quot;version&quot;: &quot;1.3.4&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="264938:265121" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="265147:265340" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="265368:265565" ph="{&quot;version&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="265580:265751" ph="{&quot;version&quot;: &quot;4.0.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="265765:265934" ph="{&quot;version&quot;: &quot;3.2.1&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="265951:266126" ph="{&quot;version&quot;: &quot;2.1.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="266141:267255" ph="{&quot;version&quot;: &quot;7.1.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="266330:267249" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="266353:266548" ph="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="266567:266754" ph="{&quot;version&quot;: &quot;3.2.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="266791:267014" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="267040:267241" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="267277:267712" ph="{&quot;version&quot;: &quot;5.0.0&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="267480:267706" ph="{...}" />
-            <marker date="1503733524000" expanded="true" signature="267503:267698" ph="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#42#81#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1071,77 +485,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1503733524000" expanded="true" signature="0:639" ph="{&quot;name&quot;: &quot;desh_h5&quot;...}" />
-            <marker date="1503733524000" expanded="true" signature="82:464" ph="{&quot;apisauce&quot;: &quot;^0.14.1&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/RaceInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="68" column="42" lean-forward="false" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="42" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/I18n.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-            <marker date="1503735310000" expanded="true" signature="198:527" ph="{&quot;fallbackLng&quot;: 'en'...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="62" lean-forward="false" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+        <state relative-caret-position="323">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/PlayerInfo.css">
+    <entry file="file://$PROJECT_DIR$/src/service/Api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="84" column="22" lean-forward="false" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/PlayerInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="89" column="34" lean-forward="true" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+        <state relative-caret-position="153">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="30" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/RaceInfo.css">
+    <entry file="file://$PROJECT_DIR$/src/service/RaceDao.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1715">
-          <caret line="230" column="21" lean-forward="true" selection-start-line="230" selection-start-column="21" selection-end-line="230" selection-end-column="21" />
+        <state relative-caret-position="187">
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/GameInfo.css">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="53" lean-forward="false" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/registerServiceWorker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1149,13 +542,346 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/RaceInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#42#81#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/RaceInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="11" lean-forward="false" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/Api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/RaceDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/HttpUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/registerServiceWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/RaceInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#42#81#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/registerServiceWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/static/js/main.1fc6fa55.js" />
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/i18n/zh.json" />
+    <entry file="file://$PROJECT_DIR$/src/assets/i18n/english.json" />
+    <entry file="file://$PROJECT_DIR$/node_modules/i18next/dist/es/i18next.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3033">
+          <caret line="54" column="45" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/i18next/dist/es/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="747" column="100" lean-forward="false" selection-start-line="747" selection-start-column="100" selection-end-line="747" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/locales/zh/translations.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/locales/en/translations.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/HttpUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/RaceInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/RaceInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/PlayerInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/NewsInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/Colors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/NewsInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/PlayerInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/RaceDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/Api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/I18n.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Clamp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/GameInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="507">
+          <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/GameInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
