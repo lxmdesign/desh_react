@@ -6,9 +6,9 @@ import ReactMarkdown from 'react-markdown';
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import {getRaceInfo, setLang} from '../service/RaceDao';
 import '../styles/RaceInfo.css';
-import {translate, Trans} from 'react-i18next';
+import I18n from '../service/I18n';
 
-class RaceInfo extends Component {
+export default class RaceInfo extends Component {
 
     state = {
         dataStr: '',
@@ -44,10 +44,10 @@ class RaceInfo extends Component {
 
 
     content = () => {
-        const { t, i18n } = this.props;
+
         if (!this.isEmptyObject(this.state.data.race)) {
             const navs = [
-                {name: t('load_ipnone'), path: "/"},
+                {name: I18n.t('load_ipnone'), path: "/"},
                 {name: '主赛信息', path: "/"},
                 {name: '边塞信息', path: "/"}
             ];
@@ -113,5 +113,3 @@ class RaceInfo extends Component {
         )
     };
 }
-
-export default translate('translations')(RaceInfo);
