@@ -4,8 +4,9 @@
 import React, {Component} from 'react';
 import markdown from 'marked';
 import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
-import {getRaceInfo} from '../service/RaceDao';
+import {getRaceInfo,setLang} from '../service/RaceDao';
 import '../styles/RaceInfo.css';
+import I18n from '../service/I18n';
 
 export default class RaceInfo extends Component {
 
@@ -15,7 +16,9 @@ export default class RaceInfo extends Component {
     };
 
     componentDidMount() {
-        const body = {raceId: 91};
+        const {id,lang} = this.props.match.params;
+        setLang(lang);
+        const body = {raceId: id};
         document.title = '扑客';
         getRaceInfo(body, data => {
             console.log('RaceInfo', data)
@@ -49,7 +52,7 @@ export default class RaceInfo extends Component {
             } = this.state.data.race;
             const navs = [{
                 exact: true,
-                name: "简介",
+                name: I18n.t('load_ipnone'),
                 path: "/"
 
             }, {
