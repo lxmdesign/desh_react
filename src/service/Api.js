@@ -24,5 +24,5 @@ function player_info(body){
 }
 function game_info(body){
     const {gameId} = body;
-    return 'u/0/races/'+gameId;
+    return 'rankGame/'+gameId;
 }

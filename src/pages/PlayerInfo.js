@@ -60,17 +60,17 @@ export default class PlayerInfo extends Component {
                         <span className="country">{country}</span>
 
                         <div className="player-head-nav">
-                            <div class="nav-rank">
+                            <div className="nav-rank">
 
                                 <span>{ranking}</span>
                                 <span>名次</span>
                             </div>
-                            <div class="nav-score">
+                            <div className="nav-score">
 
-                                <span>{dpi_total_score}</span>
+                                <span>2333{dpi_total_score}</span>
                                 <span>积分</span>
                             </div>
-                            <div class="nav-prize">
+                            <div className="nav-prize">
 
                                 <span>¥{dpi_total_earning}</span>
                                 <span>奖金</span>

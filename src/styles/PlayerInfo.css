@@ -4,7 +4,7 @@
 
 }
 .player-head{
-    height:270px;
+    height:260px;
     background: url('../assets/images/background.png') no-repeat center;
     background-size: 100% 100%;
     padding: 32px 0 0 20px;
@@ -51,17 +51,22 @@
     text-overflow:ellipsis;
     white-space: nowrap;
 }
-.header-rank{
+.player-head-nav{
+    display: flex;
+    margin-top: 80px;
+
+}
+.nav-rank{
     flex: 1;
 }
-.header-rank span:nth-child(1){
+.nav-rank span:nth-child(1){
     display: block;
     font-size:17px;
     color:#CCC;
-    padding-left: 30px;
+    padding-left: 18px;
     height: 24px;
 }
-.header-rank span:nth-child(2){
+.nav-rank span:nth-child(2){
     display: block;
     font-size:12px;
     color:#888;
@@ -74,16 +79,20 @@
     line-height: 21px;
     margin-left: 10px;
 }
-.header-score{
+.nav-score{
     flex: 1;
 }
-.header-score span:nth-child(1){
+.nav-score span:nth-child(1){
     display: block;
     font-size:17px;
     color:#CCC;
     height: 24px;
+
+    text-align: center;
+    padding-left:15px;
+
 }
-.header-score span:nth-child(2){
+.nav-score span:nth-child(2){
     display: block;
     font-size:12px;
     color:#888;
@@ -95,16 +104,16 @@
     text-align: center;
     line-height: 21px;
 }
-.header-prize{
+.nav-prize{
     flex: 1;
 }
-.header-prize span:nth-child(1){
+.nav-prize span:nth-child(1){
     display: block;
     font-size:17px;
     color:#CCC;
     height: 24px;
 }
-.header-prize span:nth-child(2){
+.nav-prize span:nth-child(2){
     display: block;
     font-size:12px;
     color:#888;
