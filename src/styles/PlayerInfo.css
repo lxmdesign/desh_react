@@ -1,159 +1,240 @@
-.player{
-    margin:0;
-    padding:0;
+.player {
+    margin: 0;
+    padding: 0;
 
 }
-.player-head{
-    height:200px;
+
+.player-head {
+    height: 200px;
     background: url('../assets/images/background.png') no-repeat center;
     background-size: 100% 100%;
 }
 
-.player-head-top h2{
+.player-head-top h2 {
     text-align: center;
-    color:#FFE9AD !important;
+    color: #FFE9AD !important;
     font-size: 18px;
     font-family: PingFangSC-Light;
     line-height: 25px;
-    margin-top:0px;
+    margin-top: 0px;
     padding-top: 10px;
 }
-.player-head .personImg{
+
+.player-head .personImg {
     float: left;
-    width:74px;
-    height:74px;
+    width: 74px;
+    height: 74px;
     border-radius: 36.5px;
     margin-left: 25px;
 }
-.player-head .personName{
+
+.player-head .personName {
     overflow: hidden;
-    zoom:1;
+    zoom: 1;
     display: block;
-    width:200px;
-    color:#FFFFFF  !important;
+    width: 200px;
+    color: #FFFFFF !important;
     font-size: 15px;
     font-family: PingFangSC-Medium;
     line-height: 21px;
     margin-bottom: -8px;
-    margin-left:120px;
-    text-overflow:ellipsis;
+    margin-left: 120px;
+    text-overflow: ellipsis;
     white-space: nowrap;
 
 }
-.player-head .country{
+
+.player-head .country {
     overflow: hidden;
-    zoom:1;
+    zoom: 1;
     display: block;
-    color:#AAAAAA  !important;
+    color: #AAAAAA !important;
     font-size: 14px;
     font-family: PingFangSC-Medium;
     line-height: 20px;
-    margin-left:120px;
-    text-overflow:ellipsis;
+    margin-left: 120px;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
-.player-head-nav{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:100%;
-    height:60px;
+
+.player-head-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
 
 }
-.nav-rank,.nav-score,.nav-prize{
+
+.nav-rank, .nav-score, .nav-prize {
     flex: 1;
     text-align: center;
-    width:30%;
 
 }
-.nav-rank span:nth-child(1){
+
+.nav-rank span:nth-child(1) {
     display: block;
-    font-size:17px;
-    color:#CCC;
+    font-size: 17px;
+    color: #CCC;
     text-align: center;
-
+    box-sizing: border-box;
 }
-.nav-rank span:nth-child(2){
+
+.nav-rank span:nth-child(2) {
     display: block;
-    font-size:12px;
-    color:#888;
+    font-size: 12px;
+    color: #888;
     background-color: #292929;
     /*opacity: 0.08;*/
     height: 21px;
     width: 50px;
     border-radius: 18px;
     line-height: 21px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.nav-score span:nth-child(1) {
+
+    font-size: 17px;
+    color: #CCC;
 
 }
-.nav-score span:nth-child(1){
-    display: block;
-    font-size:17px;
-    color:#CCC;
-    height: 24px;
-    width: 50px;
-    text-align: center;
+.nav-rank, .nav-score, .nav-prize {
+    flex: 1;
+
 
 }
-.nav-score span:nth-child(2){
+
+.nav-rank span:nth-child(1) {
+
+    font-size: 17px;
+    color: #CCC;
+
+
+}
+
+.nav-rank span:nth-child(2) {
+    font-size: 12px;
+    color: #888;
+    background-color: #292929;
+    border-radius: 18px;
+}
+
+.nav-score span:nth-child(1) {
+
+    font-size: 17px;
+    color: #CCC;
+
+}
+
+.nav-score span:nth-child(2) {
+
+    font-size: 12px;
+    color: #888;
+    background-color: #292929;
+
+    border-radius: 18px;
+
+}
+
+.nav-prize span:nth-child(1) {
+
+    font-size: 17px;
+    color: #CCC;
+
+}
+
+.nav-prize span:nth-child(2) {
+
+    font-size: 12px;
+    color: #888;
+    background-color: #292929;
+    border-radius: 18px;
+
+}
+
+player-body {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    height: 170px;
+}
+
+.nav-score span:nth-child(2) {
     display: block;
-    font-size:12px;
-    color:#888;
+    font-size: 12px;
+    color: #888;
     background-color: #292929;
     /*opacity: 0.08;*/
     height: 21px;
     width: 50px;
     border-radius: 18px;
     line-height: 21px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
-.nav-prize span:nth-child(1){
-    display: block;
-    font-size:17px;
-    color:#CCC;
-    height: 24px;
-    width: 60px;
-    text-align: center;
+
+.nav-prize span:nth-child(1) {
+
+    font-size: 17px;
+    color: #CCC;
+
 }
-.nav-prize span:nth-child(2){
+
+.nav-prize span:nth-child(2) {
     display: block;
-    font-size:12px;
-    color:#888;
+    font-size: 12px;
+    color: #888;
     background-color: #292929;
     /*opacity: 0.08;*/
     height: 21px;
     width: 50px;
     border-radius: 18px;
     line-height: 21px;
+    box-sizing: border-box;
+    margin: auto;
 }
-player-body{
-    width:100%;
+
+player-body {
+    width: 100%;
 }
-table{
-    width:400px;
-    height:170px;
+
+table {
+    width: 100%;
+    height: 170px;
 }
-table tbody tr{
-    background-color:#fff;
+
+table tbody tr {
+    background-color: #fff;
 }
-table tbody tr td{
-    padding:12px 18px 10px 19px;
+
+table tbody tr td {
+    padding: 12px 18px 10px 19px;
 }
-table tbody tr td a{
+
+table tbody tr td a {
     text-decoration: none;
 }
+
 /*table*/
-.table-header{
+.table-header {
     overflow: hidden;
     zoom: 1;
-    width:380px;
-    height:24px;
+    width: 380px;
+    height: 24px;
 }
-.table-header span:nth-child(1){
+
+.table-header span:nth-child(1) {
     font-size: 17px;
     color: #333;
     line-height: 24px;
     float: left;
 }
-.table-header span:nth-child(2){
+
+.table-header span:nth-child(2) {
     float: right;
     width: 58px;
     height: 24px;
@@ -164,29 +245,35 @@ table tbody tr td a{
     text-align: center;
     line-height: 24px;
 }
-.table-detail{
+
+.table-detail {
     display: flex;
     padding-bottom: 17px;
     border-bottom: 1px solid #ECECEE;
 }
-.table-detail div{
+
+.table-detail div {
     flex: 1;
 }
-.table-detail div span{
+
+.table-detail div span {
     display: block;
     text-align: center;
-    height:24px;
+    height: 24px;
 }
-.table-detail div span:nth-child(1){
+
+.table-detail div span:nth-child(1) {
     font-size: 12px;
     color: #AAA;
 }
-.table-detail div span:nth-child(2){
+
+.table-detail div span:nth-child(2) {
     font-size: 15px;
     color: #888;
 }
-.table-time{
-    height:20px;
+
+.table-time {
+    height: 20px;
     margin-top: 11px;
     background: url('../assets/images/home_clock.png') no-repeat left center;
     background-size: 10px 10px;
@@ -196,8 +283,9 @@ table tbody tr td a{
     line-height: 20px;
     text-align: left;
 }
-.table-location{
-    height:20px;
+
+.table-location {
+    height: 20px;
     background: url('../assets/images/home_adr.png') no-repeat left center;
     background-size: 8px 11px;
     padding-left: 18px;

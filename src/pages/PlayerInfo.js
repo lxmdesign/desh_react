@@ -78,7 +78,7 @@ export default class PlayerInfo extends Component {
                         <div className="player-head-nav">
                             <div className="nav-rank">
                                 <span>{ranking}</span>
-                                <span>名次</span>
+                                <span>Ranking</span>
                             </div>
                             <div className="nav-score">
                                 <span>{strNotNull(dpi_total_score)?dpi_total_score:'--'}</span>
