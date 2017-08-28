@@ -31,3 +31,13 @@ export function strNotNull(str) {
     else
         return true;
 }
+
+export function modify(str,str2) {
+    var demoClassName = str;
+    if (this.props.active) {
+        demoClassName += str2;
+    }
+    return (
+        demoClassName
+    )
+}

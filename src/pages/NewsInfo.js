@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import markdown from 'marked';
 import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
-import {getNewsInfo} from '../service/RaceDao';
+import {getNewsInfo,setLang} from '../service/RaceDao';
 import '../styles/NewsInfo.css';
 
 export default class NewsInfo extends Component {
@@ -11,7 +11,9 @@ export default class NewsInfo extends Component {
     };
 
     componentDidMount() {
-        const body = {newsId: 91};
+        const {id, lang} = this.props.match.params;
+        setLang(lang);
+        const body = {newsId: id};
         document.title = '扑客';
         getNewsInfo(body, data => {
             console.log('NewsInfo', data)

@@ -5,14 +5,13 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: #161718;
-    opacity: 0.5;
+    background-color: #ECECEE;
 }
 
 .top-race {
     display: flex;
     flex-direction: row;
-    background-color: greenyellow;
+    background-color: #ffffff;
 }
 
 .img-logo {
@@ -28,10 +27,102 @@
     margin: 20px 14px 14px 0;
     flex: 1;
 }
-
+.race-info-time{
+    height: 20px;
+    margin-top: 11px;
+    background: url('../assets/images/home_clock.png') no-repeat left center;
+    background-size: 10px 10px;
+    padding-left: 18px;
+    color: #666;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+}
+.race-info-location {
+    height: 20px;
+    background: url('../assets/images/home_adr.png') no-repeat left center;
+    background-size: 8px 11px;
+    padding-left: 18px;
+    color: #666;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+}
 .title {
     font-family: PingFangSC-Medium;
     font-size: 17px;
     color: #333333;
 
 }
+
+.line {
+    height: 1.2px;
+    width:90%;
+}
+
+.div_flex {
+
+}
+
+.race-massage {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+
+}
+
+.race-massage div span:nth-child(1) {
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #AAAAAA;
+    line-height: 17px;
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+
+}
+
+.race-massage div span:nth-child(2) {
+    font-family: PingFangSC-Medium;
+    font-size: 15px;
+    color: #888888;
+    line-height: 21px;
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.race-table {
+    display: table !important;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 6px;
+    background-color: #fff;
+}
+
+.race-table thead {
+    background-color: #CECDBB !important;
+    opacity: 1;
+    line-height: 32px;
+    color: #fff;
+    font-size: 14px;
+
+}
+.race-table tbody tr{
+    height:48px;
+}
+.race-table tbody tr:nth-child(2n){
+    background: #F5F5F5;
+}
+.race-table tbody tr td {
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+.race-table tbody tr td:nth-child(2){
+    color:#3F9FFF !important;
+}
+

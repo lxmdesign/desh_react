@@ -19,12 +19,10 @@ class App extends Component {
                 <div>
 
                     <Route exact path="/race/:id/:lang" component={RaceInfo}/>
-                    <Route path="/about" component={About}/>
-                    <Route path="/topics" component={Topics}/>
 
                     <Route path="/news" component={NewsInfo}/>
                     <Route path="/rankPlayer" component={PlayerInfo}/>
-                    <Route path="/rankGame" component={GameInfo}/>
+                    <Route path="/rankGame/:id/:lang" component={GameInfo}/>
                 </div>
             </Router>
         );
