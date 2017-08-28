@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54ff4807-a8bb-4c56-9439-dc904f03feb0" name="Default" comment="牌手赛事">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/assets/images/组-3@2x.png" afterPath="$PROJECT_DIR$/src/assets/images/Group-3@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/assets/images/返回图标.png" afterPath="$PROJECT_DIR$/src/assets/images/ReturnIcon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/assets/images/返回图标@2x.png" afterPath="$PROJECT_DIR$/src/assets/images/ReturnIcon@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/assets/images/返回图标@3x.png" afterPath="$PROJECT_DIR$/src/assets/images/ReturnIcon@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/assets/images/金牌-3@2x.png" afterPath="$PROJECT_DIR$/src/assets/images/goldMedal.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/assets/images/铜牌@2x.png" afterPath="$PROJECT_DIR$/src/assets/images/bronzeMedal.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/assets/images/银牌@2x.png" afterPath="$PROJECT_DIR$/src/assets/images/silverMedal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/GameInfo.js" afterPath="$PROJECT_DIR$/src/pages/GameInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/NewsInfo.js" afterPath="$PROJECT_DIR$/src/pages/NewsInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/PlayerInfo.js" afterPath="$PROJECT_DIR$/src/pages/PlayerInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/RaceInfo.js" afterPath="$PROJECT_DIR$/src/pages/RaceInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/Api.js" afterPath="$PROJECT_DIR$/src/service/Api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/utils.js" afterPath="$PROJECT_DIR$/src/service/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/GameInfo.css" afterPath="$PROJECT_DIR$/src/styles/GameInfo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/PlayerInfo.css" afterPath="$PROJECT_DIR$/src/styles/PlayerInfo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/RaceInfo.css" afterPath="$PROJECT_DIR$/src/styles/RaceInfo.css" />
+    <list default="true" id="54ff4807-a8bb-4c56-9439-dc904f03feb0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/desh_h5.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,8 +34,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="304">
+              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -110,7 +98,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2041" />
+    <option name="x" value="2040" />
     <option name="y" value="23" />
     <option name="width" value="1697" />
     <option name="height" value="977" />
@@ -307,7 +295,7 @@
       <workItem from="1503730972726" duration="8876000" />
       <workItem from="1503885418064" duration="867000" />
       <workItem from="1503886694173" duration="87000" />
-      <workItem from="1503913666388" duration="37000" />
+      <workItem from="1503913666388" duration="175000" />
     </task>
     <task id="LOCAL-00001" summary="路由传参">
       <created>1503721928372</created>
@@ -337,14 +325,21 @@
       <option name="project" value="LOCAL" />
       <updated>1503741208388</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="merge">
+      <created>1503913821964</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1503913821964</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27361000" />
+    <option name="totallyTimeSpent" value="27499000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2041" y="23" width="1697" height="977" extended-state="0" />
+    <frame x="2040" y="23" width="1697" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16288783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -404,7 +399,8 @@
     <MESSAGE value="路由传参" />
     <MESSAGE value="Merge branch 'master' of github.com:lxmdesign/desh_react&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;src/App.js&#10;#&#9;src/pages/RaceInfo.js" />
     <MESSAGE value="牌手赛事" />
-    <option name="LAST_COMMIT_MESSAGE" value="牌手赛事" />
+    <MESSAGE value="merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -455,6 +451,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -538,6 +537,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -635,6 +637,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -650,6 +655,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -719,6 +727,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -762,8 +771,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="304">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding />
         </state>
       </provider>
