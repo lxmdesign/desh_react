@@ -35,3 +35,9 @@ export function getGameInfo(body, resolve, reject) {
         resolve(ret.data);
     }, reject);
 }
+export function getRankInfo(body, resolve, reject) {
+    get(Api.rank_info(body), ret => {
+        resolve(ret.data);
+    }, reject);
+}
+
