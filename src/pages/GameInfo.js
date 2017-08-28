@@ -53,8 +53,8 @@ export default class GameInfo extends Component {
                             <p className="title">{race.name}</p>
                             <div className="div_flex"/>
 
-                            <span className="race-info-time"><Time value={race.begin_date} format="YYYY:MM:DD"/>-<Time
-                                value={race.end_date} format="YYYY:MM:DD"/></span>
+                            <span className="race-info-time"><Time value={race.begin_date} format="YYYY.MM.DD"/>-<Time
+                                value={race.end_date} format="YYYY.MM.DD"/></span>
                             <span className="race-info-location "> {race.location}</span>
 
                         </div>

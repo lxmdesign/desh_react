@@ -108,7 +108,7 @@ export function get(url, resolve, reject) {
         .then((response) => {
             if (response.ok) {
                 const {code, msg} = response.data;
-                if (code === 0 || response.status === 200) {
+                if (code === 0) {
                     resolve(response.data);
                 } else {
                     reject(msg);
