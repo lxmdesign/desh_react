@@ -75,7 +75,7 @@ export default class GameInfo extends Component {
                     <div className="race-person">
 
                         <span>参赛人数</span>
-                        <a><span>{race.participants}人</span></a>
+                        <span>{race.participants}</span>
                     </div>
                 </div>
 
