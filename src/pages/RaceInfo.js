@@ -4,19 +4,23 @@
 import React, {Component} from 'react';
 import markdown from 'marked';
 import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
-import {getRaceInfo,setLang} from '../service/RaceDao';
+import {getRaceInfo, setLang} from '../service/RaceDao';
+import Time from 'react-time-format';
 import '../styles/RaceInfo.css';
 import I18n from '../service/I18n';
+import {modify} from '../service/utils';
+import imgMenu from '../assets/images/Triangle@3x.png';
 
 export default class RaceInfo extends Component {
 
     state = {
         dataStr: '',
-        data: {}
+        data: {},
+        menu: 0
     };
 
     componentDidMount() {
-        const {id,lang} = this.props.match.params;
+        const {id, lang} = this.props.match.params;
         setLang(lang);
         const body = {raceId: id};
         document.title = '扑客';
@@ -36,10 +40,11 @@ export default class RaceInfo extends Component {
             return !1;
         return !0
     }
+
     //html to markDown
     desc = (description) => {
         var des = markdown(description)
-        return {__html:des}
+        return {__html: des}
     }
     //click事件
 
@@ -53,14 +58,17 @@ export default class RaceInfo extends Component {
             const navs = [{
                 exact: true,
                 name: I18n.t('load_ipnone'),
-                path: "/"
+                path: "/",
+                activeClassName: "active"
 
             }, {
                 name: "主赛信息",
-                path: "/"
+                path: "/",
+                activeClassName: ""
             }, {
                 name: "边赛信息",
-                path: "/"
+                path: "/",
+                activeClassName: ""
             }];
 
             return (
@@ -71,36 +79,77 @@ export default class RaceInfo extends Component {
                             <div className="title">{name}</div>
                             <img src={logo}/>
                             <ul className="ul-1-2">
-                                <li>{begin_date}—{end_date}</li>
+                                <li><Time value={begin_date} format="YYYY:MM:DD"/>—<Time value={end_date}
+                                                                                         format="YYYY:MM:DD"/></li>
                                 <li>{location}</li>
                                 <li className="li-4"><span>{status}</span><span>{ticket_status}</span></li>
                             </ul>
                         </div>
-                        <ul className="ul-2" style={{margin: 0}}>
-                            {
-                                navs.map((value, key) =>
-                                    (<li key={key}>
-                                        <NavLink className="navLink" activeClassName="active" to={value.path} >
-                                            {value.name}
-                                        </NavLink>
-                                    </li>))
-                            }
-                            {/*<li onClick={this.changeClass(0)} >简介</li>*/}
-                            {/*<li onClick={this.changeClass(1)} >主赛信息</li>*/}
-                            {/*<li onClick={this.changeClass(2)} >边塞信息</li>*/}
-                        </ul>
+
+
+                        <div className="menu">
+                            <div className="menu1" onClick={() => {
+                                this.setState({
+                                    menu: 0
+                                })
+                            }}>
+                                <span className='txtMenu '>简介</span>
+                                {/*<img src={imgMenu} className="imgMe"/>*/}
+                            </div>
+                            <div className="menu1"
+                                 onClick={() => {
+                                     this.setState({
+                                         menu: 1
+                                     })
+                                 }}>
+                                <span className='txtMenu'>主赛信息</span>
+
+                            </div>
+                            <div className="menu1"
+                                 onClick={() => {
+                                     this.setState({
+                                         menu: 2
+                                     })
+                                 }}>
+                                <span className='txtMenu'>边塞信息</span>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div className="introduceGame"  dangerouslySetInnerHTML={this.desc(description)}></div>
-                    {/*<div className="mainGame"  dangerouslySetInnerHTML={this.desc(schedules)}></div>*/}
-
-                    {/*info*/}
+                    {this.selectMenu()}
 
                 </div>
 
             );
         }
     }
+    selectMenu = ()=>{
+        const {
+            name, location, status, ticket_status, begin_date, end_date, logo,
+            schedules, description, Blind, Ranks
+        } = this.state.data.race;
+
+        switch (this.state.menu){
+            case 0:
+                return this.introView(description);
+            case 1:
+                return this.infoView();
+            case 2:
+                return this.infoView();
+        }
+    }
+
+    introView = (description) => {
+
+        return <div className="introduceGame" dangerouslySetInnerHTML={this.desc(description)}></div>;
+    };
+
+    infoView = () => {
+        return <div className="infoView"> </div>
+    };
 
 
     render() {

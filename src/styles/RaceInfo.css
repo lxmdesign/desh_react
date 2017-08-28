@@ -1,6 +1,35 @@
 
+
+
+.infoView{
+    background-color: red;
+    flex:1
+}
+
+.menu{
+    display: flex;
+}
+
+.menu1{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+}
+.txtMenu{
+    font-size: 16px;
+    color: #888888;
+    display: block;
+    height:32px;
+}
+.imgMe{
+    background: url('../assets/images/Triangle.png') no-repeat  center bottom;
+}
+
 body{
-    margin: 0 none !important;
+    margin: 0  !important;
 }
 a{
     text-decoration: none;
@@ -9,128 +38,9 @@ ul,ol{
     list-style: none;
     padding: 0;
 }
-
-.gameConTable{
-    display: table !important;
-}
-
-table{
-    display: table !important;
-    width: 100%;
-    border-collapse:collapse;
-}
-table thead tr{
-    font-family: PingFangSC-Regular;
-    font-size: 14px;
-    height: 32px;
-    color: #FFFFFF;
-    background: #AEBABB;
-}
-table tbody tr{
-    font-family: PingFangSC-Regular;
-    font-size: 14px;
-    color: #666666;
-    line-height: 48px;
-    height: 48px;
-    text-align: center;
-    border: 1px solid #EEEEEE;
-}
-table tbody tr td a{
-    color: #3F9FFF;
-    font-family: PingFangSC-Medium;
-    font-size: 14px;
-    display: inline-block;
-}
-.gameList{
-    height: 36px;
-    margin: 21px 13px 19px 16px;
-    border: 1px solid #161718;
-    border-radius: 2px;
-    display: flex;
-}
-.gameList li{
-    flex: 1;
-    line-height: 36px;
-    text-align: center;
-    font-family: PingFangSC-Regular;
-    font-size: 14px;
-    color: #161718;
-    position: relative;
-}
-.gameList li:nth-child(1):before{
-    content: '';
-    position: absolute;
-    top:25%;
-    right: 0;
-    width: 0;
-    height:100%;
-    transform: scale(0.5);
-    transform-origin: right top;
-    border: 1px solid #161718;
-}
-.gameList li:nth-child(3):before{
-    content: '';
-    position: absolute;
-    top:25%;
-    left: 0;
-    width: 0;
-    height:100%;
-    transform: scale(0.5);
-    transform-origin: left top;
-    border: 1px solid #161718;
-}
-.ul-2 li a.active{
-    color: #cccccc !important;
-    background: url('../assets/images/Triangle.png') no-repeat center bottom;
-}
-.gameActive{
-    color: #cccccc !important;
-    background: url('../assets/images/Triangle.png') no-repeat center bottom;
-}
-.gameListActive {
-    background: #161718;
-    color: #FFFFFF !important;
-}
-
-header{
-    overflow: hidden;
-    zoom: 1;
-    height: 44px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #161718;
-    color: #fff;
-    line-height: 44px;
-    z-index: 10;
-}
-header span{
-    float: left;
-}
-header .back{
-    width: 10%;
-    height:100%;
-    color: #fff;
-    cursor: pointer;
-}
-header .title{
-    float: left;
-    line-height :initial;
-    height: 34px;
-    padding-top: 10px;
-    text-align: center;
-    width: 60%;
-    margin-left:10%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.content{
-    /*padding-top: 44px;*/
-    overflow: hidden;
-}
 .mainNav{
     width: 100%;
-    height:200px;
+    height:220px;
     background: url('../assets/images/background.png') no-repeat;
     background-size: 100% 100%;
 }
@@ -165,16 +75,13 @@ header .title{
 }
 .mainNav .ul-1 .ul-1-2 li:nth-child(1){
     padding-left: 25px;
-    background: url(../assets/images/stopwatch-icon.png) no-repeat left center;
+    background: url("../assets/images/stopwatch-icon.png") no-repeat left center;
 }
 .mainNav .ul-1 .ul-1-2 li:nth-child(2){
     padding-left: 25px;
-    background: url(../assets/images/match_location.png) no-repeat left center;
+    background: url("../assets/images/match_location.png") no-repeat left center;
 }
-/*.mainNav .ul-1 .ul-1-2 li:nth-child(3){
-  font-size: 14px;
-  color: #D2C476;
-}*/
+
 .mainNav .ul-1 .ul-1-2 .li-4 span{
     height: 17px;
     line-height: 17px;
@@ -187,34 +94,35 @@ header .title{
 .mainNav .ul-1 .ul-1-2 .li-4 span:nth-child(1){
     margin-right: 9px;
 }
+.mainNav .ul-1{
+    margin-bottom: 7px;
+}
 .mainNav .ul-2{
+    display:flex;
+    justify-content: space-around;
+    height:50px;
+}
+
+.mainNav .ul-2 li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: #cccccc !important;
+}
+.mainNav .ul-2 li a.active{
+    background: url('../assets/images/Triangle.png') no-repeat center bottom;
+
+}
+
+.content{
+    /*padding-top: 44px;*/
     overflow: hidden;
-    zoom: 1;
-    z-index: 15;
-    width: 100%;
 }
-.fixed{
-    position: fixed;
-    top: 0;
-}
-.mainNav .ul-2 li{
-    width: 94px;
-    float: left;
-    font-size: 16px;
-    color: #888888;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-}
+
 .introduceGame{
     margin: 15px;
 }
-/*.introduceGame h3{
-  color: red;
-}
-.introduceGame p{
-  color: red !important;
-}*/
+
 .introduceGame p img{
     width: 100% !important;
 }
@@ -235,110 +143,3 @@ header .title{
     line-height: 20px;
     text-indent: 20px;
 }
-
-.sideGame .sideList{
-    position: relative;
-    overflow: hidden;
-    zoom: 1;
-    height: 100px;
-    /*display: flex;*/
-    border-bottom: 1px solid #EEEEEE;
-}
-.sideGame .sideList:before{
-    content: '';
-    position: absolute;
-    top:10%;
-    left: 0;
-    width: 0;
-    height:100%;
-    transform: scale(0.8);
-    transform-origin: left top;
-    border: 2px solid #161718;
-}
-.sideGame .sideList .sideListLink{
-    width: 100%;
-    display: flex;
-}
-.sideGame .sideList .sideListLink .sideTitle{
-    width: 105px;
-    padding:24px 0 27px 15px;
-}
-.sideGame .sideList .sideListLink .sideTitle span{
-    display: block;
-}
-.sideGame .sideList .sideListLink .sideTitle span:nth-child(1){
-    font-family: PingFangSC-Regular;
-    font-size: 20px;
-    color: #666666;
-}
-.sideGame .sideList .sideListLink .sideTitle span:nth-child(2){
-    font-family: PingFangSC-Regular;
-    font-size: 15px;
-    color: #666666;
-}
-.sideGame .sideList .sideListLink .sideCon{
-    height: 100%;
-    flex: 1;
-    padding-right: 38.8px;
-}
-.sideGame .sideList .sideListLink .sideCon span{
-    display: block;
-}
-.sideGame .sideList .sideListLink .sideCon span:nth-child(1){
-    margin-top: 15px;
-    font-family: PingFangHK-Regular;
-    font-size: 17px;
-    color: #444444;
-    line-height: 22px;
-    /*height: 44px;*/
-}
-.sideGame .sideList .sideListLink .sideCon span:nth-child(1) a{
-    font-family: PingFangHK-Regular;
-    font-size: 17px;
-    color: #444444;
-    line-height: 22px;
-}
-.sideGame .sideList .sideListLink .sideCon span:nth-child(2){
-    font-family: PingFangSC-Medium;
-    font-size: 14px;
-    color: #AAAAAA;
-    margin: 6px 0;
-}
-.sideGame .sideList .sideListLink .sideCon span:nth-child(3){
-    font-family: PingFangSC-Medium;
-    font-size: 14px;
-    color: #FF5837;
-}
-footer a{
-    cursor: pointer;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    height: 42px;
-    line-height: 42px;
-    /*text-align: center;*/
-    width: 70%;
-    padding-left: 30%;
-    font-family: PingFangSC-Regular;
-    font-size: 16px;
-    color: #D1BC91;
-    background: #161718;
-    opacity: 0.9;
-    background-image: url('../assets/images/load-logo.png');
-    background-repeat: no-repeat;
-    background-position: 36px center;
-    background-size: 28px 28px;
-}
-footer a span{
-    float: right;
-    width: 58px;
-    height: 22px;
-    line-height: 22px;
-    font-size: 12px;
-    text-align: center;
-    margin: 10px 20px 0 0;
-    border: 1px solid #D1BC91;
-    color: #D1BC91;
-    border-radius: 2px;
-}
-

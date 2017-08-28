@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
-import markdown from 'marked';
-import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
+
 import {getGameInfo, getRankInfo, setLang} from '../service/RaceDao';
 import '../styles/GameInfo.css';
 import Time from 'react-time-format';
 import Clamp from '../utils/Clamp';
 import {isEmptyObject} from '../service/utils';
+import {
+
+    Link
+} from 'react-router-dom'
 
 export default class GameInfo extends Component {
 
@@ -41,21 +44,23 @@ export default class GameInfo extends Component {
             return <div/>;
         return (
             <div className="container">
+                <Link to={'/race/' + race.race_id + '/zh'}>
+                    <div className="top-race">
+                        <img className="img-logo"
+                             src={race.big_logo} alt="Big"/>
 
-                <div className="top-race">
-                    <img className="img-logo"
-                         src={race.big_logo} alt="Big"/>
+                        <div className="race-info">
+                            <p className="title">{race.name}</p>
+                            <div className="div_flex"/>
 
-                    <div className="race-info">
-                        <p className="title">{race.name}</p>
-                        <div className="div_flex"/>
+                            <span className="race-info-time"><Time value={race.begin_date} format="YYYY:MM:DD"/>-<Time
+                                value={race.end_date} format="YYYY:MM:DD"/></span>
+                            <span className="race-info-location "> {race.location}</span>
 
-                        <span className="race-info-time"><Time value={race.begin_date} format="YYYY:MM:DD" />-<Time value={race.end_date} format="YYYY:MM:DD" /></span>
-                        <span className="race-info-location "> {race.location}</span>
+                        </div>
 
                     </div>
-
-                </div>
+                </Link>
                 <div className="line"/>
 
                 <div className="race-massage">
@@ -68,8 +73,9 @@ export default class GameInfo extends Component {
                         <span>{race.prize}</span>
                     </div>
                     <div className="race-person">
+
                         <span>参赛人数</span>
-                        <span>{race.participants}人</span>
+                        <a><span>{race.participants}人</span></a>
                     </div>
                 </div>
 
@@ -88,7 +94,7 @@ export default class GameInfo extends Component {
                             return <tr >
                                 <td>{item.ranking}</td>
                                 <td className="table-name">{item.player.name}</td>
-                                <td>¥{item.earning}</td>
+                                <td>{item.earning}¥</td>
                                 <td>{item.score}</td>
                             </tr>
                         })}

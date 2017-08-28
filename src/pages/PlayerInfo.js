@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import markdown from 'marked';
-import {getPlayerInfo} from '../service/RaceDao';
+import {getPlayerInfo,setLang} from '../service/RaceDao';
 import {moneyFormat,getGetOrdinal,strNotNull} from '../service/utils';
 import Time from 'react-time-format';
 import {getRankInfo} from '../service/RaceDao';
@@ -17,7 +17,9 @@ export default class PlayerInfo extends Component {
     };
 
     componentDidMount() {
-        const body = {playerId: 'f2e229c5'};
+        const {id, lang} = this.props.match.params;
+        setLang(lang);
+        const body = {playerId: id};
         document.title = '扑客';
         getPlayerInfo(body, data => {
             console.log('PlayerInfo', data)
