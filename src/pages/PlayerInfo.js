@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
 import markdown from 'marked';
-import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 import {getPlayerInfo} from '../service/RaceDao';
 import {moneyFormat,getGetOrdinal,strNotNull} from '../service/utils';
 import Time from 'react-time-format';
-import NumberFormat from 'react-number-format';
 import {getRankInfo} from '../service/RaceDao';
 import '../styles/PlayerInfo.css';
-import 返回图标 from '../assets/images/返回图标.png';
+import ReurnIcon from '../assets/images/ReturnIcon.png';
 import Group2x from '../assets/images/Group@2x.png';
 import Group from '../assets/images/Group.png';
 
@@ -78,7 +76,7 @@ export default class PlayerInfo extends Component {
                         <div className="player-head-nav">
                             <div className="nav-rank">
                                 <span>{ranking}</span>
-                                <span>Ranking</span>
+                                <span>名次</span>
                             </div>
                             <div className="nav-score">
                                 <span>{strNotNull(dpi_total_score)?dpi_total_score:'--'}</span>

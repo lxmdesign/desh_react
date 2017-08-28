@@ -63,6 +63,7 @@
     justify-content: center;
     height: 60px;
     width: 100%;
+    margin-top: 30px;
 
 }
 
@@ -73,44 +74,9 @@
 }
 
 .nav-rank span:nth-child(1) {
-    display: block;
+    display:block;
     font-size: 17px;
     color: #CCC;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.nav-rank span:nth-child(2) {
-    display: block;
-    font-size: 12px;
-    color: #888;
-    background-color: #292929;
-    /*opacity: 0.08;*/
-    height: 21px;
-    width: 50px;
-    border-radius: 18px;
-    line-height: 21px;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-
-.nav-score span:nth-child(1) {
-
-    font-size: 17px;
-    color: #CCC;
-
-}
-.nav-rank, .nav-score, .nav-prize {
-    flex: 1;
-
-
-}
-
-.nav-rank span:nth-child(1) {
-
-    font-size: 17px;
-    color: #CCC;
-
 
 }
 
@@ -119,39 +85,37 @@
     color: #888;
     background-color: #292929;
     border-radius: 18px;
+    padding:1px 10px 1px 10px;
 }
 
 .nav-score span:nth-child(1) {
-
+    display:block;
     font-size: 17px;
     color: #CCC;
 
 }
 
 .nav-score span:nth-child(2) {
-
     font-size: 12px;
     color: #888;
     background-color: #292929;
-
     border-radius: 18px;
-
+    padding:1px 10px 1px 10px;
 }
 
 .nav-prize span:nth-child(1) {
-
+    display:block;
     font-size: 17px;
     color: #CCC;
 
 }
 
 .nav-prize span:nth-child(2) {
-
     font-size: 12px;
     color: #888;
     background-color: #292929;
     border-radius: 18px;
-
+    padding:1px 10px 1px 10px;
 }
 
 player-body {
@@ -163,49 +127,6 @@ table {
     height: 170px;
 }
 
-.nav-score span:nth-child(2) {
-    display: block;
-    font-size: 12px;
-    color: #888;
-    background-color: #292929;
-    /*opacity: 0.08;*/
-    height: 21px;
-    width: 50px;
-    border-radius: 18px;
-    line-height: 21px;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-
-.nav-prize span:nth-child(1) {
-
-    font-size: 17px;
-    color: #CCC;
-
-}
-
-.nav-prize span:nth-child(2) {
-    display: block;
-    font-size: 12px;
-    color: #888;
-    background-color: #292929;
-    /*opacity: 0.08;*/
-    height: 21px;
-    width: 50px;
-    border-radius: 18px;
-    line-height: 21px;
-    box-sizing: border-box;
-    margin: auto;
-}
-
-player-body {
-    width: 100%;
-}
-
-table {
-    width: 100%;
-    height: 170px;
-}
 
 table tbody tr {
     background-color: #fff;
