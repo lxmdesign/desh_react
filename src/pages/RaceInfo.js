@@ -93,7 +93,7 @@ export default class RaceInfo extends Component {
                                     menu: 0
                                 })
                             }}>
-                                <span className='txtMenu '>简介</span>
+                                <span className='txtMenu'>简介</span>
                                 {/*<img src={imgMenu} className="imgMe"/>*/}
                             </div>
                             <div className="menu1"
