@@ -1,16 +1,53 @@
 
 
-
-.infoView{
-    background-color: red;
-    flex:1
+.infoView-nav {
+    height: 40px;
+    display: flex;
+    border: 1px solid #161718;
+    border-radius: 2px;
+    width: 345px;
+    align-self: center;
+    margin-top: 20px;
 }
 
-.menu{
+.btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: #161718;
+}
+
+
+.txt1 {
+
+}
+
+
+.clo_line{
+    height: 40px;
+    width: 1px;
+    background-color: #161718;
+}
+
+.infoView {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.menu {
     display: flex;
 }
 
-.menu1{
+.menu1 {
     display: flex;
     flex-direction: column;
     width: 120px;
@@ -18,37 +55,44 @@
     justify-content: center;
     margin-top: 18px;
 }
-.txtMenu{
+
+.txtMenu {
     font-size: 16px;
     color: #888888;
     display: block;
-    height:32px;
-}
-.imgMe{
-    background: url('../assets/images/Triangle.png') no-repeat  center bottom;
+    height: 32px;
 }
 
-body{
-    margin: 0  !important;
+.imgMe {
+    background: url('../assets/images/Triangle.png') no-repeat center bottom;
 }
-a{
+
+body {
+    margin: 0 !important;
+}
+
+a {
     text-decoration: none;
 }
-ul,ol{
+
+ul, ol {
     list-style: none;
     padding: 0;
 }
-.mainNav{
+
+.mainNav {
     width: 100%;
-    height:220px;
+    height: 220px;
     background: url('../assets/images/background.png') no-repeat;
     background-size: 100% 100%;
 }
-.mainNav .ul-1{
+
+.mainNav .ul-1 {
     overflow: hidden;
     zoom: 1;
 }
-.mainNav .ul-1 .title{
+
+.mainNav .ul-1 .title {
     /*float: left;*/
     height: 44px;
     line-height: 44px;
@@ -57,32 +101,37 @@ ul,ol{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.mainNav .ul-1 img{
+
+.mainNav .ul-1 img {
     float: left;
     height: 104px;
     width: 80px;
     margin: 0 17px 0 16px;
 }
-.mainNav .ul-1 .ul-1-2{
+
+.mainNav .ul-1 .ul-1-2 {
     float: left;
     padding-top: 10px;
 }
-.mainNav .ul-1 .ul-1-2 li{
+
+.mainNav .ul-1 .ul-1-2 li {
     line-height: 26px;
     height: 26px;
     font-size: 12px;
     color: #cccccc;
 }
-.mainNav .ul-1 .ul-1-2 li:nth-child(1){
+
+.mainNav .ul-1 .ul-1-2 li:nth-child(1) {
     padding-left: 25px;
     background: url("../assets/images/stopwatch-icon.png") no-repeat left center;
 }
-.mainNav .ul-1 .ul-1-2 li:nth-child(2){
+
+.mainNav .ul-1 .ul-1-2 li:nth-child(2) {
     padding-left: 25px;
     background: url("../assets/images/match_location.png") no-repeat left center;
 }
 
-.mainNav .ul-1 .ul-1-2 .li-4 span{
+.mainNav .ul-1 .ul-1-2 .li-4 span {
     height: 17px;
     line-height: 17px;
     text-align: center;
@@ -91,55 +140,64 @@ ul,ol{
     border: 1px solid #AAAAAA;
     border-radius: 2px;
 }
-.mainNav .ul-1 .ul-1-2 .li-4 span:nth-child(1){
+
+.mainNav .ul-1 .ul-1-2 .li-4 span:nth-child(1) {
     margin-right: 9px;
 }
-.mainNav .ul-1{
+
+.mainNav .ul-1 {
     margin-bottom: 7px;
 }
-.mainNav .ul-2{
-    display:flex;
+
+.mainNav .ul-2 {
+    display: flex;
     justify-content: space-around;
-    height:50px;
+    height: 50px;
 }
 
-.mainNav .ul-2 li a{
+.mainNav .ul-2 li a {
     display: block;
     height: 50px;
     line-height: 50px;
     color: #cccccc !important;
 }
-.mainNav .ul-2 li a.active{
+
+.mainNav .ul-2 li a.active {
     background: url('../assets/images/Triangle.png') no-repeat center bottom;
 
 }
 
-.content{
+.content {
     /*padding-top: 44px;*/
     overflow: hidden;
 }
 
-.introduceGame{
+.introduceGame {
     margin: 15px;
 }
 
-.introduceGame p img{
+.introduceGame p img {
     width: 100% !important;
 }
 
-.mainGame .remark{
+.mainGame .remark {
     margin: 33px 18px 20px 21px;
 }
-.mainGame .remark h2,p{
+
+.mainGame .remark h2, p {
     margin: 0;
     font-family: PingFangSC-Regular;
     font-size: 14px;
     color: #888888;
 }
-.mainGame .remark h2{
+
+.mainGame .remark h2 {
     line-height: 22px;
 }
-.mainGame .remark p{
+
+.mainGame .remark p {
     line-height: 20px;
     text-indent: 20px;
 }
+
+/*主赛信息*/
