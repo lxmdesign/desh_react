@@ -1,10 +1,76 @@
-.schedule .schedule-nav {
+
+.info-content {
+    min-height: 48px;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.blindStructure-info {
+    display: flex;
+    justify-content: space-around;
+
+    border-bottom: 1px solid #EEEEEE;
+    height: 48px;
+    line-height: 48px;
+
+}
+
+.blindStructure-info div {
+    flex: 1;
+    text-align: center;
+
+}
+
+.blindStructure .blindStructure-nav {
     display: flex;
     justify-content: space-around;
     background-color: #AEBABB;
     color: #ffffff;
+    height: 32px;
+    margin-top: 20px;
+    line-height: 32px;
 }
 
+.schedule .schedule-nav {
+    display: flex;
+    background-color: #AEBABB;
+    height: 32px;
+    margin-top: 20px;
+}
+
+.schedule-nav div{
+    color: #ffffff;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.schedule-info{
+    display: flex;
+    height: 48px;
+    justify-content: space-around;
+
+}
+
+.schedule-info span{
+    font-size: 14px;
+    color: #666666;
+    line-height: 15px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.schedule-info:nth-child(2n){
+    background-color: #F5F5F5;
+}
 .schedule table thead {
     height: 32px;
     margin-top: 20px;
@@ -70,26 +136,20 @@
 }
 
 .schedule table tbody tr {
-    height: 48px;
-}
-
-.schedule table tbody tr td {
+    min-height: 48px;
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    width: 100%;
+    background-color: #3f9fff;
 }
 
 .schedule table tbody tr td {
-    font-family: PingFangSC-Regular;
+    flex:1;
     font-size: 14px;
     color: #666666;
-    line-height: 15px;
+    background-color: yellow;
+    align-items: center;
+    justify-content: center;
 }
 
-.schedule table tbody tr:nth-child(2n) {
-    background: #F5F5F5 !important;
-}
 
 .infoView {
     flex-direction: column;

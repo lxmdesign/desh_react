@@ -174,10 +174,10 @@ export default class RaceInfo extends Component {
         // return sch;
     }
     scheduleMessageOne=(schedule)=>{
-        return <span>{schedule}</span>
+        return <td>{schedule}</td>
     }
     scheduleMessageTwo = (schedule1,schedule2)=>{
-        return <span>{schedule1}<br/>{schedule2}</span>
+        return <td>{schedule1}<br/>{schedule2}</td>
     }
 
     introView = (description) => {
@@ -222,32 +222,53 @@ export default class RaceInfo extends Component {
         } = this.state.data;
 
         return <div className="schedule">
-            <table>
-                <thead className="schedule-nav">
-                    <span>赛程</span>
-                    <span>日期</span>
-                    <span>开始时间</span>
-                </thead>
-                <tbody>
-                {schedules.map(schedule =>{
 
-                    console.log('list',schedule)
-                    return <tr>
-                        <td>
-                            {this.scheduleMessage(schedule.schedule)}
-                            <span><Time value={schedule.begin_time} format="MM-DD" /></span>
-                            <span><Time value={schedule.begin_time} format="hh:mm" /></span>
-                        </td>
-                    </tr>
+                <div className="schedule-nav">
+                    <div>赛程</div>
+                    <div>日期</div>
+                    <div>开始时间</div>
+                </div>
+                <div className="schedule-items">
+                {schedules.map((schedule,i) =>{
+
+                    return <div className='schedule-info'>
+                        <span>
+                             {this.scheduleMessage(schedule.schedule)}
+                        </span>
+
+                        <span>
+                            {moment(schedule.begin_time).format('MM-DD')}
+                        </span>
+                        <span>
+                            {moment(schedule.begin_time).format('hh:mm')}
+                        </span>
+
+                    </div>
                 })}
-                </tbody>
-            </table>
+                </div>
+
         </div>
     }
 
     blindStructureView=()=>{
+        const {
+            blinds
+        } = this.state.data;
+        return <div className="blindStructure">
+            <div className="blindStructure-nav">
+                <span>级别</span>
+                <span>盲注</span>
+                <span>前注</span>
+                <span>时间</span>
+            </div>
+            <div>
+                {blinds.map((blind, i) => <BlindStructureInfo key={i} blind={blind}/>)}
 
+            </div>
+
+        </div>
     }
+
 
 
     sideView = () => {
@@ -300,5 +321,31 @@ class SideItem extends Component {
             </div>
 
         </div>)
+    }
+}
+
+class BlindStructureInfo extends Component {
+
+    render() {
+        const {blind} = this.props;
+        return (blind.blind_type === "blind_struct"? <div  className="blindStructure-info">
+            <div className="info-class">
+                {blind.level}
+            </div>
+
+            <div className="info-blinds">
+                {blind.small_blind}-{blind.big_blind}
+            </div>
+            <div className="info-beforeNote">
+                {blind.ante}
+            </div>
+
+            <div className="info-time">
+                {blind.race_time}
+            </div>
+
+        </div>:<div className="info-content">
+                {blind.content}
+            </div>)
     }
 }
