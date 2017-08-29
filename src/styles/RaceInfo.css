@@ -1,5 +1,41 @@
+.schedule .schedule-nav{
+    display:flex;
+    justify-content: space-around;
+    background-color: #AEBABB;
+    color:#ffffff;
+}
 
 
+.schedule table thead{
+    height:32px;
+    margin-top: 20px;
+}
+.schedule table thead span{
+    line-height:32px;
+}
+
+.schedule table tbody tr{
+    height:48px;
+}
+.schedule table tbody tr td{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+.schedule table tbody tr td{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #666666;
+    line-height: 15px;
+}
+.schedule table tbody tr:nth-child(2n){
+    background: #F5F5F5 !important;
+}
+.infoView{
+    flex-direction: column;
+    align-content: center;
+}
 .infoView-nav {
     height: 40px;
     display: flex;
@@ -23,6 +59,8 @@
     justify-content: center;
     flex: 1;
     background-color: #161718;
+    color:#ffffff;
+
 }
 
 
@@ -42,9 +80,17 @@
     width: 100%;
     justify-content: center;
 }
-
+/*.menu-fixed{*/
+    /*position:fixed;*/
+    /*width:100%;*/
+    /*top:0;*/
+    /*right:0;*/
+    /*height: 32px;*/
+    /*background-color: #161718;*/
+/*}*/
 .menu {
     display: flex;
+
 }
 
 .menu1 {
