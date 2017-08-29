@@ -22,7 +22,7 @@ export function getRaceInfo(body, resolve, reject) {
 
 export function getNewsInfo(body, resolve, reject) {
     get(Api.news_info(body), ret => {
-        resolve(ret);
+        resolve(ret.data);
     }, reject);
 }
 export function getPlayerInfo(body, resolve, reject) {

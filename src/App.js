@@ -20,8 +20,8 @@ class App extends Component {
 
                     <Route exact path="/race/:id/:lang" component={RaceInfo}/>
 
-                    <Route path="/news" component={NewsInfo}/>
-                    <Route path="/rankPlayer" component={PlayerInfo}/>
+                    <Route path="/news/:id/:lang" component={NewsInfo}/>
+                    <Route path="/rankPlayer/:id/:lang" component={PlayerInfo}/>
                     <Route path="/rankGame/:id/:lang" component={GameInfo}/>
                 </div>
             </Router>
