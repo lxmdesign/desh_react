@@ -4,8 +4,14 @@
 import Api from './Api';
 import {get, post, setDpLang} from './HttpUtil';
 
+var lang = 'zh';
+
 export function setLang(lang) {
     setDpLang(lang)
+}
+
+export function getLang() {
+    return lang;
 }
 
 

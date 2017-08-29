@@ -3,14 +3,16 @@
  */
 import React, {Component} from 'react';
 import markdown from 'marked';
-import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
-import {getRaceInfo, setLang, getSubRace} from '../service/RaceDao';
+import {getRaceInfo, setLang, getSubRace, getLang} from '../service/RaceDao';
 import Time from 'react-time-format';
 import '../styles/RaceInfo.css';
 import I18n from '../service/I18n';
 import {modify} from '../service/utils';
 import imgMenu from '../assets/images/Triangle@3x.png';
 import moment from 'moment';
+import {
+    Link
+} from 'react-router-dom'
 
 export default class RaceInfo extends Component {
 
@@ -201,7 +203,10 @@ class SideItem extends Component {
 
     render() {
         const {item} = this.props;
-        return ( <div className="sideView">
+        return ( <div className="sideView" onClick={() => {
+
+            return <Link to={`/sidedetail/'${item.race_id}/${getLang()}`}/>
+        }}>
             <div className="sideTime">
                 <span className="txtMonth">
                     {moment(item.begin_date).format('YYYY-MM')}

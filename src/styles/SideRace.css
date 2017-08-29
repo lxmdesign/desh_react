@@ -1,0 +1,45 @@
+
+
+
+
+.subInfo1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 17px;
+    margin-top: 10px;
+}
+
+.subInfo1 span{
+    font-size: 14px;
+    color: #666666;
+}
+
+.location{
+    font-size: 13px;
+    color: #888888;
+    margin-top: 3px;
+}
+.time{
+    font-size: 13px;
+    color: #888888;
+    margin-top: 9px;
+}
+.title{
+    font-size: 18px;
+    color: #444444;
+    margin-top: 20px;
+}
+.subInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 17px;
+}
+
+.container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+}
