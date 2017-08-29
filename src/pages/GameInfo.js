@@ -53,8 +53,8 @@ export default class GameInfo extends Component {
                             <p className="title">{race.name}</p>
                             <div className="div_flex"/>
 
-                            <span className="race-info-time"><Time value={race.begin_date} format="YYYY:MM:DD"/>-<Time
-                                value={race.end_date} format="YYYY:MM:DD"/></span>
+                            <span className="race-info-time"><Time value={race.begin_date} format="YYYY.MM.DD"/>-<Time
+                                value={race.end_date} format="YYYY.MM.DD"/></span>
                             <span className="race-info-location "> {race.location}</span>
 
                         </div>
@@ -75,7 +75,7 @@ export default class GameInfo extends Component {
                     <div className="race-person">
 
                         <span>参赛人数</span>
-                        <a><span>{race.participants}人</span></a>
+                        <span>{race.participants}</span>
                     </div>
                 </div>
 

@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54ff4807-a8bb-4c56-9439-dc904f03feb0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/desh_h5.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/GameInfo.js" afterPath="$PROJECT_DIR$/src/pages/GameInfo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/RaceInfo.js" afterPath="$PROJECT_DIR$/src/pages/RaceInfo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/Api.js" afterPath="$PROJECT_DIR$/src/service/Api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/HttpUtil.js" afterPath="$PROJECT_DIR$/src/service/HttpUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/RaceDao.js" afterPath="$PROJECT_DIR$/src/service/RaceDao.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/RaceInfo.css" afterPath="$PROJECT_DIR$/src/styles/RaceInfo.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +32,8 @@
       <file leaf-file-name="RaceInfo.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/RaceInfo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="289">
+              <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -30,7 +42,7 @@
       <file leaf-file-name="PlayerInfo.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/PlayerInfo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="3332">
               <caret line="196" column="13" lean-forward="false" selection-start-line="196" selection-start-column="13" selection-end-line="196" selection-end-column="13" />
               <folding />
             </state>
@@ -40,7 +52,7 @@
       <file leaf-file-name="GameInfo.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/GameInfo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
+            <state relative-caret-position="2108">
               <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="126" selection-end-column="1" />
               <folding />
             </state>
@@ -50,8 +62,8 @@
       <file leaf-file-name="RaceInfo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/RaceInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="226" column="29" lean-forward="true" selection-start-line="226" selection-start-column="29" selection-end-line="226" selection-end-column="29" />
+            <state relative-caret-position="200">
+              <caret line="218" column="22" lean-forward="true" selection-start-line="218" selection-start-column="22" selection-end-line="218" selection-end-column="22" />
               <folding>
                 <element signature="e#42#81#0" expanded="true" />
               </folding>
@@ -62,8 +74,8 @@
       <file leaf-file-name="Clamp.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/Clamp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3850">
-              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            <state relative-caret-position="153">
+              <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -72,8 +84,8 @@
       <file leaf-file-name="PlayerInfo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/PlayerInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="126" column="124" lean-forward="true" selection-start-line="126" selection-start-column="72" selection-end-line="126" selection-end-column="124" />
+            <state relative-caret-position="2142">
+              <caret line="126" column="124" lean-forward="false" selection-start-line="126" selection-start-column="72" selection-end-line="126" selection-end-column="124" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -85,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/src/service/utils.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -212,7 +224,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="480" />
+    <option name="x" value="223" />
     <option name="y" value="23" />
     <option name="width" value="1697" />
     <option name="height" value="977" />
@@ -235,7 +247,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -319,6 +330,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -514,6 +526,7 @@
       <workItem from="1503741790066" duration="87000" />
       <workItem from="1503884204848" duration="25771000" />
       <workItem from="1503981744573" duration="7131000" />
+      <workItem from="1503996455163" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="路由传参">
       <created>1503721928372</created>
@@ -589,7 +602,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58667000" />
+    <option name="totallyTimeSpent" value="58669000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -601,15 +614,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="480" y="23" width="1697" height="977" extended-state="0" />
+    <frame x="223" y="23" width="1697" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16858006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17039275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="ReactNative" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32712457" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -621,6 +633,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -688,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -922,7 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -962,7 +973,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/PlayerInfo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="3332">
           <caret line="196" column="13" lean-forward="false" selection-start-line="196" selection-start-column="13" selection-end-line="196" selection-end-column="13" />
           <folding />
         </state>
@@ -970,7 +981,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/GameInfo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
+        <state relative-caret-position="2108">
           <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="126" selection-end-column="1" />
           <folding />
         </state>
@@ -978,8 +989,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/Clamp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3850">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state relative-caret-position="153">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -987,15 +998,15 @@
     <entry file="file://$PROJECT_DIR$/src/service/utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/PlayerInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="126" column="124" lean-forward="true" selection-start-line="126" selection-start-column="72" selection-end-line="126" selection-end-column="124" />
+        <state relative-caret-position="2142">
+          <caret line="126" column="124" lean-forward="false" selection-start-line="126" selection-start-column="72" selection-end-line="126" selection-end-column="124" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1004,16 +1015,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/RaceInfo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="289">
+          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/RaceInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="226" column="29" lean-forward="true" selection-start-line="226" selection-start-column="29" selection-end-line="226" selection-end-column="29" />
+        <state relative-caret-position="200">
+          <caret line="218" column="22" lean-forward="true" selection-start-line="218" selection-start-column="22" selection-end-line="218" selection-end-column="22" />
           <folding>
             <element signature="e#42#81#0" expanded="true" />
           </folding>

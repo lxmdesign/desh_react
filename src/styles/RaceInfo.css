@@ -1,41 +1,101 @@
-.schedule .schedule-nav{
-    display:flex;
+.schedule .schedule-nav {
+    display: flex;
     justify-content: space-around;
     background-color: #AEBABB;
-    color:#ffffff;
+    color: #ffffff;
 }
 
-
-.schedule table thead{
-    height:32px;
+.schedule table thead {
+    height: 32px;
     margin-top: 20px;
 }
-.schedule table thead span{
-    line-height:32px;
+
+.schedule table thead span {
+    line-height: 32px;
 }
 
-.schedule table tbody tr{
-    height:48px;
+.sidePrize {
+    color: #DF1D0F;
+    font-size: 14px;
 }
-.schedule table tbody tr td{
+
+.sideStart {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #AAAAAA;
+    margin-top: 9px;
+}
+
+.sideTitle {
+    font-family: PingFangHK-Regular;
+    font-size: 17px;
+    color: #444444;
+    line-height: 22px;
+    margin-right: 17px;
+}
+
+.txtDay {
+    font-family: PingFangSC-Regular;
+    font-size: 15px;
+    color: #666666;
+}
+
+.txtMonth {
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    color: #666666;
+}
+
+.sideInfo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+.sideTime {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    width: 25%;
+
+}
+
+.sideView {
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    border-bottom: 1px solid #EEEEEE;
+
+}
+
+.schedule table tbody tr {
+    height: 48px;
+}
+
+.schedule table tbody tr td {
     display: flex;
     justify-content: space-around;
     text-align: center;
     width: 100%;
 }
-.schedule table tbody tr td{
+
+.schedule table tbody tr td {
     font-family: PingFangSC-Regular;
     font-size: 14px;
     color: #666666;
     line-height: 15px;
 }
-.schedule table tbody tr:nth-child(2n){
+
+.schedule table tbody tr:nth-child(2n) {
     background: #F5F5F5 !important;
 }
-.infoView{
+
+.infoView {
     flex-direction: column;
     align-content: center;
 }
+
 .infoView-nav {
     height: 40px;
     display: flex;
@@ -59,17 +119,15 @@
     justify-content: center;
     flex: 1;
     background-color: #161718;
-    color:#ffffff;
+    color: #ffffff;
 
 }
-
 
 .txt1 {
 
 }
 
-
-.clo_line{
+.clo_line {
     height: 40px;
     width: 1px;
     background-color: #161718;
@@ -80,13 +138,14 @@
     width: 100%;
     justify-content: center;
 }
+
 /*.menu-fixed{*/
-    /*position:fixed;*/
-    /*width:100%;*/
-    /*top:0;*/
-    /*right:0;*/
-    /*height: 32px;*/
-    /*background-color: #161718;*/
+/*position:fixed;*/
+/*width:100%;*/
+/*top:0;*/
+/*right:0;*/
+/*height: 32px;*/
+/*background-color: #161718;*/
 /*}*/
 .menu {
     display: flex;

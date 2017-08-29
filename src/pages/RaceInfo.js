@@ -4,12 +4,13 @@
 import React, {Component} from 'react';
 import markdown from 'marked';
 import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
-import {getRaceInfo, setLang} from '../service/RaceDao';
+import {getRaceInfo, setLang, getSubRace} from '../service/RaceDao';
 import Time from 'react-time-format';
 import '../styles/RaceInfo.css';
 import I18n from '../service/I18n';
 import {modify} from '../service/utils';
 import imgMenu from '../assets/images/Triangle@3x.png';
+import moment from 'moment';
 
 export default class RaceInfo extends Component {
 
@@ -20,18 +21,30 @@ export default class RaceInfo extends Component {
         blinds:[],
         menu: 0,
         selectInfo:0,
-        selectInfo_menu:0
+        selectInfo_menu:0,
+        subItems: []
     };
 
     componentDidMount() {
         const {id, lang} = this.props.match.params;
         setLang(lang);
         const body = {raceId: id};
-        document.title = '扑客';
+
         getRaceInfo(body, data => {
             console.log('RaceInfo', data)
             this.setState({
                 data: data
+            });
+            const {name} = data.race;
+            document.title = name;
+        }, err => {
+
+        });
+
+
+        getSubRace(body, data => {
+            this.setState({
+                subItems: data.items
             })
         }, err => {
 
@@ -131,7 +144,7 @@ export default class RaceInfo extends Component {
             case 1:
                 return this.mainInfoView();
             case 2:
-                return this.frontierInfoView();
+                return this.sideView();
         }
     }
 
@@ -154,6 +167,7 @@ export default class RaceInfo extends Component {
             var sch = schedule.split('|')
 
             return this.scheduleMessageTwo(sch[0],sch[1]);
+
         }
         //
         // console.log('sch:'+sch)
@@ -176,17 +190,19 @@ export default class RaceInfo extends Component {
         const {selectInfo,selectInfo_menu} = this.state;
         return <div className="infoView">
             <div className="infoView-nav">
-                <div className={selectInfo === 0?'btn2':'btn1'} onClick={()=>{
+                <div className={selectInfo === 0 ? 'btn2' : 'btn1'} onClick={() => {
                     this.setState({
+
                         selectInfo:0,
                         selectInfo_menu:0
                     })
                 }}>
                     <span>赛程表</span>
                 </div>
-                <div className="clo_line" />
-                <div className={selectInfo === 1?'btn2':'btn1'} onClick={()=>{
+                <div className="clo_line"/>
+                <div className={selectInfo === 1 ? 'btn2' : 'btn1'} onClick={() => {
                     this.setState({
+
                         selectInfo:1,
                         selectInfo_menu:1
                     })
@@ -199,9 +215,6 @@ export default class RaceInfo extends Component {
         </div>
     };
 
-    frontierInfoView=() =>{
-
-    };
 
     scheduleView=()=>{
         const {
@@ -237,6 +250,20 @@ export default class RaceInfo extends Component {
     }
 
 
+    sideView = () => {
+
+        const {subItems} = this.state;
+
+
+        return (
+            <div>
+                {subItems.map((item, i) => <SideItem key={i} item={item}/>)}
+
+            </div>
+        )
+    };
+
+
     render() {
         return (
             <div className='content'>
@@ -246,4 +273,32 @@ export default class RaceInfo extends Component {
             </div>
         )
     };
+}
+
+
+class SideItem extends Component {
+
+    render() {
+        const {item} = this.props;
+        return ( <div className="sideView">
+            <div className="sideTime">
+                <span className="txtMonth">
+                    {moment(item.begin_date).format('YYYY-MM')}
+                </span>
+
+                <span className="txtDay">
+                    {item.days} Days
+                </span>
+
+            </div>
+
+            <div className="sideInfo">
+                <span className="sideTitle">{item.name}</span>
+                <span className="sideStart">起始时间:{item.begin_time}</span>
+                <span className="sidePrize">{item.ticket_price}</span>
+
+            </div>
+
+        </div>)
+    }
 }
