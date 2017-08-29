@@ -1,4 +1,49 @@
 
+.sidePrize {
+    color: #DF1D0F;
+    font-size: 14px;
+}
+
+.sideStart {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #AAAAAA;
+    margin-top: 9px;
+}
+
+.sideTitle {
+    font-family: PingFangHK-Regular;
+    font-size: 17px;
+    color: #444444;
+    line-height: 22px;
+}
+
+.txtDay {
+    font-family: PingFangSC-Regular;
+    font-size: 15px;
+    color: #666666;
+}
+
+.txtMonth {
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    color: #666666;
+}
+
+.sideTime {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+
+}
+
+.sideView {
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    border-bottom: 1px solid #EEEEEE;
+
+}
 
 .infoView-nav {
     height: 40px;
@@ -25,13 +70,11 @@
     background-color: #161718;
 }
 
-
 .txt1 {
 
 }
 
-
-.clo_line{
+.clo_line {
     height: 40px;
     width: 1px;
     background-color: #161718;

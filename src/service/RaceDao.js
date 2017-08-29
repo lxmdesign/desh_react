@@ -8,6 +8,13 @@ export function setLang(lang) {
     setDpLang(lang)
 }
 
+
+export function getSubRace(body, resolve, reject) {
+    get(Api.sub_races(body), ret => {
+        resolve(ret.data);
+    }, reject)
+}
+
 export function getRaceList(resolve, reject) {
     get(Api.race_list, (ret) => {
         resolve(ret.data);
