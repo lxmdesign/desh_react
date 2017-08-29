@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="54ff4807-a8bb-4c56-9439-dc904f03feb0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/RaceInfo.js" afterPath="$PROJECT_DIR$/src/pages/RaceInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/RaceInfo.css" afterPath="$PROJECT_DIR$/src/styles/RaceInfo.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +17,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RaceInfo.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RaceInfo.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/RaceInfo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="204">
+              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -49,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RaceInfo.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RaceInfo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/RaceInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="225" column="34" lean-forward="false" selection-start-line="225" selection-start-column="34" selection-end-line="225" selection-end-column="34" />
+            <state relative-caret-position="336">
+              <caret line="226" column="29" lean-forward="true" selection-start-line="226" selection-start-column="29" selection-end-line="226" selection-end-column="29" />
               <folding>
                 <element signature="e#42#81#0" expanded="true" />
               </folding>
@@ -164,8 +162,8 @@
       <find>infoView</find>
       <find>2n</find>
       <find>map</find>
-      <find>schedule-nav</find>
       <find>selectInfo</find>
+      <find>schedule-nav</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -515,7 +513,7 @@
       <workItem from="1503730972726" duration="8184000" />
       <workItem from="1503741790066" duration="87000" />
       <workItem from="1503884204848" duration="25771000" />
-      <workItem from="1503981744573" duration="7071000" />
+      <workItem from="1503981744573" duration="7131000" />
     </task>
     <task id="LOCAL-00001" summary="路由传参">
       <created>1503721928372</created>
@@ -580,11 +578,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503916063777</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="赛程表">
+      <created>1503994582923</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1503994582923</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58607000" />
+    <option name="totallyTimeSpent" value="58667000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -652,7 +657,8 @@
     <MESSAGE value="ranking" />
     <MESSAGE value="race" />
     <MESSAGE value="raceInfo" />
-    <option name="LAST_COMMIT_MESSAGE" value="raceInfo" />
+    <MESSAGE value="赛程表" />
+    <option name="LAST_COMMIT_MESSAGE" value="赛程表" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -996,21 +1002,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/RaceInfo.js">
+    <entry file="file://$PROJECT_DIR$/src/styles/RaceInfo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="225" column="34" lean-forward="false" selection-start-line="225" selection-start-column="34" selection-end-line="225" selection-end-column="34" />
-          <folding>
-            <element signature="e#42#81#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/RaceInfo.css">
+    <entry file="file://$PROJECT_DIR$/src/pages/RaceInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="336">
+          <caret line="226" column="29" lean-forward="true" selection-start-line="226" selection-start-column="29" selection-end-line="226" selection-end-column="29" />
+          <folding>
+            <element signature="e#42#81#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
