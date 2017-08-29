@@ -16,7 +16,8 @@ export default class RaceInfo extends Component {
     state = {
         dataStr: '',
         data: {},
-        menu: 0
+        menu: 0,
+        selectInfo:0
     };
 
     componentDidMount() {
@@ -55,21 +56,6 @@ export default class RaceInfo extends Component {
                 name, location, status, ticket_status, begin_date, end_date, logo,
                 schedules, description, Blind, Ranks
             } = this.state.data.race;
-            const navs = [{
-                exact: true,
-                name: I18n.t('load_ipnone'),
-                path: "/",
-                activeClassName: "active"
-
-            }, {
-                name: "主赛信息",
-                path: "/",
-                activeClassName: ""
-            }, {
-                name: "边赛信息",
-                path: "/",
-                activeClassName: ""
-            }];
 
             return (
                 <div className='content'>
@@ -93,7 +79,7 @@ export default class RaceInfo extends Component {
                                     menu: 0
                                 })
                             }}>
-                                <span className='txtMenu'>简介</span>
+                                <span className='txtMenu imgMe'>简介</span>
                                 {/*<img src={imgMenu} className="imgMe"/>*/}
                             </div>
                             <div className="menu1"
@@ -102,7 +88,7 @@ export default class RaceInfo extends Component {
                                          menu: 1
                                      })
                                  }}>
-                                <span className='txtMenu'>主赛信息</span>
+                                <span className='txtMenu imgMe'>主赛信息</span>
 
                             </div>
                             <div className="menu1"
@@ -126,13 +112,13 @@ export default class RaceInfo extends Component {
             );
         }
     }
-    selectMenu = ()=>{
+    selectMenu = () => {
         const {
             name, location, status, ticket_status, begin_date, end_date, logo,
             schedules, description, Blind, Ranks
         } = this.state.data.race;
 
-        switch (this.state.menu){
+        switch (this.state.menu) {
             case 0:
                 return this.introView(description);
             case 1:
@@ -148,7 +134,27 @@ export default class RaceInfo extends Component {
     };
 
     infoView = () => {
-        return <div className="infoView"> </div>
+
+        const {selectInfo} = this.state;
+        return <div className="infoView">
+            <div className="infoView-nav">
+                <div className={selectInfo === 0?'btn2':'btn1'} onClick={()=>{
+                    this.setState({
+                        selectInfo:0
+                    })
+                }}>
+                    <span>赛程表</span>
+                </div>
+                <div className="clo_line" />
+                <div className={selectInfo === 1?'btn2':'btn1'} onClick={()=>{
+                    this.setState({
+                        selectInfo:1
+                    })
+                }}>
+                    <div>盲注结构</div>
+                </div>
+            </div>
+        </div>
     };
 
 
