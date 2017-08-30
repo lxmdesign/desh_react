@@ -157,22 +157,19 @@ export default class RaceInfo extends Component {
     };
 
 
-
     introView = (description) => {
 
         return <div className="introduceGame" dangerouslySetInnerHTML={this.desc(description)}></div>;
     };
 
     mainInfoView = () => {
-        const {schedules, blinds} = this.state.data;
+        const {schedules, blinds, ranks} = this.state.data;
         return <RaceBlindList
+            ranks={ranks}
             schedules={schedules}
             blinds={blinds}/>
 
     };
-
-
-
 
 
     sideView = () => {

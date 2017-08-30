@@ -5,13 +5,14 @@ import React, {PureComponent} from 'react';
 import moment from 'moment';
 import '../styles/RaceInfo.css';
 import I18n from '../service/I18n';
+import {isEmptyObject} from '../service/utils';
 
 
 export default class RaceBlindList extends PureComponent {
 
     state = {
-        selectInfo: 0,
-
+        selectBtn: 0,
+        btns: []
     };
 
     render() {
@@ -21,29 +22,110 @@ export default class RaceBlindList extends PureComponent {
     }
 
 
-    mainInfoView = () => {
+    btnActive = () => {
+        const {selectBtn, btns} = this.state;
+        if (btns.length === 1) {
 
-        const {selectInfo} = this.state;
-        return <div className="infoView">
-            <div className="infoView-nav">
-                <div className={selectInfo === 0 ? 'btn2' : 'btn1'} onClick={() => {
+
+            return (<div className="infoView-nav">
+                <div className={selectBtn === btns[0] ? 'btn2' : 'btn1'} onClick={() => {
                     this.setState({
-
-                        selectInfo: 0
+                        selectBtn: btns[0]
                     })
                 }}>
-                    <span>{I18n.t('Schedule')}</span>
+                    <span>{this._btnName(btns[0])}</span>
+                </div>
+            </div>)
+        }
+        if (btns.length === 2) {
+
+            return (<div className="infoView-nav">
+                <div className={selectBtn === btns[0] ? 'btn2' : 'btn1'} onClick={() => {
+                    this.setState({
+                        selectBtn: btns[0]
+                    })
+                }}>
+                    <span>{this._btnName(btns[0])}</span>
                 </div>
                 <div className="clo_line"/>
-                <div className={selectInfo === 1 ? 'btn2' : 'btn1'} onClick={() => {
+                <div className={selectBtn === btns[1] ? 'btn2' : 'btn1'} onClick={() => {
                     this.setState({
-
-                        selectInfo: 1
+                        selectBtn: btns[1]
                     })
                 }}>
-                    <div>{I18n.t('Blind')}</div>
+                    <span>{this._btnName(btns[1])}</span>
                 </div>
-            </div>
+            </div>)
+
+        }
+
+        if (btns.length === 3) {
+
+            return (<div className="infoView-nav">
+                <div className={selectBtn === 0 ? 'btn2' : 'btn1'} onClick={() => {
+                    this.setState({
+                        selectBtn: 0
+                    })
+                }}>
+                    <span>{this._btnName(0)}</span>
+                </div>
+                <div className="clo_line"/>
+                <div className={selectBtn === 1 ? 'btn2' : 'btn1'} onClick={() => {
+                    this.setState({
+                        selectBtn: 1
+                    })
+                }}>
+                    <span>{this._btnName(1)}</span>
+                </div>
+                <div className="clo_line"/>
+                <div className={selectBtn === 2 ? 'btn2' : 'btn1'} onClick={() => {
+                    this.setState({
+                        selectBtn: 2
+                    })
+                }}>
+                    <span>{this._btnName(2)}</span>
+                </div>
+            </div>);
+        }
+
+
+    };
+
+
+    _btnName = (index) => {
+        switch (index) {
+            case 0:
+                return I18n.t('Schedule');
+            case 1:
+                return I18n.t('Blind');
+            case 2:
+                return I18n.t('GameResult');
+        }
+    };
+
+    componentDidMount() {
+        const {schedules, blinds, ranks} = this.props;
+        let btns = [];
+        if (!isEmptyObject(schedules) && schedules.length > 0) {
+            btns.push(0)
+        }
+        if (!isEmptyObject(blinds) && blinds.length > 0) {
+            btns.push(1)
+        }
+        if (!isEmptyObject(ranks) && ranks.length > 0) {
+            btns.push(2)
+        }
+        this.setState({
+            selectBtn: btns[0],
+            btns: btns
+        })
+    }
+
+    mainInfoView = () => {
+
+
+        return <div className="infoView">
+            {this.btnActive()}
 
             {this.select_mainInfoMenu()}
         </div>
@@ -105,7 +187,7 @@ export default class RaceBlindList extends PureComponent {
 
     //主赛信息选择显示页面
     select_mainInfoMenu = () => {
-        switch (this.state.selectInfo) {
+        switch (this.state.selectBtn) {
             case 0:
                 return this.scheduleView();
             case 1:
