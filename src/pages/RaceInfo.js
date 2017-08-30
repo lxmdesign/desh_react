@@ -13,10 +13,7 @@ import RaceBlindList from '../components/RaceBlindList';
 export default class RaceInfo extends Component {
 
     state = {
-        dataStr: '',
         data: {},
-        schedules: [],
-        blinds: [],
         menu: 0,
         subItems: [],
         class_name1: 'txtMenu imgMe',
