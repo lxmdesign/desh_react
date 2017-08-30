@@ -97,7 +97,10 @@ export default class RaceInfo extends Component {
                             <div className="menu">
                                 <div className="menu1" onClick={() => {
                                     this.setState({
-                                        menu: 0
+                                        menu: 0,
+                                        class_name1 :'txtMenu'+' '+'imgMe',
+                                        class_name2 :'txtMenu',
+                                        class_name3 :'txtMenu'
                                     })
                                 }}>
                                     <span className={this.state.class_name1}>简介</span>
@@ -106,7 +109,10 @@ export default class RaceInfo extends Component {
                                 <div className="menu1"
                                      onClick={() => {
                                          this.setState({
-                                             menu: 1
+                                             menu: 1,
+                                             class_name1 :'txtMenu',
+                                             class_name2 :this.state.class_name2+' '+'imgMe',
+                                             class_name3 :'txtMenu'
                                          })
                                      }}>
                                     <span className={this.state.class_name2}>主赛信息</span>
@@ -115,7 +121,10 @@ export default class RaceInfo extends Component {
                                 <div className="menu1"
                                      onClick={() => {
                                          this.setState({
-                                             menu: 2
+                                             menu: 2,
+                                             class_name1 :'txtMenu',
+                                             class_name2 :'txtMenu',
+                                             class_name3 :this.state.class_name3 +' '+'imgMe'
                                          })
                                      }}>
                                     <span className={this.state.class_name3}>边塞信息</span>
@@ -147,14 +156,10 @@ export default class RaceInfo extends Component {
                 console.log(this.state.class_name)
                 return this.introView(description);
             case 1:
-                this.state.class_name1 ='txtMenu'
-                this.state.class_name2 +=' '+'imgMe'
-                this.state.class_name3 ='txtMenu'
+
                 return this.mainInfoView();
             case 2:
-                this.state.class_name1 ='txtMenu'
-                this.state.class_name2 ='txtMenu'
-                this.state.class_name3 +=' '+'imgMe'
+
                 return this.sideView();
         }
     }
