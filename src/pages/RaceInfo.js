@@ -22,7 +22,10 @@ export default class RaceInfo extends Component {
         menu: 0,
         selectInfo:0,
         selectInfo_menu:0,
-        subItems: []
+        subItems: [],
+        class_name1:'txtMenu imgMe',
+        class_name2:'txtMenu',
+        class_name3:'txtMenu'
     };
 
     componentDidMount() {
@@ -97,7 +100,7 @@ export default class RaceInfo extends Component {
                                         menu: 0
                                     })
                                 }}>
-                                    <span className='txtMenu imgMe'>简介</span>
+                                    <span className={this.state.class_name1}>简介</span>
                                     {/*<img src={imgMenu} className="imgMe"/>*/}
                                 </div>
                                 <div className="menu1"
@@ -106,7 +109,7 @@ export default class RaceInfo extends Component {
                                              menu: 1
                                          })
                                      }}>
-                                    <span className='txtMenu imgMe'>主赛信息</span>
+                                    <span className={this.state.class_name2}>主赛信息</span>
 
                                 </div>
                                 <div className="menu1"
@@ -115,7 +118,7 @@ export default class RaceInfo extends Component {
                                              menu: 2
                                          })
                                      }}>
-                                    <span className='txtMenu'>边塞信息</span>
+                                    <span className={this.state.class_name3}>边塞信息</span>
 
                                 </div>
 
@@ -132,6 +135,7 @@ export default class RaceInfo extends Component {
         }
     }
     //导航信息选择显示页面
+
     selectMenu = () => {
         const {
             name, location, status, ticket_status, begin_date, end_date, logo,
@@ -140,10 +144,17 @@ export default class RaceInfo extends Component {
 
         switch (this.state.menu) {
             case 0:
+                console.log(this.state.class_name)
                 return this.introView(description);
             case 1:
+                this.state.class_name1 ='txtMenu'
+                this.state.class_name2 +=' '+'imgMe'
+                this.state.class_name3 ='txtMenu'
                 return this.mainInfoView();
             case 2:
+                this.state.class_name1 ='txtMenu'
+                this.state.class_name2 ='txtMenu'
+                this.state.class_name3 +=' '+'imgMe'
                 return this.sideView();
         }
     }
