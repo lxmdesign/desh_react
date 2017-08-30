@@ -8,7 +8,7 @@ import Time from 'react-time-format';
 import '../styles/RaceInfo.css';
 import moment from 'moment';
 import I18n from '../service/I18n';
-import RaceList from '../components/RaceList';
+import RaceBlindList from '../components/RaceBlindList';
 
 export default class RaceInfo extends Component {
 
@@ -168,7 +168,7 @@ export default class RaceInfo extends Component {
 
     mainInfoView = () => {
         const {schedules, blinds} = this.state.data;
-        return <RaceList
+        return <RaceBlindList
             schedules={schedules}
             blinds={blinds}/>
 

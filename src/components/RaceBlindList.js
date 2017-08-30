@@ -7,7 +7,7 @@ import '../styles/RaceInfo.css';
 import I18n from '../service/I18n';
 
 
-export default class RaceList extends PureComponent {
+export default class RaceBlindList extends PureComponent {
 
     state = {
         selectInfo: 0,
@@ -127,10 +127,10 @@ export default class RaceList extends PureComponent {
     };
 
     scheduleMessageOne = (schedule) => {
-        return <td>{schedule}</td>
+        return schedule
     };
     scheduleMessageTwo = (schedule1, schedule2) => {
-        return <td>{schedule1}<br/>{schedule2}</td>
+        return <span>{schedule1}<br/>{schedule2}</span>
     }
 }
 
