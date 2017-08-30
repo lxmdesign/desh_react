@@ -4,10 +4,22 @@
 import Api from './Api';
 import {get, post, setDpLang} from './HttpUtil';
 
+var lang = 'zh';
+
 export function setLang(lang) {
     setDpLang(lang)
 }
 
+export function getLang() {
+    return lang;
+}
+
+
+export function getSubInfo(body, resolve, reject) {
+    get(Api.sub_race_info(body), ret => {
+        resolve(ret.data);
+    }, reject)
+}
 
 export function getSubRace(body, resolve, reject) {
     get(Api.sub_races(body), ret => {

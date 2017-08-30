@@ -3,14 +3,14 @@
  */
 import React, {Component} from 'react';
 import markdown from 'marked';
-import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
-import {getRaceInfo, setLang, getSubRace} from '../service/RaceDao';
+import {getRaceInfo, setLang, getSubRace, getLang} from '../service/RaceDao';
 import Time from 'react-time-format';
 import '../styles/RaceInfo.css';
 import I18n from '../service/I18n';
 import {modify} from '../service/utils';
 import imgMenu from '../assets/images/Triangle@3x.png';
 import moment from 'moment';
+import {withRouter} from "react-router-dom";
 
 export default class RaceInfo extends Component {
 
@@ -290,11 +290,13 @@ export default class RaceInfo extends Component {
     sideView = () => {
 
         const {subItems} = this.state;
-
+        const {params} = this.props.match;
 
         return (
             <div>
-                {subItems.map((item, i) => <SideItem key={i} item={item}/>)}
+                {subItems.map((item, i) => <SideItem key={i} item={item}
+                                                     history={this.props.history}
+                                                     params={params}/>)}
 
             </div>
         )
@@ -316,8 +318,11 @@ export default class RaceInfo extends Component {
 class SideItem extends Component {
 
     render() {
-        const {item} = this.props;
-        return ( <div className="sideView">
+        const {item, params} = this.props;
+        return ( <div className="sideView" onClick={() => {
+            this.props.history.push(`/race/${params.id}/${params.lang}/sidedetail/${item.race_id}`)
+
+        }}>
             <div className="sideTime">
                 <span className="txtMonth">
                     {moment(item.begin_date).format('YYYY-MM')}
