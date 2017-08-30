@@ -9,6 +9,7 @@ import '../styles/RaceInfo.css';
 import moment from 'moment';
 import I18n from '../service/I18n';
 import RaceBlindList from '../components/RaceBlindList';
+import {raceStatusConvert,ticketStatusConvert} from '../service/utils';
 
 export default class RaceInfo extends Component {
 
@@ -80,7 +81,7 @@ export default class RaceInfo extends Component {
                                 <li><Time value={begin_date} format="YYYY:MM:DD"/>—<Time value={end_date}
                                                                                          format="YYYY:MM:DD"/></li>
                                 <li>{location}</li>
-                                <li className="li-4"><span>{status}</span><span>{ticket_status}</span></li>
+                                <li className="li-4"><span>{raceStatusConvert(status)}</span><span>{ticketStatusConvert(ticket_status)}</span></li>
                             </ul>
                         </div>
 

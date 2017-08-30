@@ -1,3 +1,5 @@
+import I18n from '../service/I18n';
+
 export function getGetOrdinal(n) {
     let s = ["th", "st", "nd", "rd"],
         v = n % 100;
@@ -40,4 +42,31 @@ export function modify(str,str2) {
     return (
         demoClassName
     )
+}
+
+/*赛事状态*/
+export function raceStatusConvert(status) {
+    switch (status) {
+        case 'unbegin':
+            return I18n.t('races_unstart');
+        case 'go_ahead':
+            return I18n.t('donging');
+        case 'ended':
+            return I18n.t('ended');
+        case 'closed':
+            return I18n.t('closed');
+    }
+}
+/*票务状态*/
+export function ticketStatusConvert(status) {
+    switch (status) {
+        case 'unsold':
+            return I18n.t('ticket_unsold');
+        case 'selling':
+            return I18n.t('ticket_selling');
+        case 'end':
+            return I18n.t('ticket_end');
+        case 'sold_out':
+            return I18n.t('ticket_sold_out');
+    }
 }

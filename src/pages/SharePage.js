@@ -33,8 +33,7 @@ export default class SharePage extends Component {
                 <img src={sharePage05} alt="" />
             </div>
             <div className="sharePage-person">
-                <ImageSlider data={['1.jpg', '2.jpg']} />
-                <ImageSlider src={person01} alt="" />
+                <img src={person01} alt="" />
                 <img src={person02} alt="" />
                 <img src={person03} alt="" />
                 <img src={person04} alt="" />
