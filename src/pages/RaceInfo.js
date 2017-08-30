@@ -10,9 +10,7 @@ import I18n from '../service/I18n';
 import {modify} from '../service/utils';
 import imgMenu from '../assets/images/Triangle@3x.png';
 import moment from 'moment';
-import {
-    Link
-} from 'react-router-dom'
+import {withRouter} from "react-router-dom";
 
 export default class RaceInfo extends Component {
 
@@ -176,11 +174,13 @@ export default class RaceInfo extends Component {
     sideView = () => {
 
         const {subItems} = this.state;
-
+        const {params} = this.props.match;
 
         return (
             <div>
-                {subItems.map((item, i) => <SideItem key={i} item={item}/>)}
+                {subItems.map((item, i) => <SideItem key={i} item={item}
+                                                     history={this.props.history}
+                                                     params={params}/>)}
 
             </div>
         )
@@ -202,10 +202,10 @@ export default class RaceInfo extends Component {
 class SideItem extends Component {
 
     render() {
-        const {item} = this.props;
+        const {item, params} = this.props;
         return ( <div className="sideView" onClick={() => {
+            this.props.history.push(`/race/${params.id}/${params.lang}/sidedetail/${item.race_id}`)
 
-            return <Link to={`/sidedetail/'${item.race_id}/${getLang()}`}/>
         }}>
             <div className="sideTime">
                 <span className="txtMonth">

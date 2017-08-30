@@ -15,6 +15,12 @@ export function getLang() {
 }
 
 
+export function getSubInfo(body, resolve, reject) {
+    get(Api.sub_race_info(body), ret => {
+        resolve(ret.data);
+    }, reject)
+}
+
 export function getSubRace(body, resolve, reject) {
     get(Api.sub_races(body), ret => {
         resolve(ret.data);

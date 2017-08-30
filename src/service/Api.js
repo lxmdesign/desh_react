@@ -8,7 +8,13 @@ export default {
     player_info: player_info,
     game_info: game_info,
     rank_info: rank_info,
-    sub_races: sub_races
+    sub_races: sub_races,
+    sub_race_info: sub_race_info
+}
+
+function sub_race_info(body) {
+    const {raceId, subId} = body;
+    return 'races/' + raceId + '/sub_races/' + subId;
 }
 
 

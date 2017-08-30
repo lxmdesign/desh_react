@@ -23,7 +23,7 @@ class App extends Component {
                     <Route path="/news/:id/:lang" component={NewsInfo}/>
                     <Route path="/rankPlayer/:id/:lang" component={PlayerInfo}/>
                     <Route path="/rankGame/:id/:lang" component={GameInfo}/>
-                    <Route path="/sidedetail/:id/:lang" component={SubRace}/>
+                    <Route path="/race/:id/:lang/sidedetail/:subId" component={SubRace}/>
                 </div>
             </Router>
         );
