@@ -1,0 +1,22 @@
+.sharePage{
+    margin:0;
+    padding:0;
+
+
+}
+
+.sharePage .sharePage-img img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.sharePage-person{
+    height:380px;
+    display:flex;
+    justify-content: space-around;
+
+}
+.sharePage-person img{
+    width: 30%;
+    height:380px;
+}

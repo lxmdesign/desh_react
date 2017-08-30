@@ -12,6 +12,9 @@ import PlayerInfo from './pages/PlayerInfo';
 import GameInfo from './pages/GameInfo';
 import SubRace from './pages/SideRace';
 
+
+import SharePage from './pages/SharePage';
+
 class App extends Component {
     render() {
         return (
@@ -24,6 +27,8 @@ class App extends Component {
                     <Route path="/rankPlayer/:id/:lang" component={PlayerInfo}/>
                     <Route path="/rankGame/:id/:lang" component={GameInfo}/>
                     <Route path="/race/:id/:lang/sidedetail/:subId" component={SubRace}/>
+
+                    <Route path="/sharePage" component={SharePage}/>
                 </div>
             </Router>
         );
