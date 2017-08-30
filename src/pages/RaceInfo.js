@@ -2,6 +2,7 @@
  * Created by lorne on 2017/8/24.
  */
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import markdown from 'marked';
 import {getRaceInfo, setLang, getSubRace, getLang} from '../service/RaceDao';
 import Time from 'react-time-format';
@@ -85,46 +86,43 @@ export default class RaceInfo extends Component {
                             </ul>
                         </div>
 
-
-                        <div className="menu-fixed">
-                            <div className="menu">
-                                <div className="menu1" onClick={() => {
-                                    this.setState({
-                                        menu: 0,
-                                        class_name1: 'txtMenu' + ' ' + 'imgMe',
-                                        class_name2: 'txtMenu',
-                                        class_name3: 'txtMenu'
-                                    })
-                                }}>
-                                    <span className={this.state.class_name1}>{I18n.t('Introduction')}</span>
-                                    {/*<img src={imgMenu} className="imgMe"/>*/}
-                                </div>
-                                <div className="menu1"
-                                     onClick={() => {
-                                         this.setState({
-                                             menu: 1,
-                                             class_name1: 'txtMenu',
-                                             class_name2: this.state.class_name2 + ' ' + 'imgMe',
-                                             class_name3: 'txtMenu'
-                                         })
-                                     }}>
-                                    <span className={this.state.class_name2}>{I18n.t('MainInformation')}</span>
-
-                                </div>
-                                <div className="menu1"
-                                     onClick={() => {
-                                         this.setState({
-                                             menu: 2,
-                                             class_name1: 'txtMenu',
-                                             class_name2: 'txtMenu',
-                                             class_name3: this.state.class_name3 + ' ' + 'imgMe'
-                                         })
-                                     }}>
-                                    <span className={this.state.class_name3}>{I18n.t('SideInformation')}</span>
-
-                                </div>
+                        <div className="menu">
+                            <div className="menu1" onClick={() => {
+                                this.setState({
+                                    menu: 0,
+                                    class_name1: 'txtMenu' + ' ' + 'imgMe',
+                                    class_name2: 'txtMenu',
+                                    class_name3: 'txtMenu'
+                                })
+                            }}>
+                                <span className={this.state.class_name1}>{I18n.t('Introduction')}</span>
+                                {/*<img src={imgMenu} className="imgMe"/>*/}
+                            </div>
+                            <div className="menu1"
+                                 onClick={() => {
+                                     this.setState({
+                                         menu: 1,
+                                         class_name1: 'txtMenu',
+                                         class_name2: this.state.class_name2 + ' ' + 'imgMe',
+                                         class_name3: 'txtMenu'
+                                     })
+                                 }}>
+                                <span className={this.state.class_name2}>{I18n.t('MainInformation')}</span>
 
                             </div>
+                            <div className="menu1"
+                                 onClick={() => {
+                                     this.setState({
+                                         menu: 2,
+                                         class_name1: 'txtMenu',
+                                         class_name2: 'txtMenu',
+                                         class_name3: this.state.class_name3 + ' ' + 'imgMe'
+                                     })
+                                 }}>
+                                <span className={this.state.class_name3}>{I18n.t('SideInformation')}</span>
+
+                            </div>
+
                         </div>
 
                     </div>
@@ -190,10 +188,17 @@ export default class RaceInfo extends Component {
 
 
     render() {
+        const {params} = this.props.match;
         return (
             <div className='content'>
 
                 {this.content()}
+
+                <footer><a onClick={() => {
+                    this.props.history.push(`/race/${params.id}/${params.lang}/loadAPP`)
+                }}>
+
+                {I18n.t('app_plant')}<span>{I18n.t('load_app')}</span></a></footer>
 
             </div>
         )
@@ -209,6 +214,8 @@ class SideItem extends Component {
             this.props.history.push(`/race/${params.id}/${params.lang}/sidedetail/${item.race_id}`)
 
         }}>
+            <div className="dark"/>
+
             <div className="sideTime">
                 <span className="txtMonth">
                     {moment(item.begin_date).format('YYYY-MM')}

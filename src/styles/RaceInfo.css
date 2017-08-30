@@ -1,3 +1,8 @@
+.dark{
+    height: 60px;
+    width: 3px;
+    background-color: #161718;
+}
 
 .info-content {
     min-height: 48px;
@@ -195,14 +200,6 @@
     justify-content: center;
 }
 
-/*.menu-fixed{*/
-/*position:fixed;*/
-/*width:100%;*/
-/*top:0;*/
-/*right:0;*/
-/*height: 32px;*/
-/*background-color: #161718;*/
-/*}*/
 .menu {
     display: flex;
 }

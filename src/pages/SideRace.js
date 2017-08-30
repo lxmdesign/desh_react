@@ -3,16 +3,18 @@
  */
 import '../styles/SideRace.css';
 import React, {PureComponent} from 'react';
-import {getSubInfo,setLang} from '../service/RaceDao'
+import {getSubInfo, setLang} from '../service/RaceDao'
 import moment from 'moment';
 import I18n from '../service/I18n';
+import RaceBlindList from '../components/RaceBlindList';
+import {isEmptyObject} from '../service/utils'
 
 export default class SideRace extends PureComponent {
 
     state = {
         data: {},
-        selectBtn:0,
-        selectBtn_menu:0
+        selectBtn: 0,
+        selectBtn_menu: 0
     };
 
     componentDidMount() {
@@ -24,7 +26,7 @@ export default class SideRace extends PureComponent {
         };
 
         getSubInfo(body, data => {
-            console.log('sub', data)
+
             const {name} = data;
             document.title = name;
             this.setState({
@@ -54,7 +56,7 @@ export default class SideRace extends PureComponent {
                 <span>{I18n.t('Admission')}：{ticket_price}</span>
                 <span>{I18n.t('beginChip')}：{blind}</span>
             </div>
-
+            <div className="line"></div>
             <div className="sideRace-body">
                 <div className="body-nav">
                     {this.mainInfoView()}
@@ -65,43 +67,15 @@ export default class SideRace extends PureComponent {
 
     mainInfoView = () => {
 
-        const {selectBtn,selectBtn_menu} = this.state;
-        return <div className="infoView">
-            <div className="infoView-nav">
-                <div className={selectBtn === 0 ? 'btn2' : 'btn1'} onClick={() => {
-                    this.setState({
+        const {schedules, blinds, ranks} = this.state.data;
+        console.log('side',this.state.data)
+        if (!isEmptyObject(this.state.data))
+            return <RaceBlindList
+                ranks={ranks}
+                schedules={schedules}
+                blinds={blinds}/>
 
-                        selectBtn:0,
-                        selectBtn_menu:0
-                    })
-                }}>
-                    <span>{I18n.t('Schedule')}</span>
-                </div>
-                <div className="clo_line"/>
-                <div className={selectBtn === 1 ? 'btn2' : 'btn1'} onClick={() => {
-                    this.setState({
-
-                        selectBtn:1,
-                        selectBtn_menu:1
-                    })
-                }}>
-                    <div>{I18n.t('Blind')}</div>
-                </div>
-                <div className="clo_line"/>
-                <div className={selectBtn === 2 ? 'btn2' : 'btn1'} onClick={() => {
-                    this.setState({
-
-                        selectBtn:2,
-                        selectBtn_menu:2
-                    })
-                }}>
-                    <div>{I18n.t('GameResult')}</div>
-                </div>
-            </div>
-
-        </div>
     };
-
 
 
 }

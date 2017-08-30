@@ -5,9 +5,8 @@
 .App-header {
     overflow: hidden;
     zoom: 1;
+    height:100px;
     background-color: #fff;
-    height: 60px;
-    padding: 0 4.5% 7px 4.5%;
     position: relative;
 }
 .App-header:before{
@@ -52,9 +51,7 @@
     padding:4.5%;
 }
 /*markdown里的样式*/
-.App div{
-    margin-bottom: 40px;
-}
+
 .App div p{
     margin: 0;
     margin-bottom: 22px;

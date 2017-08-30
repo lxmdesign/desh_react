@@ -11,6 +11,7 @@ import NewsInfo from './pages/NewsInfo';
 import PlayerInfo from './pages/PlayerInfo';
 import GameInfo from './pages/GameInfo';
 import SubRace from './pages/SideRace';
+import Download from './pages/Download';
 
 
 import SharePage from './pages/SharePage';
@@ -22,6 +23,9 @@ class App extends Component {
                 <div>
 
                     <Route exact path="/race/:id/:lang" component={RaceInfo}/>
+                        {/*<Route path="/loadApp" component={Download}/>*/}
+                    {/*</Route>*/}
+                    <Route path="/race/:id/:lang/loadApp" component={Download}/>
 
                     <Route path="/news/:id/:lang" component={NewsInfo}/>
                     <Route path="/rankPlayer/:id/:lang" component={PlayerInfo}/>
@@ -29,6 +33,8 @@ class App extends Component {
                     <Route path="/race/:id/:lang/sidedetail/:subId" component={SubRace}/>
 
                     <Route path="/sharePage" component={SharePage}/>
+
+
                 </div>
             </Router>
         );
