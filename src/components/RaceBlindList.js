@@ -26,7 +26,6 @@ export default class RaceBlindList extends PureComponent {
         const {selectBtn, btns} = this.state;
         if (btns.length === 1) {
 
-
             return (<div className="infoView-nav">
                 <div className={selectBtn === btns[0] ? 'btn2' : 'btn1'} onClick={() => {
                     this.setState({
