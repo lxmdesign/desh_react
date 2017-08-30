@@ -7,7 +7,8 @@ import {get, post, setDpLang} from './HttpUtil';
 var lang = 'zh';
 
 export function setLang(lang) {
-    setDpLang(lang)
+    setDpLang(lang);
+
 }
 
 export function getLang() {

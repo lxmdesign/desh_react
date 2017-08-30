@@ -7,6 +7,7 @@ import {getRaceInfo, setLang, getSubRace, getLang} from '../service/RaceDao';
 import Time from 'react-time-format';
 import '../styles/RaceInfo.css';
 import moment from 'moment';
+import I18n from '../service/I18n';
 
 export default class RaceInfo extends Component {
 
@@ -28,7 +29,6 @@ export default class RaceInfo extends Component {
         const {id, lang} = this.props.match.params;
         setLang(lang);
         const body = {raceId: id};
-
         getRaceInfo(body, data => {
             console.log('RaceInfo', data)
             this.setState({
@@ -99,7 +99,7 @@ export default class RaceInfo extends Component {
                                         class_name3 :'txtMenu'
                                     })
                                 }}>
-                                    <span className={this.state.class_name1}>简介</span>
+                                    <span className={this.state.class_name1}>{I18n.t('Introduction')}</span>
                                     {/*<img src={imgMenu} className="imgMe"/>*/}
                                 </div>
                                 <div className="menu1"
@@ -111,7 +111,7 @@ export default class RaceInfo extends Component {
                                              class_name3 :'txtMenu'
                                          })
                                      }}>
-                                    <span className={this.state.class_name2}>主赛信息</span>
+                                    <span className={this.state.class_name2}>{I18n.t('MainInformation')}</span>
 
                                 </div>
                                 <div className="menu1"
@@ -123,7 +123,7 @@ export default class RaceInfo extends Component {
                                              class_name3 :this.state.class_name3 +' '+'imgMe'
                                          })
                                      }}>
-                                    <span className={this.state.class_name3}>边塞信息</span>
+                                    <span className={this.state.class_name3}>{I18n.t('SideInformation')}</span>
 
                                 </div>
 
@@ -207,7 +207,7 @@ export default class RaceInfo extends Component {
                         selectInfo_menu:0
                     })
                 }}>
-                    <span>赛程表</span>
+                    <span>{I18n.t('Schedule')}</span>
                 </div>
                 <div className="clo_line"/>
                 <div className={selectInfo === 1 ? 'btn2' : 'btn1'} onClick={() => {
@@ -217,7 +217,7 @@ export default class RaceInfo extends Component {
                         selectInfo_menu:1
                     })
                 }}>
-                    <div>盲注结构</div>
+                    <div>{I18n.t('Blind')}</div>
                 </div>
             </div>
 
@@ -234,9 +234,9 @@ export default class RaceInfo extends Component {
         return <div className="schedule">
 
                 <div className="schedule-nav">
-                    <div>赛程</div>
-                    <div>日期</div>
-                    <div>开始时间</div>
+                    <div>{I18n.t('race_day')}</div>
+                    <div>{I18n.t('date')}</div>
+                    <div>{I18n.t('beginDate')}</div>
                 </div>
                 <div className="schedule-items">
                 {schedules.map((schedule,i) =>{
@@ -266,10 +266,10 @@ export default class RaceInfo extends Component {
         } = this.state.data;
         return <div className="blindStructure">
             <div className="blindStructure-nav">
-                <span>级别</span>
-                <span>盲注</span>
-                <span>前注</span>
-                <span>时间</span>
+                <span>{I18n.t('Level')}</span>
+                <span>{I18n.t('Level')}</span>
+                <span>{I18n.t('Ante')}</span>
+                <span>{I18n.t('time')}</span>
             </div>
             <div>
                 {blinds.map((blind, i) => <BlindStructureInfo key={i} blind={blind}/>)}
@@ -330,7 +330,7 @@ class SideItem extends Component {
 
             <div className="sideInfo">
                 <span className="sideTitle">{item.name}</span>
-                <span className="sideStart">起始时间:{item.begin_time}</span>
+                <span className="sideStart">{I18n.t('start_time')}:{item.begin_time}</span>
                 <span className="sidePrize">{item.ticket_price}</span>
 
             </div>

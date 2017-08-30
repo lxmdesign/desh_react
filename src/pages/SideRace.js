@@ -5,7 +5,7 @@ import '../styles/SideRace.css';
 import React, {PureComponent} from 'react';
 import {getSubInfo} from '../service/RaceDao'
 import moment from 'moment';
-
+import I18n from '../service/I18n';
 
 export default class SideRace extends PureComponent {
 
@@ -42,16 +42,16 @@ export default class SideRace extends PureComponent {
             <div className="subInfo">
                 <span className="title">{name}</span>
                 <span
-                    className="time">时间：{moment(begin_date).format('YYYY.MM.DD')}-{moment(end_date).format('YYYY.MM.DD')}</span>
-                <span className="location">地点：{location}</span>
+                    className="time">{I18n.t('time')}：{moment(begin_date).format('YYYY.MM.DD')}-{moment(end_date).format('YYYY.MM.DD')}</span>
+                <span className="location">{I18n.t('address')}：{location}</span>
 
             </div>
 
             <div className="subInfo1">
-                <span>金额：¥{prize}</span>
-                <span>参赛人数：{participants}</span>
-                <span>入场资格：{ticket_price}</span>
-                <span>起始记分牌：{blind}</span>
+                <span>{I18n.t('prize')}：¥{prize}</span>
+                <span>{I18n.t('peoples')}：{participants}</span>
+                <span>{I18n.t('Admission')}：{ticket_price}</span>
+                <span>{I18n.t('beginChip')}：{blind}</span>
             </div>
 
             <div className="sideRace-body">
@@ -74,7 +74,7 @@ export default class SideRace extends PureComponent {
                         selectBtn_menu:0
                     })
                 }}>
-                    <span>赛程表</span>
+                    <span>{I18n.t('Schedule')}</span>
                 </div>
                 <div className="clo_line"/>
                 <div className={selectBtn === 1 ? 'btn2' : 'btn1'} onClick={() => {
@@ -84,7 +84,7 @@ export default class SideRace extends PureComponent {
                         selectBtn_menu:1
                     })
                 }}>
-                    <div>盲注结构</div>
+                    <div>{I18n.t('Blind')}</div>
                 </div>
                 <div className="clo_line"/>
                 <div className={selectBtn === 2 ? 'btn2' : 'btn1'} onClick={() => {
@@ -94,11 +94,11 @@ export default class SideRace extends PureComponent {
                         selectBtn_menu:2
                     })
                 }}>
-                    <div>赛事结果</div>
+                    <div>{I18n.t('GameResult')}</div>
                 </div>
             </div>
 
-            {this.select_mainInfoMenu()}
+            {/*{this.select_mainInfoMenu()}*/}
         </div>
     };
 

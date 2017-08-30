@@ -3,6 +3,7 @@ import markdown from 'marked';
 import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 import {getNewsInfo,setLang} from '../service/RaceDao';
 import '../styles/NewsInfo.css';
+import I18n from '../service/I18n';
 
 export default class NewsInfo extends Component {
 
@@ -14,7 +15,7 @@ export default class NewsInfo extends Component {
         const {id, lang} = this.props.match.params;
         setLang(lang);
         const body = {newsId: id};
-        document.title = '扑客';
+        document.title = I18n.t('app_name');
         getNewsInfo(body, data => {
             console.log('NewsInfo', data)
             this.setState({

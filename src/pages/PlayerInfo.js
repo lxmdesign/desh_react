@@ -5,6 +5,7 @@ import {moneyFormat,getGetOrdinal,strNotNull} from '../service/utils';
 import Time from 'react-time-format';
 import {getRankInfo} from '../service/RaceDao';
 import '../styles/PlayerInfo.css';
+import I18n from '../service/I18n';
 import ReurnIcon from '../assets/images/ReturnIcon.png';
 import Group2x from '../assets/images/Group@2x.png';
 import Group from '../assets/images/Group.png';
@@ -20,7 +21,7 @@ export default class PlayerInfo extends Component {
         const {id, lang} = this.props.match.params;
         setLang(lang);
         const body = {playerId: id};
-        document.title = '扑客';
+        document.title = I18n.t('app_name');
         getPlayerInfo(body, data => {
             console.log('PlayerInfo', data)
             this.setState({
@@ -68,7 +69,7 @@ export default class PlayerInfo extends Component {
                         <div className='player-head-top'>
                             {/*<img alt='' src={返回图标}/>*/}
                             {/*<img alt='' src={Group2x}/>*/}
-                            <h2>国内排行</h2>
+                            <h2>{I18n.t('domestic_ranking')}</h2>
                             {/*<img alt='' src={Group}/>*/}
                         </div>
                         <img className='personImg' src={avatar}/>
@@ -78,15 +79,15 @@ export default class PlayerInfo extends Component {
                         <div className="player-head-nav">
                             <div className="nav-rank">
                                 <span>{ranking}</span>
-                                <span>名次</span>
+                                <span>{I18n.t('ranking')}</span>
                             </div>
                             <div className="nav-score">
                                 <span>{strNotNull(dpi_total_score)?dpi_total_score:'--'}</span>
-                                <span>积分</span>
+                                <span>{I18n.t('integral')}</span>
                             </div>
                             <div className="nav-prize">
                                 <span>¥{moneyFormat(dpi_total_earning)}</span>
-                                <span>奖金</span>
+                                <span>{I18n.t('bonus')}</span>
                             </div>
                         </div>
 
@@ -108,19 +109,19 @@ export default class PlayerInfo extends Component {
                                             </div>
                                             <div className="table-detail">
                                                 <div className="table-num">
-                                                    <span>买入</span>
+                                                    <span>{I18n.t('buy')}</span>
                                                     <span>{race.ticket_price}</span>
                                                 </div>
                                                 <div className="table-person">
-                                                    <span>参赛人数</span>
+                                                    <span>{I18n.t('peoples')}</span>
                                                     <span>{race.participants}</span>
                                                 </div>
                                                 <div className="table-prize">
-                                                    <span>奖金</span>
+                                                    <span>{I18n.t('bonus')}</span>
                                                     <span>¥{moneyFormat(rank.earning)}</span>
                                                 </div>
                                                 <div className="table-score">
-                                                    <span>积分</span>
+                                                    <span>{I18n.t('integral')}</span>
                                                     <span>{rank.score}</span>
                                                 </div>
                                             </div>

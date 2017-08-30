@@ -5,6 +5,7 @@ import '../styles/GameInfo.css';
 import Time from 'react-time-format';
 import Clamp from '../utils/Clamp';
 import {isEmptyObject} from '../service/utils';
+import I18n from '../service/I18n';
 import {
 
     Link
@@ -23,7 +24,7 @@ export default class GameInfo extends Component {
         setLang(lang);
 
         const body = {gameId: id};
-        document.title = '扑客';
+        document.title = I18n.t('app_name');
         getGameInfo(body, data => {
             console.log('GameInfo', data)
             this.setState({
@@ -65,16 +66,16 @@ export default class GameInfo extends Component {
 
                 <div className="race-massage">
                     <div className="race-buy">
-                        <span>买入</span>
+                        <span>{I18n.t('buy')}</span>
                         <span>{race.ticket_price}</span>
                     </div>
                     <div className="race-prize">
-                        <span>奖池</span>
+                        <span>{I18n.t('prize_pool')}</span>
                         <span>{race.prize}</span>
                     </div>
                     <div className="race-person">
 
-                        <span>参赛人数</span>
+                        <span>{I18n.t('peoples')}</span>
                         <span>{race.participants}</span>
                     </div>
                 </div>
@@ -83,10 +84,10 @@ export default class GameInfo extends Component {
                     <table className="race-table">
                         <thead>
                         <tr>
-                            <th>名次</th>
-                            <th>参赛人</th>
-                            <th>奖金</th>
-                            <th>积分</th>
+                            <th>{I18n.t('ranking')}</th>
+                            <th>{I18n.t('contestant')}</th>
+                            <th>{I18n.t('bonus')}</th>
+                            <th>{I18n.t('integral')}</th>
                         </tr>
                         </thead>
                         <tbody>
