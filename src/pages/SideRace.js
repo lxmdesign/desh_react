@@ -3,7 +3,7 @@
  */
 import '../styles/SideRace.css';
 import React, {PureComponent} from 'react';
-import {getSubInfo} from '../service/RaceDao'
+import {getSubInfo,setLang} from '../service/RaceDao'
 import moment from 'moment';
 import I18n from '../service/I18n';
 
@@ -17,6 +17,7 @@ export default class SideRace extends PureComponent {
 
     componentDidMount() {
         const {id, lang, subId} = this.props.match.params;
+        setLang(lang);
         const body = {
             raceId: id,
             subId: subId
@@ -98,7 +99,6 @@ export default class SideRace extends PureComponent {
                 </div>
             </div>
 
-            {/*{this.select_mainInfoMenu()}*/}
         </div>
     };
 
