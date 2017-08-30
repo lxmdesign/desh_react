@@ -1,4 +1,85 @@
 
+.info-content {
+    min-height: 48px;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.blindStructure-info {
+    display: flex;
+    justify-content: space-around;
+
+    border-bottom: 1px solid #EEEEEE;
+    height: 48px;
+    line-height: 48px;
+
+}
+
+.blindStructure-info div {
+    flex: 1;
+    text-align: center;
+
+}
+
+.blindStructure .blindStructure-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #AEBABB;
+    color: #ffffff;
+    height: 32px;
+    margin-top: 20px;
+    line-height: 32px;
+}
+
+.schedule .schedule-nav {
+    display: flex;
+    background-color: #AEBABB;
+    height: 32px;
+    margin-top: 20px;
+}
+
+.schedule-nav div{
+    color: #ffffff;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.schedule-info{
+    display: flex;
+    height: 48px;
+    justify-content: space-around;
+
+}
+
+.schedule-info span{
+    font-size: 14px;
+    color: #666666;
+    line-height: 15px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.schedule-info:nth-child(2n){
+    background-color: #F5F5F5;
+}
+.schedule table thead {
+    height: 32px;
+    margin-top: 20px;
+}
+
+.schedule table thead span {
+    line-height: 32px;
+}
+
 .sidePrize {
     color: #DF1D0F;
     font-size: 14px;
@@ -16,6 +97,7 @@
     font-size: 17px;
     color: #444444;
     line-height: 22px;
+    margin-right: 17px;
 }
 
 .txtDay {
@@ -30,10 +112,18 @@
     color: #666666;
 }
 
+.sideInfo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
 .sideTime {
     display: flex;
     flex-direction: column;
     margin-left: 15px;
+    width: 25%;
 
 }
 
@@ -43,6 +133,27 @@
     align-items: center;
     border-bottom: 1px solid #EEEEEE;
 
+}
+
+.schedule table tbody tr {
+    min-height: 48px;
+    display: flex;
+    background-color: #3f9fff;
+}
+
+.schedule table tbody tr td {
+    flex:1;
+    font-size: 14px;
+    color: #666666;
+    background-color: yellow;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.infoView {
+    flex-direction: column;
+    align-content: center;
 }
 
 .infoView-nav {
@@ -68,6 +179,8 @@
     justify-content: center;
     flex: 1;
     background-color: #161718;
+    color: #ffffff;
+
 }
 
 .txt1 {
@@ -86,8 +199,17 @@
     justify-content: center;
 }
 
+/*.menu-fixed{*/
+/*position:fixed;*/
+/*width:100%;*/
+/*top:0;*/
+/*right:0;*/
+/*height: 32px;*/
+/*background-color: #161718;*/
+/*}*/
 .menu {
     display: flex;
+
 }
 
 .menu1 {

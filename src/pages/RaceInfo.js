@@ -17,8 +17,11 @@ export default class RaceInfo extends Component {
     state = {
         dataStr: '',
         data: {},
+        schedules:[],
+        blinds:[],
         menu: 0,
-        selectInfo: 0,
+        selectInfo:0,
+        selectInfo_menu:0,
         subItems: []
     };
 
@@ -60,6 +63,7 @@ export default class RaceInfo extends Component {
         var des = markdown(description)
         return {__html: des}
     }
+
     //click事件
 
 
@@ -86,34 +90,36 @@ export default class RaceInfo extends Component {
                         </div>
 
 
-                        <div className="menu">
-                            <div className="menu1" onClick={() => {
-                                this.setState({
-                                    menu: 0
-                                })
-                            }}>
-                                <span className='txtMenu imgMe'>简介</span>
-                                {/*<img src={imgMenu} className="imgMe"/>*/}
-                            </div>
-                            <div className="menu1"
-                                 onClick={() => {
-                                     this.setState({
-                                         menu: 1
-                                     })
-                                 }}>
-                                <span className='txtMenu imgMe'>主赛信息</span>
+                        <div className="menu-fixed">
+                            <div className="menu">
+                                <div className="menu1" onClick={() => {
+                                    this.setState({
+                                        menu: 0
+                                    })
+                                }}>
+                                    <span className='txtMenu imgMe'>简介</span>
+                                    {/*<img src={imgMenu} className="imgMe"/>*/}
+                                </div>
+                                <div className="menu1"
+                                     onClick={() => {
+                                         this.setState({
+                                             menu: 1
+                                         })
+                                     }}>
+                                    <span className='txtMenu imgMe'>主赛信息</span>
+
+                                </div>
+                                <div className="menu1"
+                                     onClick={() => {
+                                         this.setState({
+                                             menu: 2
+                                         })
+                                     }}>
+                                    <span className='txtMenu'>边塞信息</span>
+
+                                </div>
 
                             </div>
-                            <div className="menu1"
-                                 onClick={() => {
-                                     this.setState({
-                                         menu: 2
-                                     })
-                                 }}>
-                                <span className='txtMenu'>边塞信息</span>
-
-                            </div>
-
                         </div>
 
                     </div>
@@ -125,6 +131,7 @@ export default class RaceInfo extends Component {
             );
         }
     }
+    //导航信息选择显示页面
     selectMenu = () => {
         const {
             name, location, status, ticket_status, begin_date, end_date, logo,
@@ -135,10 +142,42 @@ export default class RaceInfo extends Component {
             case 0:
                 return this.introView(description);
             case 1:
-                return this.infoView();
+                return this.mainInfoView();
             case 2:
                 return this.sideView();
         }
+    }
+
+    //主赛信息选择显示页面
+    select_mainInfoMenu = () => {
+        switch (this.state.selectInfo_menu) {
+            case 0:
+                return this.scheduleView();
+            case 1:
+                return this.blindStructureView();
+        }
+    }
+
+    //赛程格式化
+    scheduleMessage = (schedule) => {
+        if (schedule.indexOf('|') == -1) {
+            return this.scheduleMessageOne(schedule);
+        } else {
+
+            var sch = schedule.split('|')
+
+            return this.scheduleMessageTwo(sch[0],sch[1]);
+
+        }
+        //
+        // console.log('sch:'+sch)
+        // return sch;
+    }
+    scheduleMessageOne=(schedule)=>{
+        return <td>{schedule}</td>
+    }
+    scheduleMessageTwo = (schedule1,schedule2)=>{
+        return <td>{schedule1}<br/>{schedule2}</td>
     }
 
     introView = (description) => {
@@ -146,14 +185,16 @@ export default class RaceInfo extends Component {
         return <div className="introduceGame" dangerouslySetInnerHTML={this.desc(description)}></div>;
     };
 
-    infoView = () => {
+    mainInfoView = () => {
 
-        const {selectInfo} = this.state;
+        const {selectInfo,selectInfo_menu} = this.state;
         return <div className="infoView">
             <div className="infoView-nav">
                 <div className={selectInfo === 0 ? 'btn2' : 'btn1'} onClick={() => {
                     this.setState({
-                        selectInfo: 0
+
+                        selectInfo:0,
+                        selectInfo_menu:0
                     })
                 }}>
                     <span>赛程表</span>
@@ -161,14 +202,73 @@ export default class RaceInfo extends Component {
                 <div className="clo_line"/>
                 <div className={selectInfo === 1 ? 'btn2' : 'btn1'} onClick={() => {
                     this.setState({
-                        selectInfo: 1
+
+                        selectInfo:1,
+                        selectInfo_menu:1
                     })
                 }}>
                     <div>盲注结构</div>
                 </div>
             </div>
+
+            {this.select_mainInfoMenu()}
         </div>
     };
+
+
+    scheduleView=()=>{
+        const {
+            schedules
+        } = this.state.data;
+
+        return <div className="schedule">
+
+                <div className="schedule-nav">
+                    <div>赛程</div>
+                    <div>日期</div>
+                    <div>开始时间</div>
+                </div>
+                <div className="schedule-items">
+                {schedules.map((schedule,i) =>{
+
+                    return <div className='schedule-info'>
+                        <span>
+                             {this.scheduleMessage(schedule.schedule)}
+                        </span>
+
+                        <span>
+                            {moment(schedule.begin_time).format('MM-DD')}
+                        </span>
+                        <span>
+                            {moment(schedule.begin_time).format('hh:mm')}
+                        </span>
+
+                    </div>
+                })}
+                </div>
+
+        </div>
+    }
+
+    blindStructureView=()=>{
+        const {
+            blinds
+        } = this.state.data;
+        return <div className="blindStructure">
+            <div className="blindStructure-nav">
+                <span>级别</span>
+                <span>盲注</span>
+                <span>前注</span>
+                <span>时间</span>
+            </div>
+            <div>
+                {blinds.map((blind, i) => <BlindStructureInfo key={i} blind={blind}/>)}
+
+            </div>
+
+        </div>
+    }
+
 
 
     sideView = () => {
@@ -218,7 +318,7 @@ class SideItem extends Component {
 
             </div>
 
-            <div className="sideTime">
+            <div className="sideInfo">
                 <span className="sideTitle">{item.name}</span>
                 <span className="sideStart">起始时间:{item.begin_time}</span>
                 <span className="sidePrize">{item.ticket_price}</span>
@@ -226,5 +326,31 @@ class SideItem extends Component {
             </div>
 
         </div>)
+    }
+}
+
+class BlindStructureInfo extends Component {
+
+    render() {
+        const {blind} = this.props;
+        return (blind.blind_type === "blind_struct"? <div  className="blindStructure-info">
+            <div className="info-class">
+                {blind.level}
+            </div>
+
+            <div className="info-blinds">
+                {blind.small_blind}-{blind.big_blind}
+            </div>
+            <div className="info-beforeNote">
+                {blind.ante}
+            </div>
+
+            <div className="info-time">
+                {blind.race_time}
+            </div>
+
+        </div>:<div className="info-content">
+                {blind.content}
+            </div>)
     }
 }
