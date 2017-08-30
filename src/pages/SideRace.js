@@ -10,7 +10,9 @@ import moment from 'moment';
 export default class SideRace extends PureComponent {
 
     state = {
-        data: {}
+        data: {},
+        selectBtn:0,
+        selectBtn_menu:0
     };
 
     componentDidMount() {
@@ -35,7 +37,7 @@ export default class SideRace extends PureComponent {
 
     render() {
         const {name, location, ticket_price, begin_date, end_date, participants, prize, blind} = this.state.data;
-        return (<div className="container">
+        return (<div className="sideRace">
 
             <div className="subInfo">
                 <span className="title">{name}</span>
@@ -52,6 +54,54 @@ export default class SideRace extends PureComponent {
                 <span>起始记分牌：{blind}</span>
             </div>
 
+            <div className="sideRace-body">
+                <div className="body-nav">
+                    {this.mainInfoView()}
+                </div>
+            </div>
         </div>)
     }
+
+    mainInfoView = () => {
+
+        const {selectBtn,selectBtn_menu} = this.state;
+        return <div className="infoView">
+            <div className="infoView-nav">
+                <div className={selectBtn === 0 ? 'btn2' : 'btn1'} onClick={() => {
+                    this.setState({
+
+                        selectBtn:0,
+                        selectBtn_menu:0
+                    })
+                }}>
+                    <span>赛程表</span>
+                </div>
+                <div className="clo_line"/>
+                <div className={selectBtn === 1 ? 'btn2' : 'btn1'} onClick={() => {
+                    this.setState({
+
+                        selectBtn:1,
+                        selectBtn_menu:1
+                    })
+                }}>
+                    <div>盲注结构</div>
+                </div>
+                <div className="clo_line"/>
+                <div className={selectBtn === 2 ? 'btn2' : 'btn1'} onClick={() => {
+                    this.setState({
+
+                        selectBtn:2,
+                        selectBtn_menu:2
+                    })
+                }}>
+                    <div>赛事结果</div>
+                </div>
+            </div>
+
+            {this.select_mainInfoMenu()}
+        </div>
+    };
+
+
+
 }

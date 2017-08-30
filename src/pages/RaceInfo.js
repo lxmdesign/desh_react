@@ -6,11 +6,7 @@ import markdown from 'marked';
 import {getRaceInfo, setLang, getSubRace, getLang} from '../service/RaceDao';
 import Time from 'react-time-format';
 import '../styles/RaceInfo.css';
-import I18n from '../service/I18n';
-import {modify} from '../service/utils';
-import imgMenu from '../assets/images/Triangle@3x.png';
 import moment from 'moment';
-import {withRouter} from "react-router-dom";
 
 export default class RaceInfo extends Component {
 
@@ -185,10 +181,8 @@ export default class RaceInfo extends Component {
             return this.scheduleMessageTwo(sch[0],sch[1]);
 
         }
-        //
-        // console.log('sch:'+sch)
-        // return sch;
     }
+
     scheduleMessageOne=(schedule)=>{
         return <td>{schedule}</td>
     }
