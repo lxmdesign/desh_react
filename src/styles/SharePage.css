@@ -61,7 +61,7 @@
 /*触屏滑动*/
 .sharePage-person{
     position: relative;
-    width: 100%;
+
     overflow: auto;
     margin-top: 20px;
 }
@@ -79,8 +79,8 @@
     font-size: 14px;
     /*width: 270px;*/
     /*height: 378px;*/
-    width: 243px;
-    height: 304.2px;
+    width: 189px;
+    height: 264.6px;
     background-color: #fff;
     border-radius: 5px;
     text-align: center;
@@ -95,5 +95,4 @@
 .name{
     margin-left: 10px;
     margin-top: 20px;
-    /*font-family: FZLTIHK--GBK1-0;*/
 }
