@@ -22,7 +22,7 @@
 
 .sharePage-btn{
     width:100%;
-    height:124px;
+    height:80px;
     background-color:rgba(0,0,0,0.5);
     /*background-color:#000000;*/
     /*opacity: 0.8;*/
@@ -42,10 +42,10 @@
     line-height: 50px;
     border: 2px solid #D1BC91;
     border-radius: 5px;
-    background: url('../assets/images/questionMark.png') no-repeat 5px center;
-    background-size: 25% 34%;
+    background: url('../assets/images/questionMark.png') no-repeat 8px center;
+    background-size: 23% 38%;
     text-align: center;
-    padding-left: 25%;
+    padding-left: 20%;
     color: #D1BC91;
 }
 .sharePage-btn .android-app-download {
@@ -84,9 +84,12 @@
     background-color: #fff;
     border-radius: 5px;
     text-align: center;
-    /*margin-right: 12px;*/
+    margin-left: 8px;
     /*-webkit-box-shadow: 1px 5px 7px rgba(6, 0, 1, .14);*/
     /*box-shadow: 1px 5px 7px rgba(6, 0, 1, .14);*/
+}
+.box-item:nth-child(1){
+    margin-left: 0px;
 }
 .box-item img{
     width: 100%;
@@ -95,4 +98,9 @@
 .name{
     margin-left: 10px;
     margin-top: 20px;
+
+}
+.name img{
+    height:24.5px;
+
 }

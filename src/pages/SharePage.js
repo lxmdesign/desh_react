@@ -16,6 +16,7 @@ import character from '../assets/images/h5-character.png';
 export default class SharePage extends Component {
 
     render() {
+        const {params} = this.props.match;
       return(
         <div className="sharePage">
 
@@ -59,7 +60,9 @@ export default class SharePage extends Component {
                         常见问题
                     </div>
                 </a>
-                <a href="">
+                <a onClick={() => {
+                    this.props.history.push(`/race/${params.id}/${params.lang}/loadAPP`)
+                }}>
                     <div className="android-app-download" >
                         立即下载德州扑克
                     </div>
