@@ -1,0 +1,61 @@
+.question{
+    /*background: url('../assets/images/H5SahrePage01.png') no-repeat;*/
+    height:100%;
+
+}
+.question-nav{
+    width:100%;
+    height:48px;
+    background: #AAAAAA;
+    display:flex;
+    justify-content: space-around;
+}
+.question-nav a:nth-child(1){
+    display: block;
+    font-family: PingFangSC-Regular;
+    font-size: 17px;
+    color: #333333;
+    height:21px;
+    line-height: 21px;
+}
+.question-nav a:nth-child(2){
+    display: block;
+    font-family: PingFangSC-Regular;
+    font-size: 17px;
+    color: #333333;
+    height:21px;
+    line-height: 21px;
+}
+.image1{
+    border: 1px solid #ECB655;
+    border-radius: 3px;
+    width:18px;
+    height:18px;
+    color:#ECB655;
+}
+.image2{
+    border: 1px solid #444444;
+    border-radius: 3px;
+    width:18px;
+    height:18px;
+    color:#444444;
+}
+.question .question1{
+    height:21px;
+    font-family: PingFangSC-Regular;
+    font-size: 15px;
+    color: #EDB655;
+
+}
+.question .question2{
+    height:84px;
+    font-family: PingFangSC-Regular;
+    font-size: 15px;
+    color: #444444;
+
+}
+.line{
+    height:1px;
+    border: 1px solid #AAAAAA;
+    width:80%;
+}
