@@ -5,7 +5,8 @@
 .App-header {
     overflow: hidden;
     zoom: 1;
-    height:100px;
+    /*修改间隔*/
+    height:90px;
     background-color: #fff;
     position: relative;
 }

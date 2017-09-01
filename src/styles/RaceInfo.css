@@ -1,3 +1,4 @@
+
 .dark{
     height: 60px;
     width: 3px;
@@ -150,7 +151,6 @@
     flex:1;
     font-size: 14px;
     color: #666666;
-    background-color: yellow;
     align-items: center;
     justify-content: center;
 }
@@ -166,7 +166,6 @@
     display: flex;
     border: 1px solid #161718;
     border-radius: 2px;
-    width: 345px;
     align-self: center;
     margin-top: 20px;
 }
@@ -176,6 +175,7 @@
     align-items: center;
     justify-content: center;
     flex: 1;
+
 }
 
 .btn2 {
@@ -200,16 +200,20 @@
     justify-content: center;
 }
 
+.fixed{
+
+}
 .menu {
     display: flex;
+    width:100%;
+    justify-content: space-around;
+    position:absolute;left:0;bottom:0;
+
 }
 
 .menu1 {
-    display: flex;
-    flex-direction: column;
-    width: 120px;
-    align-items: center;
-    justify-content: center;
+    /*display: flex;*/
+    /*justify-content: space-around;*/
 
 }
 
@@ -222,10 +226,6 @@
 
 .imgMe {
     background: url('../assets/images/Triangle.png') no-repeat center bottom;
-}
-
-body {
-    margin: 0 !important;
 }
 
 a {
@@ -242,6 +242,8 @@ ul, ol {
     height: 220px;
     background: url('../assets/images/background.png') no-repeat;
     background-size: 100% 100%;
+    position:relative;
+
 }
 
 .mainNav .ul-1 {
@@ -302,9 +304,7 @@ ul, ol {
     margin-right: 9px;
 }
 
-.mainNav .ul-1 {
-    margin-bottom: 7px;
-}
+
 
 .mainNav .ul-2 {
     display: flex;
@@ -327,6 +327,8 @@ ul, ol {
 .content {
     /*padding-top: 44px;*/
     overflow: hidden;
+    width:100%;
+    height:100%;
 }
 
 .introduceGame {

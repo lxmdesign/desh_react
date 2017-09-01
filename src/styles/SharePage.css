@@ -1,7 +1,7 @@
 .sharePage{
     margin:0;
     padding:0;
-
+    width:100%;
 
 }
 
@@ -9,14 +9,91 @@
     width: 100%;
     vertical-align: middle;
 }
+.sharePage .sharePage-img img:nth-child(2){
+    margin-top: -2px;
+}
 
 .sharePage-person{
-    height:380px;
+    height:330px;
     display:flex;
     justify-content: space-around;
 
 }
-.sharePage-person img{
-    width: 30%;
-    height:380px;
+
+.sharePage-btn{
+    width:100%;
+    height:124px;
+    background-color:rgba(0,0,0,0.5);
+    /*background-color:#000000;*/
+    /*opacity: 0.8;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sharePage-btn a:nth-child(1){
+    width:30%;
+}
+.sharePage-btn a:nth-child(2){
+    width:50%;
+}
+
+.sharePage-btn .sharePage-btn-question {
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #D1BC91;
+    border-radius: 5px;
+    background: url('../assets/images/questionMark.png') no-repeat 5px center;
+    background-size: 25% 34%;
+    text-align: center;
+    padding-left: 25%;
+    color: #D1BC91;
+}
+.sharePage-btn .android-app-download {
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #D1BC91;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #D1BC91;
+    font-family: PingFangHK-Regular;
+    color: #000000 !important;
+}
+/*触屏滑动*/
+.sharePage-person{
+    position: relative;
+    width: 100%;
+    overflow: auto;
+    margin-top: 20px;
+}
+.scroll-box{
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    /*overflow-x: hidden;*/
+    /*overflow-y: hidden;*/
+    padding: 10px;
+}
+.box-item{
+    display: inline-block;
+    font-size: 14px;
+    /*width: 270px;*/
+    /*height: 378px;*/
+    width: 243px;
+    height: 304.2px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    /*margin-right: 12px;*/
+    /*-webkit-box-shadow: 1px 5px 7px rgba(6, 0, 1, .14);*/
+    /*box-shadow: 1px 5px 7px rgba(6, 0, 1, .14);*/
+}
+.box-item img{
+    width: 100%;
+    height: 100%;
+}
+.name{
+    margin-left: 10px;
+    margin-top: 20px;
+    /*font-family: FZLTIHK--GBK1-0;*/
 }

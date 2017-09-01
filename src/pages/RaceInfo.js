@@ -86,6 +86,7 @@ export default class RaceInfo extends Component {
                             </ul>
                         </div>
 
+                        <div className="fixed">
                         <div className="menu">
                             <div className="menu1" onClick={() => {
                                 this.setState({
@@ -124,7 +125,7 @@ export default class RaceInfo extends Component {
                             </div>
 
                         </div>
-
+                        </div>
                     </div>
 
                     {this.selectMenu()}

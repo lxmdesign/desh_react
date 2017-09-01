@@ -6,9 +6,6 @@ import Time from 'react-time-format';
 import {getRankInfo} from '../service/RaceDao';
 import '../styles/PlayerInfo.css';
 import I18n from '../service/I18n';
-import ReurnIcon from '../assets/images/ReturnIcon.png';
-import Group2x from '../assets/images/Group@2x.png';
-import Group from '../assets/images/Group.png';
 
 export default class PlayerInfo extends Component {
 
@@ -40,11 +37,6 @@ export default class PlayerInfo extends Component {
         })
     }
 
-    desc = (description) => {
-        var des = markdown(description)
-        return {__html:des}
-    }
-
     isEmptyObject(e) {
         var t;
         for (t in e)
@@ -53,32 +45,31 @@ export default class PlayerInfo extends Component {
     }
     //click事件
 
-    content = () => {
-        if (!this.isEmptyObject(this.state.player)) {
-            const {
-                avatar, country, dpi_total_score, dpi_total_earning, followed, id, memo,
-                name, ranking
-            } = this.state.player;
-            const {
-             items
-            } = this.state;
 
+    content = () => {
+        const {
+            avatar, country, dpi_total_score, dpi_total_earning,
+            name, ranking
+        } = this.state.player;
+            console.log("avatar:"+avatar);
             return (
                 <div className="player">
                     <div className='player-head'>
                         <div className='player-head-top'>
                             {/*<img alt='' src={返回图标}/>*/}
                             {/*<img alt='' src={Group2x}/>*/}
-                            <h2>{I18n.t('domestic_ranking')}</h2>
+                            {/*<h2>{I18n.t('domestic_ranking')}</h2>*/}
+                            <h2></h2>
                             {/*<img alt='' src={Group}/>*/}
                         </div>
-                        <img className='personImg' src={avatar}/>
+                        {this.image()}
+
                         <span className="personName">{name}</span><br/>
                         <span className="country">{country}</span>
 
                         <div className="player-head-nav">
                             <div className="nav-rank">
-                                <span>{ranking}</span>
+                                <span>{strNotNull(ranking)?ranking:'--'}</span>
                                 <span>{I18n.t('ranking')}</span>
                             </div>
                             <div className="nav-score">
@@ -94,55 +85,78 @@ export default class PlayerInfo extends Component {
                     </div>
 
                     <div className='player-body'>
-                        <table >
-                            <tbody>
-                            {items.map(item =>{
-                                const {race,rank} = item;
-
-                                console.log('list',race,rank)
-                                return <tr>
-                                    <td>
-                                        <a>
-                                            <div className="table-header">
-                                                <span>{race.name}</span>
-                                                <span>{getGetOrdinal(rank.ranking)}</span>
-                                            </div>
-                                            <div className="table-detail">
-                                                <div className="table-num">
-                                                    <span>{I18n.t('buy')}</span>
-                                                    <span>{race.ticket_price}</span>
-                                                </div>
-                                                <div className="table-person">
-                                                    <span>{I18n.t('peoples')}</span>
-                                                    <span>{race.participants}</span>
-                                                </div>
-                                                <div className="table-prize">
-                                                    <span>{I18n.t('bonus')}</span>
-                                                    <span>¥{moneyFormat(rank.earning)}</span>
-                                                </div>
-                                                <div className="table-score">
-                                                    <span>{I18n.t('integral')}</span>
-                                                    <span>{rank.score}</span>
-                                                </div>
-                                            </div>
-                                            <div className="table-time"><Time value={race.begin_date} format="YYYY:MM:DD" />-<Time value={race.end_date} format="YYYY:MM:DD" /></div>
-                                            <div className="table-location">{race.location}</div>
-                                        </a>
-                                    </td>
-                                </tr>
-                            })}
-
-                            </tbody>
-                        </table>
+                        {this.body()}
                     </div>
 
                 </div>
 
             );
-        }
-
     }
+    image=()=>{
+        const {
+            avatar
+        } = this.state.player;
+        if(!this.isEmptyObject(avatar)){
+            return(
+            <img className='personImg' src={avatar} />
+            )
+        }else{
+            return(
+                <img className='personImgHidden' src={avatar} />
+            )
+        }
+    }
+    body = () => {
 
+        const {
+            items
+        } = this.state;
+
+        if (!this.isEmptyObject(this.state.player)) {
+            return (
+                <table >
+                    <tbody>
+                    {items.map(item =>{
+                        const {race,rank} = item;
+
+                        console.log('list',race,rank)
+                        return <tr>
+                            <td>
+                                <a>
+                                    <div className="table-header">
+                                        <span>{race.name}</span>
+                                        <span>{getGetOrdinal(rank.ranking)}</span>
+                                    </div>
+                                    <div className="table-detail">
+                                        <div className="table-num">
+                                            <span>{I18n.t('buy')}</span>
+                                            <span>{race.ticket_price}</span>
+                                        </div>
+                                        <div className="table-person">
+                                            <span>{I18n.t('peoples')}</span>
+                                            <span>{race.participants}</span>
+                                        </div>
+                                        <div className="table-prize">
+                                            <span>{I18n.t('bonus')}</span>
+                                            <span>¥{moneyFormat(rank.earning)}</span>
+                                        </div>
+                                        <div className="table-score">
+                                            <span>{I18n.t('integral')}</span>
+                                            <span>{rank.score}</span>
+                                        </div>
+                                    </div>
+                                    <div className="table-time"><Time value={race.begin_date} format="YYYY:MM:DD" />-<Time value={race.end_date} format="YYYY:MM:DD" /></div>
+                                    <div className="table-location">{race.location}</div>
+                                </a>
+                            </td>
+                        </tr>
+                    })}
+
+                    </tbody>
+                </table>
+            )
+        }
+    }
 
     render() {
         return (

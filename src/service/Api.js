@@ -10,6 +10,7 @@ export default {
     rank_info: rank_info,
     sub_races: sub_races,
     sub_race_info: sub_race_info
+
 }
 
 function sub_race_info(body) {

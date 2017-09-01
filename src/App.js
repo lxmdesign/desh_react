@@ -12,7 +12,8 @@ import PlayerInfo from './pages/PlayerInfo';
 import GameInfo from './pages/GameInfo';
 import SubRace from './pages/SideRace';
 import Download from './pages/Download';
-
+import PaySuccess from './pages/PaySuccess';
+import PayFail from './pages/PayFail';
 
 import SharePage from './pages/SharePage';
 
@@ -31,8 +32,12 @@ class App extends Component {
                     <Route path="/rankPlayer/:id/:lang" component={PlayerInfo}/>
                     <Route path="/rankGame/:id/:lang" component={GameInfo}/>
                     <Route path="/race/:id/:lang/sidedetail/:subId" component={SubRace}/>
+                    <Route path="/pay/success" component={PaySuccess}/>
+                    <Route path="/pay/pay/fail" component={PayFail}/>
 
                     <Route path="/sharePage" component={SharePage}/>
+
+
 
 
                 </div>
