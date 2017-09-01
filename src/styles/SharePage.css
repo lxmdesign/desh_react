@@ -29,9 +29,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    bottom:0;
+
 }
 .sharePage-btn a:nth-child(1){
-    width:30%;
+    width:35%;
 }
 .sharePage-btn a:nth-child(2){
     width:50%;
@@ -42,8 +44,8 @@
     line-height: 50px;
     border: 2px solid #D1BC91;
     border-radius: 5px;
-    background: url('../assets/images/questionMark.png') no-repeat 8px center;
-    background-size: 23% 38%;
+    background: url('../assets/images/questionMark.png') no-repeat 5px center;
+    background-size: 25px 25px;
     text-align: center;
     padding-left: 20%;
     color: #D1BC91;
@@ -96,8 +98,10 @@
     height: 100%;
 }
 .name{
+
     margin-left: 10px;
     margin-top: 15px;
+
 
 }
 .name img{
