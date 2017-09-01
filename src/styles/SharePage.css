@@ -19,23 +19,36 @@
     justify-content: space-around;
 
 }
+.fixed{
+    width:100%;
+    height:60px;
+    overflow: hidden;
+    clear: both;
+    zoom: 1;
+}
+footer{
+    position:fixed;
+    bottom: 0;
+    width:100%;
 
+
+}
 .sharePage-btn{
     width:100%;
     height:80px;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.8);
     /*background-color:#000000;*/
-    /*opacity: 0.8;*/
     display: flex;
     justify-content: space-around;
     align-items: center;
     bottom:0;
 
+
 }
-.sharePage-btn a:nth-child(1){
-    width:35%;
+.sharePage-btn div:nth-child(1){
+    width:25%;
 }
-.sharePage-btn a:nth-child(2){
+.sharePage-btn div:nth-child(2){
     width:50%;
 }
 
@@ -47,7 +60,7 @@
     background: url('../assets/images/questionMark.png') no-repeat 5px center;
     background-size: 25px 25px;
     text-align: center;
-    padding-left: 20%;
+    padding-left: 10%;
     color: #D1BC91;
 }
 .sharePage-btn .android-app-download {

@@ -54,20 +54,21 @@ export default class SharePage extends Component {
                 <img src={sharePage08} alt="" />
             </div>
             <br/>
+
+            <div className="fixed"></div><br/>
+            <footer >
             <div className="sharePage-btn">
-                <a  href="">
-                    <div className="sharePage-btn-question">
-                        常见问题
-                    </div>
-                </a>
-                <a onClick={() => {
+
+                <div className="sharePage-btn-question">
+                    常见问题
+                </div>
+                <div className="android-app-download"  onClick={() => {
                     this.props.history.push(`/race/${params.id}/${params.lang}/loadAPP`)
                 }}>
-                    <div className="android-app-download" >
-                        立即下载德州扑克
-                    </div>
-                </a>
+                    立即下载德州扑克
+                </div>
             </div>
+            </footer>
         </div>
       )}
 }
