@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import '../styles/SharePage.css';
 import sharePage01 from '../assets/images/H5SahrePage01.png';
 import sharePage02 from '../assets/images/H5SahrePage02.png';
-import sharePage04 from '../assets/images/H5SahrePage04.png';
 import sharePage05 from '../assets/images/H5SahrePage05.png';
 import sharePage07 from '../assets/images/H5SahrePage07.png';
 import sharePage08 from '../assets/images/H5SahrePage08.png';
@@ -25,9 +24,9 @@ export default class SharePage extends Component {
 
             <div className="sharePage-img">
                 <img src={sharePage01} alt="" />
-                <img src={sharePage02} alt="" />
-                <img src={sharePage04} alt="" />
+                {/*<img src={sharePage04} alt="" />*/}
                 <img src={sharePage05} alt="" />
+
             </div>
             <div className="name">
                 <img src={character} alt="" />
@@ -50,22 +49,26 @@ export default class SharePage extends Component {
                 </div>
             </div>
             <div className="sharePage-img">
-                <img src={sharePage07} alt="" />
+                <img src={sharePage02} alt="" />
+
+                {/*<img src={sharePage07} alt="" />*/}
                 <img src={sharePage08} alt="" />
             </div>
-            <br/>
+
 
             <div className="fixed"></div><br/>
             <footer >
             <div className="sharePage-btn">
 
-                <div className="sharePage-btn-question">
+                <div className="sharePage-btn-question" onClick={() => {
+                    this.props.history.push(`/race/${params.id}/${params.lang}/question`)
+                }}>
                     常见问题
                 </div>
                 <div className="android-app-download"  onClick={() => {
                     this.props.history.push(`/race/${params.id}/${params.lang}/loadAPP`)
                 }}>
-                    立即下载德州扑克
+                    立即下载扑客
                 </div>
             </div>
             </footer>
