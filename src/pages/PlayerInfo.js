@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import markdown from 'marked';
 import {getPlayerInfo,setLang} from '../service/RaceDao';
 import {moneyFormat,getGetOrdinal,strNotNull} from '../service/utils';
 import Time from 'react-time-format';

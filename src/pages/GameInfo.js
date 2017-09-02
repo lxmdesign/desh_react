@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import {getGameInfo, getRankInfo, setLang} from '../service/RaceDao';
 import '../styles/GameInfo.css';
 import Time from 'react-time-format';
-import Clamp from '../utils/Clamp';
 import {isEmptyObject} from '../service/utils';
 import I18n from '../service/I18n';
 import {

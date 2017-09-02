@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import markdown from 'marked';
-import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 import {getNewsInfo,setLang} from '../service/RaceDao';
 import '../styles/NewsInfo.css';
 import I18n from '../service/I18n';
