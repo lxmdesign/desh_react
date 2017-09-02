@@ -9,7 +9,7 @@ import NewsInfo from './pages/NewsInfo';
 import PlayerInfo from './pages/PlayerInfo';
 import GameInfo from './pages/GameInfo';
 import SubRace from './pages/SideRace';
-import Question from './pages/Question';
+import Question from './pages/Question/Question';
 import Download from './pages/Download';
 import PaySuccess from './pages/PaySuccess';
 import PayFail from './pages/PayFail';
