@@ -59,11 +59,12 @@ export default class SharePage extends Component {
             <footer >
             <div className="sharePage-btn">
 
-                <div className="sharePage-btn-question" >
-                {/*<div className="sharePage-btn-question" onClick={() => {*/}
-                    {/*this.props.history.push(`/race/${params.id}/${params.lang}/question`)*/}
-                {/*}}>*/}
-                    常见问题
+
+                <div className="sharePage-btn-question" onClick={() => {
+                    this.props.history.push(`/race/${params.id}/${params.lang}/question`)
+                }}>
+                    <div className="image"></div>
+                    <div className="char">常见问题</div>
                 </div>
                 <div className="android-app-download"  onClick={() => {
                     this.props.history.push(`/race/${params.id}/${params.lang}/loadAPP`)
