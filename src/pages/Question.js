@@ -5,7 +5,12 @@ import '../styles/footer.css';
 
 export default class Download extends Component {
     state = {
-        item:0
+        item:0,
+        class_name2: 'questions-fixed name',
+        class_name1: 'questions-fixed',
+        class_name4: 'name2',
+        class_name5: 'content',
+        class_name6: 'content name6'
     };
 
     items = [
@@ -52,7 +57,15 @@ export default class Download extends Component {
             </div>)
         }
     }
-
+    judge=()=>{
+        return this.state.item===0?this.state.class_name1:this.state.class_name2;
+    }
+    judge2=()=>{
+        return this.state.item===0?"":this.state.class_name4;
+    }
+    judgeContent=()=>{
+        return this.state.item===0?this.state.class_name5:this.state.class_name6;
+    }
     render(){
         const {params} = this.props.match;
         return(
@@ -60,13 +73,13 @@ export default class Download extends Component {
                 <div className="questions-img">
 
                 </div>
-                <div className="questions-fixed">
-                    <div>
+                <div className={this.judge()}>
+                    <div className={this.judge2()}>
                         {this.questionNav()}
                     </div>
                 </div>
 
-                <div className="content">
+                <div className={this.judgeContent()}>
                     {
                         this.items.map((value,key) =>
                             <div className="box">
@@ -105,3 +118,4 @@ export default class Download extends Component {
         )
     }
 }
+

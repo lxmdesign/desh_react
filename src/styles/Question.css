@@ -27,12 +27,24 @@
     -o-background-size: cover;
     background-size: cover;
 }
+
 .questions-fixed div{
     height:231px;
     width:100%;
     position:relative;
 
 }
+.questions .name{
+    width:100%;
+    height:182px;
+    top:-15px;
+    left:-10px;
+
+}
+/*.questions-fixed .name2{*/
+    /*width:100%;*/
+    /*height:182px;*/
+/*}*/
 .questions-fixed div .question-nav{
     width:100%;
     height:48px;
@@ -65,10 +77,15 @@
 }
 
 .questions .content{
+    overflow: hidden;
+    clear: both;
     width:100%;
     padding-bottom: 140px;
     background-color: #ffffff !important;
-    margin-top: 229px;
+    margin-top: 231px;
+}
+.questions .name6{
+    margin-top: 172px;
 }
 
 .box {
