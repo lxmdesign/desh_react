@@ -102,7 +102,7 @@ export default class Download extends Component {
                 <footer >
                     <div className="sharePage-btn">
                         <div className="sharePage-btn-question" onClick={() => {
-                            this.props.history.push(`/race/${params.id}/${params.lang}/question`)
+                            this.props.history.push(`/sharePage/question`)
                         }}>
                             <div className="image"></div>
                             <div className="char">常见问题</div>

@@ -4,9 +4,11 @@
   "private": true,
   "dependencies": {
     "apisauce": "^0.14.1",
+    "bd-require": "^0.1.0",
     "i18next": "8.4.3",
     "i18next-browser-languagedetector": "2.0.0",
     "i18next-xhr-backend": "1.4.2",
+    "jssha": "^2.3.1",
     "marked": "^0.3.6",
     "moment": "^2.18.1",
     "react": "^15.6.1",
@@ -16,7 +18,9 @@
     "react-number-format": "^2.0.3",
     "react-router-dom": "^4.2.0",
     "react-scripts": "1.0.11",
-    "react-time-format": "0.0.5"
+    "react-time-format": "0.0.5",
+    "urllib": "^2.24.0",
+    "weixin-js-sdk": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
