@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {getGameInfo, getRankInfo, setLang} from '../service/RaceDao';
+import {getGameInfo, setLang} from '../service/RaceDao';
 import '../styles/GameInfo.css';
 import Time from 'react-time-format';
 import {isEmptyObject} from '../service/utils';

@@ -2,9 +2,8 @@
  * Created by lorne on 2017/8/24.
  */
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 import markdown from 'marked';
-import {getRaceInfo, setLang, getSubRace, getLang} from '../service/RaceDao';
+import {getRaceInfo, setLang, getSubRace} from '../service/RaceDao';
 import Time from 'react-time-format';
 import '../styles/RaceInfo.css';
 import moment from 'moment';
@@ -68,8 +67,7 @@ export default class RaceInfo extends Component {
     content = () => {
         if (!this.isEmptyObject(this.state.data.race)) {
             const {
-                name, location, status, ticket_status, begin_date, end_date, logo,
-                schedules, description, Blind, Ranks
+                name, location,begin_date, end_date, logo
             } = this.state.data.race;
 
             return (
@@ -141,10 +139,7 @@ export default class RaceInfo extends Component {
     //导航信息选择显示页面
 
     selectMenu = () => {
-        const {
-            name, location, status, ticket_status, begin_date, end_date, logo,
-            schedules, description, Blind, Ranks
-        } = this.state.data.race;
+        const {description} = this.state.data.race;
 
         switch (this.state.menu) {
             case 0:
