@@ -53,8 +53,22 @@ export default class Download extends Component {
                     this.setState({
                         item: 1,
                     })
+                    {/*Component.forceUpdate("/sharePage")*/}
+                    this.props.history.push("/sharePage")
                 }}>关闭</a>
             </div>)
+        }if(this.state.item===0){
+            return (
+                <div className="question-nav">
+                    <a>常见问题</a>
+                    <a onClick={() => {
+                        this.setState({
+                            item: 0,
+                        })
+                        {/*Component.forceUpdate("/sharePage")*/}
+                        this.props.history.push("/sharePage")
+                    }}>关闭</a>
+                </div>)
         }
     }
     judge=()=>{
@@ -75,6 +89,13 @@ export default class Download extends Component {
                 </div>
                 <div className={this.judge()}>
                     <div className={this.judge2()}>
+                        {/*<div className="question-nav">*/}
+                            {/*<a>常见问题</a>*/}
+                            {/*<a onClick={() => {*/}
+                                {/**/}
+                                {/*this.props.history.push("/question")*/}
+                            {/*}}>关闭</a>*/}
+                        {/*</div>*/}
                         {this.questionNav()}
                     </div>
                 </div>
