@@ -10,7 +10,9 @@ import '../styles/RaceInfo.css';
 import moment from 'moment';
 import I18n from '../service/I18n';
 import RaceBlindList from '../components/RaceBlindList';
-import {raceStatusConvert,ticketStatusConvert} from '../service/utils';
+import {raceStatusConvert, ticketStatusConvert} from '../service/utils';
+var getWxSignature = require('../utils/getWxSignature');
+var wx = require('weixin-js-sdk');
 
 export default class RaceInfo extends Component {
 
@@ -24,6 +26,12 @@ export default class RaceInfo extends Component {
     };
 
     componentDidMount() {
+
+        console.log('url', document.location.href);
+
+        const wxSignatrue = getWxSignature(document.location.href);
+        console.log('wxSignatrue', wxSignatrue)
+
         const {id, lang} = this.props.match.params;
         setLang(lang);
         const body = {raceId: id};
@@ -82,49 +90,51 @@ export default class RaceInfo extends Component {
                                 <li><Time value={begin_date} format="YYYY:MM:DD"/>—<Time value={end_date}
                                                                                          format="YYYY:MM:DD"/></li>
                                 <li>{location}</li>
-                                <li className="li-4"><span>{raceStatusConvert(status)}</span><span>{ticketStatusConvert(ticket_status)}</span></li>
+                                <li className="li-4">
+                                    <span>{raceStatusConvert(status)}</span><span>{ticketStatusConvert(ticket_status)}</span>
+                                </li>
                             </ul>
                         </div>
 
                         <div className="fixed">
-                        <div className="menu">
-                            <div className="menu1" onClick={() => {
-                                this.setState({
-                                    menu: 0,
-                                    class_name1: 'txtMenu' + ' ' + 'imgMe',
-                                    class_name2: 'txtMenu',
-                                    class_name3: 'txtMenu'
-                                })
-                            }}>
-                                <span className={this.state.class_name1}>{I18n.t('Introduction')}</span>
-                                {/*<img src={imgMenu} className="imgMe"/>*/}
-                            </div>
-                            <div className="menu1"
-                                 onClick={() => {
-                                     this.setState({
-                                         menu: 1,
-                                         class_name1: 'txtMenu',
-                                         class_name2: this.state.class_name2 + ' ' + 'imgMe',
-                                         class_name3: 'txtMenu'
-                                     })
-                                 }}>
-                                <span className={this.state.class_name2}>{I18n.t('MainInformation')}</span>
+                            <div className="menu">
+                                <div className="menu1" onClick={() => {
+                                    this.setState({
+                                        menu: 0,
+                                        class_name1: 'txtMenu' + ' ' + 'imgMe',
+                                        class_name2: 'txtMenu',
+                                        class_name3: 'txtMenu'
+                                    })
+                                }}>
+                                    <span className={this.state.class_name1}>{I18n.t('Introduction')}</span>
+                                    {/*<img src={imgMenu} className="imgMe"/>*/}
+                                </div>
+                                <div className="menu1"
+                                     onClick={() => {
+                                         this.setState({
+                                             menu: 1,
+                                             class_name1: 'txtMenu',
+                                             class_name2: this.state.class_name2 + ' ' + 'imgMe',
+                                             class_name3: 'txtMenu'
+                                         })
+                                     }}>
+                                    <span className={this.state.class_name2}>{I18n.t('MainInformation')}</span>
+
+                                </div>
+                                <div className="menu1"
+                                     onClick={() => {
+                                         this.setState({
+                                             menu: 2,
+                                             class_name1: 'txtMenu',
+                                             class_name2: 'txtMenu',
+                                             class_name3: this.state.class_name3 + ' ' + 'imgMe'
+                                         })
+                                     }}>
+                                    <span className={this.state.class_name3}>{I18n.t('SideInformation')}</span>
+
+                                </div>
 
                             </div>
-                            <div className="menu1"
-                                 onClick={() => {
-                                     this.setState({
-                                         menu: 2,
-                                         class_name1: 'txtMenu',
-                                         class_name2: 'txtMenu',
-                                         class_name3: this.state.class_name3 + ' ' + 'imgMe'
-                                     })
-                                 }}>
-                                <span className={this.state.class_name3}>{I18n.t('SideInformation')}</span>
-
-                            </div>
-
-                        </div>
                         </div>
                     </div>
 
@@ -199,7 +209,7 @@ export default class RaceInfo extends Component {
                     this.props.history.push(`/race/${params.id}/${params.lang}/loadAPP`)
                 }}>
 
-                {I18n.t('app_plant')}<span>{I18n.t('load_app')}</span></a></footer>
+                    {I18n.t('app_plant')}<span>{I18n.t('load_app')}</span></a></footer>
 
             </div>
         )
