@@ -34,13 +34,13 @@ export default class SharePage extends Component {
 
                 <div className="scroll-box">
                     <div className="box-item">
+                        <img src={person03} alt="" />
+                    </div>
+                    <div className="box-item">
                         <img src={person01} alt="" />
                     </div>
                     <div className="box-item">
                         <img src={person02} alt="" />
-                    </div>
-                    <div className="box-item">
-                        <img src={person03} alt="" />
                     </div>
                     <div className="box-item">
                         <img src={person04} alt="" />

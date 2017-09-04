@@ -1,4 +1,7 @@
-
+body{
+    margin:0;
+    padding:0;
+}
 .questions-img{
 }
 .questions-fixed{
@@ -71,7 +74,7 @@
     margin-top: 231px !important;
 }
 .questions .name6{
-    margin-top: 172px;
+    margin-top: 172px !important;
 }
 
 .box {

@@ -35,6 +35,7 @@ class App extends Component {
                     <Route path="/pay/pay/fail" component={PayFail}/>
 
                     <Route path="/sharePage" component={SharePage}/>
+
                     <Route path="/question" component={Question}/>
 
                     {/*<Route path="/sharePage/question" component={Question}/>*/}
