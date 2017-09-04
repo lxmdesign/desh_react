@@ -10,9 +10,7 @@ import '../styles/RaceInfo.css';
 import moment from 'moment';
 import I18n from '../service/I18n';
 import RaceBlindList from '../components/RaceBlindList';
-import {raceStatusConvert, ticketStatusConvert} from '../service/utils';
-var getWxSignature = require('../utils/getWxSignature');
-var wx = require('weixin-js-sdk');
+
 
 export default class RaceInfo extends Component {
 
@@ -26,11 +24,6 @@ export default class RaceInfo extends Component {
     };
 
     componentDidMount() {
-
-        console.log('url', document.location.href);
-
-        const wxSignatrue = getWxSignature(document.location.href);
-        console.log('wxSignatrue', wxSignatrue)
 
         const {id, lang} = this.props.match.params;
         setLang(lang);
@@ -91,7 +84,7 @@ export default class RaceInfo extends Component {
                                                                                          format="YYYY:MM:DD"/></li>
                                 <li>{location}</li>
                                 <li className="li-4">
-                                    <span>{raceStatusConvert(status)}</span><span>{ticketStatusConvert(ticket_status)}</span>
+                                    {/*<span>{raceStatusConvert(status)}</span><span>{ticketStatusConvert(ticket_status)}</span>*/}
                                 </li>
                             </ul>
                         </div>
