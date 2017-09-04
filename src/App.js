@@ -25,7 +25,7 @@ class App extends Component {
                     <Route exact path="/race/:id/:lang" component={RaceInfo}/>
 
                     <Route path="/race/:id/:lang/loadApp" component={Download}/>
-                    <Route path="/race/:id/:lang/question" component={Question}/>
+
 
                     <Route path="/news/:id/:lang" component={NewsInfo}/>
                     <Route path="/rankPlayer/:id/:lang" component={PlayerInfo}/>
@@ -35,7 +35,7 @@ class App extends Component {
                     <Route path="/pay/pay/fail" component={PayFail}/>
 
                     <Route path="/sharePage" component={SharePage}/>
-
+                    <Route path="/race/:id/:lang/question" component={Question}/>
 
 
 
