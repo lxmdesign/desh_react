@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../styles/SharePage.css';
-// import sharePage01 from '../assets/images/H5SahrePage01.png';
+import sharePage01 from '../assets/images/H5SahrePage01.png';
 import sharePage02 from '../assets/images/H5SahrePage02.png';
 import sharePage05 from '../assets/images/H5SahrePage05.png';
 import sharePage08 from '../assets/images/H5SahrePage08.png';
@@ -10,8 +10,7 @@ import person03 from '../assets/images/person03.png';
 import person04 from '../assets/images/person04.png';
 import character from '../assets/images/h5-character.png';
 // var test_img = 'https://cdn.deshpro.com/static/media/background.472dab1f.png'
-const cdn ='https://cdn.deshpro.com/static/media/';
-var sharePage01 =  'https://cdn.deshpro.com/static/media/H5SahrePage01.960c9a11.png';
+// var sharePage01 =  'https://cdn.deshpro.com/static/media/H5SahrePage01.960c9a11.png';
 // var sharePage02 =  'https://cdn.deshpro.com/static/media/H5SahrePage02.afb910c0.png';
 // var sharePage05 = 'https://cdn.deshpro.com/static/media/H5SahrePage05.53b1c185.png';
 // var sharePage08 = 'https://cdn.deshpro.com/static/media/H5SahrePage08.8ee6c40a.png';
@@ -49,10 +48,10 @@ export default class SharePage extends Component {
                             <img src={person03} alt="" />
                         </div>
                         <div className="box-item">
-                            <img src={person02} alt="" />
+                            <img src={person01} alt="" />
                         </div>
                         <div className="box-item">
-                            <img src={person03} alt="" />
+                            <img src={person02} alt="" />
                         </div>
                         <div className="box-item">
                             <img src={person04} alt="" />
