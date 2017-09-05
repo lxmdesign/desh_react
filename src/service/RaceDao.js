@@ -15,6 +15,11 @@ export function getLang() {
     return lang;
 }
 
+export function getWeiXinSign(resolve, reject){
+    get(Api.weixin_js_sign, ret => {
+        resolve(ret.data);
+    }, reject)
+}
 
 export function getSubInfo(body, resolve, reject) {
     get(Api.sub_race_info(body), ret => {

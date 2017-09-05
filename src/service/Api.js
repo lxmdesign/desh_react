@@ -9,7 +9,9 @@ export default {
     game_info: game_info,
     rank_info: rank_info,
     sub_races: sub_races,
-    sub_race_info: sub_race_info
+    sub_race_info: sub_race_info,
+    weixin_js_sign:'weixin_js_sign'
+
 
 }
 
