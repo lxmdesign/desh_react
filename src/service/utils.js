@@ -70,3 +70,6 @@ export function ticketStatusConvert(status) {
             return I18n.t('ticket_sold_out');
     }
 }
+
+//微信二次分享
+
