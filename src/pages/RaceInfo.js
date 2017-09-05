@@ -1,8 +1,6 @@
 /**
  * Created by lorne on 2017/8/24.
  */
-// import wx from '../utils/jweixin-1.2.0';
-// var wx = require("http://res.wx.qq.com/open/js/jweixin-1.2.0.js");
 import React, {Component} from 'react';
 import markdown from 'marked';
 import {getRaceInfo, setLang, getSubRace,getWeiXinSign} from '../service/RaceDao';
@@ -33,6 +31,8 @@ export default class RaceInfo extends Component {
         const {id, lang} = this.props.match.params;
         setLang(lang);
         const body = {raceId: id};
+        const url = {url: "http://www.deshpro.com/h5"};
+
         getRaceInfo(body, data => {
             console.log('RaceInfo', data)
             this.setState({
@@ -44,7 +44,6 @@ export default class RaceInfo extends Component {
 
         });
 
-
         getSubRace(body, data => {
             this.setState({
                 subItems: data.items
@@ -54,9 +53,8 @@ export default class RaceInfo extends Component {
         })
 
         //微信二次分享
-        const uri = document.location.href;
-        getWeiXinSign(body, data => {
-            const uri = document.location.href;
+        getWeiXinSign(url, data => {
+            // const uri = document.location.href;
             console.log('WeiXinSignInfo', data)
             this.setState({
                 wxDate: data
@@ -65,11 +63,8 @@ export default class RaceInfo extends Component {
 
         });
 
-
-        const {appId, nonceStr,timestamp, url, signature, rawString} = this.state.wxDate.date;
-
         window.wx.ready(function(){
-            alert("ready");
+            // alert("ready");
             window.wx.onMenuShareTimeline({//分享到朋友圈
                 title: '我是标题', // 分享标题
                 desc: '', // 分享描述
@@ -109,7 +104,8 @@ export default class RaceInfo extends Component {
                 imgUrl: '' // 分享图标
             });
         });
-
+        const {appId, nonceStr,timestamp, signature, rawString} = this.state.wxDate;
+        console.log("wxDate:",this.state.wxDate)
         window.wx.config({
             debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
             appId: appId, // 必填，企业号的唯一标识，此处填写企业号corpid

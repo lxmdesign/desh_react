@@ -15,8 +15,8 @@ export function getLang() {
     return lang;
 }
 
-export function getWeiXinSign(resolve, reject){
-    get(Api.weixin_js_sign, ret => {
+export function getWeiXinSign(payload, resolve, reject){
+    post(Api.weixin_js_sign, payload, ret => {
         resolve(ret.data);
     }, reject)
 }
