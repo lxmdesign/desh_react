@@ -20,7 +20,7 @@
     justify-content: space-around;
 
 }
-.fixed{
+.sharePage .fixed{
     width:100%;
     height:60px;
     overflow: hidden;
