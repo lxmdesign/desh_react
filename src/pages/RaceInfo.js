@@ -67,7 +67,7 @@ export default class RaceInfo extends Component {
 
 
         const {appId, nonceStr,timestamp, url, signature, rawString} = this.state.wxDate.date;
-        console.log("exDate:",wxDate);
+
         window.wx.ready(function(){
             alert("ready");
             window.wx.onMenuShareTimeline({//分享到朋友圈
