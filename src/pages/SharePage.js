@@ -1,14 +1,6 @@
 import React, {Component} from 'react';
 import '../styles/SharePage.css';
-// import sharePage01 from '../assets/images/H5SahrePage01.png';
-// import sharePage02 from '../assets/images/H5SahrePage02.png';
-// import sharePage05 from '../assets/images/H5SahrePage05.png';
-// import sharePage08 from '../assets/images/H5SahrePage08.png';
-// import person01 from '../assets/images/person01.png';
-// import person02 from '../assets/images/person02.png';
-// import person03 from '../assets/images/person03.png';
-// import person04 from '../assets/images/person04.png';
-// import character from '../assets/images/h5-character.png';
+import {weiXinShare} from '../service/utils';
 
 var image_url   = 'http://cdn.deshpro.com';  //生产环境cdn地址
 // var image_url   = 'http://localhost:3000';  //本地环境 
@@ -24,6 +16,19 @@ var character   = image_url + '/static/images/h5-character.png';
 
 
 export default class SharePage extends Component {
+
+    componentDidMount() {
+        //微信二次分享
+        // const url = {url: "http://www.deshpro.com:3000/race/91/zh"};
+        const url = {url: "http://h5-react.deshpro.com:3000/race/91/zh"};
+        const message = {
+            title: this.state.data.race.name,
+            desc: this.desc(this.state.data.race.description),
+            link: encodeURIComponent(window.location.href),
+            imgUrl: this.state.data.logo
+        }
+        weiXinShare(url,message);
+    }
 
     render() {
         const {params} = this.props.match;

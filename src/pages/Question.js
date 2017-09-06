@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import '../styles/Question.css';
 import '../styles/footer.css';
+import {weiXinShare} from '../service/utils';
 
 export default class Download extends Component {
     state = {
@@ -43,6 +44,18 @@ export default class Download extends Component {
             '   海外的比赛则需要提供护照的信息了。而且购票时候会需要您的证件信息进行预订酒店车票等。'
         }
     ]
+    componentDidMount() {
+        //微信二次分享
+        // const url = {url: "http://www.deshpro.com:3000/race/91/zh"};
+        const url = {url: "http://h5-react.deshpro.com:3000/race/91/zh"};
+        const message = {
+            title: this.state.data.race.name,
+            desc: this.desc(this.state.data.race.description),
+            link: encodeURIComponent(window.location.href),
+            imgUrl: this.state.data.logo
+        }
+        weiXinShare(url,message);
+    }
 
     questionNav =()=>{
         if(this.state.item===0){

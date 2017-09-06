@@ -1,17 +1,21 @@
 /**
  * Created by lorne on 2017/8/24.
  */
-import React, {Component,response} from 'react';
+import React, {Component} from 'react';
 import markdown from 'marked';
-import {getRaceInfo, setLang, getSubRace,getWeiXinSign} from '../service/RaceDao';
+import {getRaceInfo, setLang, getSubRace} from '../service/RaceDao';
 import Time from 'react-time-format';
 import '../styles/RaceInfo.css';
 import moment from 'moment';
 import I18n from '../service/I18n';
+import {weiXinShare} from '../service/utils';
 import RaceBlindList from '../components/RaceBlindList';
-
-
-
+const message = {
+    title: 'PokerPro',
+    desc: '',
+    link: encodeURIComponent(window.location.href),
+    imgUrl: ''
+}
 
 export default class RaceInfo extends Component {
 
@@ -22,8 +26,7 @@ export default class RaceInfo extends Component {
         subItems: [],
         class_name1: 'txtMenu imgMe',
         class_name2: 'txtMenu',
-        class_name3: 'txtMenu'
-
+        class_name3: 'txtMenu',
     };
 
     componentDidMount() {
@@ -31,17 +34,19 @@ export default class RaceInfo extends Component {
         const {id, lang} = this.props.match.params;
         setLang(lang);
         const body = {raceId: id};
-        const url = {url: "http://www.deshpro.com/h5"};
 
         getRaceInfo(body, data => {
-            console.log('RaceInfo', data)
+            console.log('RaceInfo', data.name)
+            message.title=data.name;
+            message.description=data.description;
+            message.logo=data.logo;
             this.setState({
                 data: data
             });
             const {name} = data.race;
             document.title = name;
         }, err => {
-
+            console.log('alksdklfj')
         });
 
         getSubRace(body, data => {
@@ -50,75 +55,15 @@ export default class RaceInfo extends Component {
             })
             console.log('subItems', this.state.subItems)
         }, err => {
-
+            console.log('alksdklfj')
         })
 
         //微信二次分享
-        getWeiXinSign(url, data => {
-            console.log('WeiXinSignInfo', data)
-            this.setState({
-                wxData: data
-            });
+        // const url = {url: "http://www.deshpro.com:3000/race/91/zh"};
+        const url = {url: "http://h5-react.deshpro.com:3000/race/91/zh"};
 
-            window.wx.ready(function(){
-                alert("ready");
-                window.wx.onMenuShareTimeline({//分享到朋友圈
-                    title: '我是标题',
-                    desc: '',
-                    link: window.location.href,
-                    imgUrl: ''
-                });
-                window.wx.onMenuShareAppMessage({//分享给朋友
-                    title: '我是标题',
-                    desc: '我是标题我是标题我是标题我是标题',
-                    link: window.location.href,
-                    imgUrl: '',
-                    type: '',
-                    dataUrl: '',
-                    success: function () {
-                        alert("success");
-                        // 用户确认分享后执行的回调函数
-                    },
-                    cancel: function () {
-                        // 用户取消分享后执行的回调函数
-                    }
-
-                });
-                window.wx.onMenuShareQQ({//分享到QQ
-                    title: '我是标题',
-                    desc: '我是标题',
-                    link: '',
-                    imgUrl: ''
-                });
-                window.wx.onMenuShareWeibo({//分享到腾讯微博
-                    title: '我是标题',
-                    desc: '',
-                    link: '',
-                    imgUrl: ''
-                });
-                window.wx.onMenuShareQZone({//分享到QQ空间
-                    title: '我是标题',
-                    desc: '',
-                    link: '',
-                    imgUrl: ''
-                });
-            });
-
-            const {appId, nonceStr,timestamp, signature, rawString} = data;
-            console.log("wxData:",data)
-            window.wx.config({
-                debug: true,
-                appId: appId,
-                timestamp: timestamp,
-                nonceStr: nonceStr,
-                signature: signature,
-                jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage','onMenuShareQQ', 'onMenuShareWeibo',"onMenuShareQZone"]
-            });
-
-        }, err => {
-
-        });
-
+        alert(message.title)
+        weiXinShare(url,message);
     }
 
     isEmptyObject(e) {

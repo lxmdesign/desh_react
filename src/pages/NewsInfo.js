@@ -3,6 +3,7 @@ import markdown from 'marked';
 import {getNewsInfo,setLang} from '../service/RaceDao';
 import '../styles/NewsInfo.css';
 import I18n from '../service/I18n';
+import {weiXinShare} from '../service/utils';
 
 export default class NewsInfo extends Component {
 
@@ -23,6 +24,17 @@ export default class NewsInfo extends Component {
         }, err => {
 
         })
+
+        //微信二次分享
+        // const url = {url: "http://www.deshpro.com:3000/race/91/zh"};
+        const url = {url: "http://h5-react.deshpro.com:3000/race/91/zh"};
+        const message = {
+            title: this.state.data.race.name,
+            desc: this.desc(this.state.data.race.description),
+            link: encodeURIComponent(window.location.href),
+            imgUrl: this.state.data.logo
+        }
+        weiXinShare(url,message);
     }
 
     desc = (description) => {

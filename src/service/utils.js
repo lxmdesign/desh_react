@@ -1,4 +1,5 @@
 import I18n from '../service/I18n';
+import {getWeiXinSign} from '../service/RaceDao';
 
 export function getGetOrdinal(n) {
     let s = ["th", "st", "nd", "rd"],
@@ -72,4 +73,32 @@ export function ticketStatusConvert(status) {
 }
 
 //微信二次分享
+export function weiXinShare(url,message){
+    getWeiXinSign(url, data => {
+        console.log('WeiXinSignInfo', data)
+        // this.setState({
+        //     wxData: data
+        // });
+
+        window.wx.ready(() =>{
+            window.wx.onMenuShareTimeline(message);//分享朋友圈
+            window.wx.onMenuShareAppMessage(message);//分享给朋友
+            window.wx.onMenuShareQQ(message);//分享到QQ
+            window.wx.onMenuShareWeibo(message);//分享到腾讯微博
+            window.wx.onMenuShareQZone(message);//分享到QQ空间
+        });
+
+        window.wx.config({
+            debug: true,
+            appId: data.appId,
+            timestamp: data.timestamp,
+            nonceStr: data.nonceStr,
+            signature: data.signature,
+            jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage','onMenuShareQQ', 'onMenuShareWeibo',"onMenuShareQZone"]
+        });
+
+    }, err => {
+
+    });
+}
 
