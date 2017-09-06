@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import '../styles/Question.css';
 import '../styles/footer.css';
-import {weiXinShare} from '../service/utils';
+import {weiXinShare,convertDate} from '../service/utils';
 
 export default class Download extends Component {
     state = {
@@ -47,14 +47,22 @@ export default class Download extends Component {
     componentDidMount() {
         //微信二次分享
         // const url = {url: "http://www.deshpro.com:3000/race/91/zh"};
-        const url = {url: "http://h5-react.deshpro.com:3000/race/91/zh"};
+        // const url = {url: "http://h5-react.deshpro.com:3000/race/91/zh"};
+        // const{name,logo,location,begin_date,end_date} =data;
         const message = {
-            title: this.state.data.race.name,
-            desc: this.desc(this.state.data.race.description),
-            link: encodeURIComponent(window.location.href),
-            imgUrl: this.state.data.logo
+            title: 'PokerPro',
+            desc: '',//分享描述
+            link: window.location.href, // 分享链接，该链接域名必须与当前企业的可信域名一致
+            imgUrl: '', // 分享图标
+            type: '', // 分享类型,music、video或link，不填默认为link
+            dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
         }
+        const url = {url: window.location.href};
         weiXinShare(url,message);
+    }
+    message_desc = (location,begin_date,end_date) => {
+        var time=convertDate(begin_date,"YYYY.MM.DD")+"-"+convertDate(end_date,"YYYY.MM.DD");
+        return (location+'\n'+time);
     }
 
     questionNav =()=>{

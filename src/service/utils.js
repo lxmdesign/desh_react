@@ -1,6 +1,16 @@
+import React from 'react';
 import I18n from '../service/I18n';
 import {getWeiXinSign} from '../service/RaceDao';
+import moment from 'moment';
 
+export function convertDate(date, formate) {
+    if (strNotNull(date))
+        return moment(date).format(formate)
+}
+
+export function utcDate(utc, formate) {
+    return moment.unix(utc).format(formate)
+}
 export function getGetOrdinal(n) {
     let s = ["th", "st", "nd", "rd"],
         v = n % 100;
@@ -101,4 +111,5 @@ export function weiXinShare(url,message){
 
     });
 }
+
 

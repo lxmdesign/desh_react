@@ -6,7 +6,7 @@
     overflow: hidden;
     zoom: 1;
     /*修改间隔*/
-    height:90px;
+    height:70px;
     background-color: #fff;
     position: relative;
 }
@@ -50,6 +50,7 @@
 
 .App-nav {
     padding:4.5%;
+    margin-top: 5px;
 }
 /*markdown里的样式*/
 

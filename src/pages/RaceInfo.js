@@ -8,14 +8,9 @@ import Time from 'react-time-format';
 import '../styles/RaceInfo.css';
 import moment from 'moment';
 import I18n from '../service/I18n';
-import {weiXinShare} from '../service/utils';
+import {weiXinShare,convertDate} from '../service/utils';
 import RaceBlindList from '../components/RaceBlindList';
-const message = {
-    title: 'PokerPro',
-    desc: '',
-    link: encodeURIComponent(window.location.href),
-    imgUrl: ''
-}
+
 
 export default class RaceInfo extends Component {
 
@@ -36,34 +31,39 @@ export default class RaceInfo extends Component {
         const body = {raceId: id};
 
         getRaceInfo(body, data => {
-            console.log('RaceInfo', data.name)
-            message.title=data.name;
-            message.description=data.description;
-            message.logo=data.logo;
+            console.log('RaceInfo', data)
             this.setState({
                 data: data
             });
-            const {name} = data.race;
+            const {name,logo,location,end_date,begin_date} = data.race;
             document.title = name;
+
+            //微信二次分享
+            // const url = {url: "http://www.deshpro.com:3000/race/91/zh"};
+            // const url = {url: "http://h5-react.deshpro.com:3000/race/91/zh"};
+            const message = {
+                title: name,
+                desc: this.message_desc(location,begin_date,end_date),//分享描述
+                link: window.location.href, // 分享链接，该链接域名必须与当前企业的可信域名一致
+                imgUrl: logo, // 分享图标
+                type: '', // 分享类型,music、video或link，不填默认为link
+                dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+            }
+            const url = {url: window.location.href};
+            console.log("message:",message);
+            weiXinShare(url,message);
         }, err => {
-            console.log('alksdklfj')
+
         });
 
         getSubRace(body, data => {
             this.setState({
                 subItems: data.items
             })
-            console.log('subItems', this.state.subItems)
         }, err => {
-            console.log('alksdklfj')
         })
 
-        //微信二次分享
-        // const url = {url: "http://www.deshpro.com:3000/race/91/zh"};
-        const url = {url: "http://h5-react.deshpro.com:3000/race/91/zh"};
 
-        alert(message.title)
-        weiXinShare(url,message);
     }
 
     isEmptyObject(e) {
@@ -71,6 +71,10 @@ export default class RaceInfo extends Component {
         for (t in e)
             return !1;
         return !0
+    }
+    message_desc = (location,begin_date,end_date) => {
+        var time=convertDate(begin_date,"YYYY.MM.DD")+"-"+convertDate(end_date,"YYYY.MM.DD");
+        return (location+'\n'+time);
     }
 
     //html to markDown
@@ -93,8 +97,8 @@ export default class RaceInfo extends Component {
                             <div className="title">{name}</div>
                             <img src={logo}/>
                             <ul className="ul-1-2">
-                                <li><Time value={begin_date} format="YYYY:MM:DD"/>—<Time value={end_date}
-                                                                                         format="YYYY:MM:DD"/></li>
+                                <li><Time value={begin_date} format="YYYY.MM.DD"/>—<Time value={end_date}
+                                                                                         format="YYYY.MM.DD"/></li>
                                 <li>{location}</li>
                                 <li className="li-4">
                                 </li>
