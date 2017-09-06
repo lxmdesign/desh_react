@@ -10,7 +10,7 @@ import '../styles/SharePage.css';
 // import person04 from '../assets/images/person04.png';
 // import character from '../assets/images/h5-character.png';
 
-var image_url   = 'https://cdn.deshpro.com';  //生产环境cdn地址
+var image_url   = 'http://cdn.deshpro.com';  //生产环境cdn地址
 // var image_url   = 'http://localhost:3000';  //本地环境 
 var sharePage01 = image_url + '/static/images/H5SahrePage01.png';
 var sharePage02 = image_url + '/static/images/H5SahrePage02.png';

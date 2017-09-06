@@ -1,7 +1,7 @@
 /**
  * Created by lorne on 2017/8/24.
  */
-import React, {Component} from 'react';
+import React, {Component,response} from 'react';
 import markdown from 'marked';
 import {getRaceInfo, setLang, getSubRace,getWeiXinSign} from '../service/RaceDao';
 import Time from 'react-time-format';
@@ -17,7 +17,7 @@ export default class RaceInfo extends Component {
 
     state = {
         data: {},
-        wxDate:{},
+        wxData:{},
         menu: 0,
         subItems: [],
         class_name1: 'txtMenu imgMe',
@@ -48,71 +48,75 @@ export default class RaceInfo extends Component {
             this.setState({
                 subItems: data.items
             })
+            console.log('subItems', this.state.subItems)
         }, err => {
 
         })
 
         //微信二次分享
         getWeiXinSign(url, data => {
-            // const uri = document.location.href;
             console.log('WeiXinSignInfo', data)
             this.setState({
-                wxDate: data
+                wxData: data
             });
+
+            window.wx.ready(function(){
+                alert("ready");
+                window.wx.onMenuShareTimeline({//分享到朋友圈
+                    title: '我是标题',
+                    desc: '',
+                    link: window.location.href,
+                    imgUrl: ''
+                });
+                window.wx.onMenuShareAppMessage({//分享给朋友
+                    title: '我是标题',
+                    desc: '我是标题我是标题我是标题我是标题',
+                    link: window.location.href,
+                    imgUrl: '',
+                    type: '',
+                    dataUrl: '',
+                    success: function () {
+                        alert("success");
+                        // 用户确认分享后执行的回调函数
+                    },
+                    cancel: function () {
+                        // 用户取消分享后执行的回调函数
+                    }
+
+                });
+                window.wx.onMenuShareQQ({//分享到QQ
+                    title: '我是标题',
+                    desc: '我是标题',
+                    link: '',
+                    imgUrl: ''
+                });
+                window.wx.onMenuShareWeibo({//分享到腾讯微博
+                    title: '我是标题',
+                    desc: '',
+                    link: '',
+                    imgUrl: ''
+                });
+                window.wx.onMenuShareQZone({//分享到QQ空间
+                    title: '我是标题',
+                    desc: '',
+                    link: '',
+                    imgUrl: ''
+                });
+            });
+
+            const {appId, nonceStr,timestamp, signature, rawString} = data;
+            console.log("wxData:",data)
+            window.wx.config({
+                debug: true,
+                appId: appId,
+                timestamp: timestamp,
+                nonceStr: nonceStr,
+                signature: signature,
+                jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage','onMenuShareQQ', 'onMenuShareWeibo',"onMenuShareQZone"]
+            });
+
         }, err => {
 
-        });
-
-        window.wx.ready(function(){
-            // alert("ready");
-            window.wx.onMenuShareTimeline({//分享到朋友圈
-                title: '我是标题', // 分享标题
-                desc: '', // 分享描述
-                link: '', // 分享链接
-                imgUrl: '' // 分享图标
-            });
-            window.wx.onMenuShareAppMessage({//分享给朋友
-                title: '我是标题', // 分享标题
-                desc: '我是标题', // 分享描述
-                link: 'http://localhost:12121/race/91/zh/2313131', // 分享链接
-                imgUrl: '', // 分享图标
-                type: '', // 分享类型,music、video或link，不填默认为link
-                dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
-                success: function () {
-                    // 用户确认分享后执行的回调函数
-                },
-                cancel: function () {
-                    // 用户取消分享后执行的回调函数
-                }
-            });
-            window.wx.onMenuShareQQ({//分享到QQ
-                title: '我是标题', // 分享标题
-                desc: '我是标题', // 分享描述
-                link: '', // 分享链接
-                imgUrl: '' // 分享图标
-            });
-            window.wx.onMenuShareWeibo({//分享到腾讯微博
-                title: '我是标题', // 分享标题
-                desc: '', // 分享描述
-                link: '', // 分享链接
-                imgUrl: '' // 分享图标
-            });
-            window.wx.onMenuShareQZone({//分享到QQ空间
-                title: '我是标题', // 分享标题
-                desc: '', // 分享描述
-                link: '', // 分享链接
-                imgUrl: '' // 分享图标
-            });
-        });
-        const {appId, nonceStr,timestamp, signature, rawString} = this.state.wxDate;
-        console.log("wxDate:",this.state.wxDate)
-        window.wx.config({
-            debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
-            appId: appId, // 必填，企业号的唯一标识，此处填写企业号corpid
-            timestamp: timestamp, // 必填，生成签名的时间戳c
-            nonceStr: nonceStr, // 必填，生成签名的随机串
-            signature: signature,// 必填，签名，见附录1
-            jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage','onMenuShareQQ', 'onMenuShareWeibo',"onMenuShareQZone"] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
         });
 
     }
@@ -130,10 +134,8 @@ export default class RaceInfo extends Component {
         return {__html: des}
     }
 
-    //click事件
-
-
     content = () => {
+
         if (!this.isEmptyObject(this.state.data.race)) {
             const {
                 name, location,begin_date, end_date, logo
@@ -141,7 +143,6 @@ export default class RaceInfo extends Component {
 
             return (
                 <div className='content'>
-                    {/*Head*/}
                     <div className="mainNav">
                         <div className="ul-1">
                             <div className="title">{name}</div>
@@ -151,7 +152,6 @@ export default class RaceInfo extends Component {
                                                                                          format="YYYY:MM:DD"/></li>
                                 <li>{location}</li>
                                 <li className="li-4">
-                                    {/*<span>{raceStatusConvert(status)}</span><span>{ticketStatusConvert(ticket_status)}</span>*/}
                                 </li>
                             </ul>
                         </div>
@@ -167,7 +167,6 @@ export default class RaceInfo extends Component {
                                     })
                                 }}>
                                     <span className={this.state.class_name1}>{I18n.t('Introduction')}</span>
-                                    {/*<img src={imgMenu} className="imgMe"/>*/}
                                 </div>
                                 <div className="menu1"
                                      onClick={() => {
