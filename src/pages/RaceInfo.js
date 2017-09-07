@@ -2,12 +2,12 @@
  * Created by lorne on 2017/8/24.
  */
 import React, {Component} from 'react';
-import markdown from 'marked';
 import {getRaceInfo, setLang, getSubRace} from '../service/RaceDao';
 import Time from 'react-time-format';
 import '../styles/RaceInfo.css';
 import moment from 'moment';
 import I18n from '../service/I18n';
+import MarkDown from '../components/MarkDown';
 import {weiXinShare,convertDate} from '../service/utils';
 import RaceBlindList from '../components/RaceBlindList';
 
@@ -75,12 +75,6 @@ export default class RaceInfo extends Component {
     message_desc = (location,begin_date,end_date) => {
         var time=convertDate(begin_date,"YYYY.MM.DD")+"-"+convertDate(end_date,"YYYY.MM.DD");
         return (location+'\r\n'+time);
-    }
-
-    //html to markDown
-    desc = (description) => {
-        var des = markdown(description)
-        return {__html: des}
     }
 
     content = () => {
@@ -174,7 +168,7 @@ export default class RaceInfo extends Component {
 
     introView = (description) => {
 
-        return <div className="introduceGame" dangerouslySetInnerHTML={this.desc(description)}></div>;
+        return <MarkDown description={description}/>;
     };
 
     mainInfoView = () => {

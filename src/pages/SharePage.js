@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 import '../styles/SharePage.css';
 import {weiXinShare} from '../service/utils';
-import {Route,Link} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import {items,sharePage01,sharePage02,sharePage08,sharePage05,
     person01,person02,person03,person04,character} from '../components/constant'
-var state=0;
+
 
 export default class SharePage extends Component {
+    state={
+        visible:false
+    }
 
     componentDidMount() {
         //微信二次分享
@@ -28,88 +31,107 @@ export default class SharePage extends Component {
         return(
             <div className="sharePage">
 
-                <div></div>
+                <div className={this.state.visible===false?"sharePage-scroll":"sharePage-unscroll"}>
 
 
-                <div className="sharePage-img">
-                    <img src={sharePage01} alt="" />
-                    <img src={sharePage05} alt="" />
+                    <div className="sharePage-img">
+                        <img src={sharePage01} alt="" />
+                        <img src={sharePage05} alt="" />
 
-                </div>
-                <div className="name">
-                    <img src={character} alt="" />
-                </div>
-                <div className="sharePage-person">
+                    </div>
+                    <div className="name">
+                        <img src={character} alt="" />
+                    </div>
+                    <div className="sharePage-person">
 
-                    <div className="scroll-box">
-                        <div className="box-item">
-                            <img src={person03} alt="" />
-                        </div>
-                        <div className="box-item">
-                            <img src={person01} alt="" />
-                        </div>
-                        <div className="box-item">
-                            <img src={person02} alt="" />
-                        </div>
-                        <div className="box-item">
-                            <img src={person04} alt="" />
+                        <div className="scroll-box">
+                            <div className="box-item">
+                                <img src={person03} alt="" />
+                            </div>
+                            <div className="box-item">
+                                <img src={person01} alt="" />
+                            </div>
+                            <div className="box-item">
+                                <img src={person02} alt="" />
+                            </div>
+                            <div className="box-item">
+                                <img src={person04} alt="" />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="sharePage-img">
-                    <img src={sharePage02} alt="" />
+                    <div className="sharePage-img">
+                        <img src={sharePage02} alt="" />
 
-                    <img src={sharePage08} alt="" />
-                </div>
+                        <img src={sharePage08} alt="" />
+                    </div>
 
-                {/*弹出问题框*/}
-                <Route path="/sharePage/question" component={Question} />
+                    {/*弹出问题框*/}
+                    <Route path="/sharePage/question" component={Question}/>
 
-                <div className="fixed"></div>
-                <footer >
-                    <div className="sharePage-btn">
+                    <div className="fixed"></div>
+                    <footer >
 
-                        <div className="sharePage-btn-question" >
-                            <Link to="/sharePage/question">
+                        <div className="sharePage-btn">
+                            <div className="sharePage-btn-question"
+                                 onClick={() => {
+                                     this.props.history.push("/sharePage/question")
+                                     this.setState({
+                                         visible: !this.state.visible
+                                     })
+                                 }}>
                                 常见问题
-                            </Link>
+                            </div>
+                            {/*<div className="sharePage-btn-question" >*/}
+                                {/*<Link to="/sharePage/question">*/}
+                                    {/*常见问题*/}
+                                {/*</Link>*/}
+                            {/*</div>*/}
+                            <div className="android-app-download"  onClick={() => {
+                                this.props.history.push(`/race/${params.id}/${params.lang}/loadAPP`)
+                            }}>
+                                立即下载扑客
+                            </div>
                         </div>
-                        <div className="android-app-download"  onClick={() => {
-                            this.props.history.push(`/race/${params.id}/${params.lang}/loadAPP`)
-                        }}>
-                            立即下载扑客
-                        </div>
-                    </div>
-                </footer>
+                    </footer>
+                </div>
             </div>
+
         )}
 
 }
 
 const Question=()=>(
-    <div className="questions">
 
-        <div className="question-nav">
-            <a>常见问题</a>
-            <Link to="/sharePage">关闭</Link>
-        </div>
+    <div className="questions-unScroll">
+        <div className="questions">
 
-        <div className="content">
-            {
-                items.map((value,key) =>
-                    <div key={key} className="box">
-                        <div className="question">
-                            <div className="image1">Q</div>
-                            <div className="question1">{value.question1}</div>
+            <div className="question-nav">
+                <a>常见问题</a>
+                <a onClick={() => {
+                    this.props.history.push("/sharePage")
+                    this.setState({
+                        visible: !this.state.visible
+                    })
+                }}>关闭</a>
+            </div>
+
+            <div className="content">
+                {
+                    items.map((value,key) =>
+                        <div key={key} className="box">
+                            <div className="question">
+                                <div className="image1">Q</div>
+                                <div className="question1">{value.question1}</div>
+                            </div>
+                            <div className="question">
+                                <div className="image2">A</div>
+                                <div className="question2">{value.question2}</div>
+                            </div>
                         </div>
-                        <div className="question">
-                            <div className="image2">A</div>
-                            <div className="question2">{value.question2}</div>
-                        </div>
-                    </div>
-                )
-            }
+                    )
+                }
+                <div style={{height:"60px"}}></div>
+            </div>
         </div>
-
     </div>
 )

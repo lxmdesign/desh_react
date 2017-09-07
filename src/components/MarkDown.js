@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import markdown from 'marked';
+import './css/MarkDown.css';
 
 
 export default class MarkDown extends Component {
@@ -14,7 +15,7 @@ export default class MarkDown extends Component {
     render(){
         const {description} =this.props;
         return (
-            <div dangerouslySetInnerHTML={this.desc(description)}></div>
+            <div className="introduceGame" dangerouslySetInnerHTML={this.desc(description)}></div>
         );
     }
 }
