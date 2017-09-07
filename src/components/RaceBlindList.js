@@ -147,6 +147,7 @@ export default class RaceBlindList extends PureComponent {
                 {schedules.map((schedule, i) => {
 
                     return <div className='schedule-info' key={i}>
+
                         <span>
                              {this.scheduleMessage(schedule.schedule)}
                         </span>

@@ -5,7 +5,7 @@ import Time from 'react-time-format';
 import {getRankInfo} from '../service/RaceDao';
 import '../styles/PlayerInfo.css';
 import I18n from '../service/I18n';
-import {weiXinShare,convertDate} from '../service/utils';
+import {weiXinShare} from '../service/utils';
 
 export default class PlayerInfo extends Component {
 
@@ -24,6 +24,7 @@ export default class PlayerInfo extends Component {
             this.setState({
                 player: data
             })
+
             document.title = data.name;
             //微信二次分享
             // const url = {url: "http://www.deshpro.com:3000/race/91/zh"};
@@ -51,10 +52,6 @@ export default class PlayerInfo extends Component {
 
         })
 
-    }
-    message_desc = (location,begin_date,end_date) => {
-        var time=convertDate(begin_date,"YYYY.MM.DD")+"-"+convertDate(end_date,"YYYY.MM.DD");
-        return (location+'\n'+time);
     }
 
     isEmptyObject(e) {

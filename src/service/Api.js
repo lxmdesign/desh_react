@@ -10,7 +10,8 @@ export default {
     rank_info: rank_info,
     sub_races: sub_races,
     sub_race_info: sub_race_info,
-    weixin_js_sign: 'weixin/js_sign'
+    weixin_js_sign: 'weixin/js_sign',
+    activities_info:activities_info
 
 
 }
@@ -46,5 +47,10 @@ function game_info(body) {
 function rank_info(body) {
     const {playerId} = body;
     return 'players/' + playerId + '/ranks';
+}
+
+function activities_info(body) {
+    const {activitiesId} = body;
+    return 'activities/' + activitiesId;
 }
 

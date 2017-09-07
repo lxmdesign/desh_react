@@ -1,19 +1,10 @@
 import React, {Component} from 'react';
 import '../styles/SharePage.css';
-import {weiXinShare,convertDate} from '../service/utils';
-
-var image_url   = 'http://cdn.deshpro.com';  //生产环境cdn地址
-// var image_url   = 'http://localhost:3000';  //本地环境 
-var sharePage01 = image_url + '/static/images/H5SahrePage01.png';
-var sharePage02 = image_url + '/static/images/H5SahrePage02.png';
-var sharePage05 = image_url + '/static/images/H5SahrePage05.png';
-var sharePage08 = image_url + '/static/images/H5SahrePage08.png';
-var person01    = image_url + '/static/images/person01.png';
-var person02    = image_url + '/static/images/person02.png';
-var person03    = image_url + '/static/images/person03.png';
-var person04    = image_url + '/static/images/person04.png';
-var character   = image_url + '/static/images/h5-character.png';
-
+import {weiXinShare} from '../service/utils';
+import {Route,Link} from 'react-router-dom';
+import {items,sharePage01,sharePage02,sharePage08,sharePage05,
+    person01,person02,person03,person04,character} from '../components/constant'
+var state=0;
 
 export default class SharePage extends Component {
 
@@ -31,10 +22,6 @@ export default class SharePage extends Component {
         const url = {url: window.location.href};
         weiXinShare(url,message);
     }
-    message_desc = (location,begin_date,end_date) => {
-        var time=convertDate(begin_date,"YYYY.MM.DD")+"-"+convertDate(end_date,"YYYY.MM.DD");
-        return (location+'\n'+time);
-    }
 
     render() {
         const {params} = this.props.match;
@@ -46,7 +33,6 @@ export default class SharePage extends Component {
 
                 <div className="sharePage-img">
                     <img src={sharePage01} alt="" />
-                    {/*<img src={sharePage04} alt="" />*/}
                     <img src={sharePage05} alt="" />
 
                 </div>
@@ -73,21 +59,20 @@ export default class SharePage extends Component {
                 <div className="sharePage-img">
                     <img src={sharePage02} alt="" />
 
-                    {/*<img src={sharePage07} alt="" />*/}
                     <img src={sharePage08} alt="" />
                 </div>
 
+                {/*弹出问题框*/}
+                <Route path="/sharePage/question" component={Question} />
 
                 <div className="fixed"></div>
                 <footer >
                     <div className="sharePage-btn">
 
-
-                        <div className="sharePage-btn-question" onClick={() => {
-                            this.props.history.push("/question")
-                        }}>
-                            <div className="image"></div>
-                            <div className="char">常见问题</div>
+                        <div className="sharePage-btn-question" >
+                            <Link to="/sharePage/question">
+                                常见问题
+                            </Link>
                         </div>
                         <div className="android-app-download"  onClick={() => {
                             this.props.history.push(`/race/${params.id}/${params.lang}/loadAPP`)
@@ -98,4 +83,33 @@ export default class SharePage extends Component {
                 </footer>
             </div>
         )}
+
 }
+
+const Question=()=>(
+    <div className="questions">
+
+        <div className="question-nav">
+            <a>常见问题</a>
+            <Link to="/sharePage">关闭</Link>
+        </div>
+
+        <div className="content">
+            {
+                items.map((value,key) =>
+                    <div key={key} className="box">
+                        <div className="question">
+                            <div className="image1">Q</div>
+                            <div className="question1">{value.question1}</div>
+                        </div>
+                        <div className="question">
+                            <div className="image2">A</div>
+                            <div className="question2">{value.question2}</div>
+                        </div>
+                    </div>
+                )
+            }
+        </div>
+
+    </div>
+)

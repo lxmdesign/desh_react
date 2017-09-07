@@ -65,4 +65,9 @@ export function getRankInfo(body, resolve, reject) {
         resolve(ret.data);
     }, reject);
 }
+export function getActivitiesInfo(body, resolve, reject) {
+    get(Api.activities_info(body), ret => {
+        resolve(ret.data);
+    }, reject);
+}
 

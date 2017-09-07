@@ -26,7 +26,7 @@ export default class SideRace extends PureComponent {
         };
 
         getSubInfo(body, data => {
-
+            console.log('SideRace', data)
             const {name} = data;
             document.title = name;
             this.setState({

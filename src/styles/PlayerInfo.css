@@ -65,7 +65,7 @@
 }
 
 .player-head-nav {
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,15 +133,12 @@ player-body {
 table {
     width: 100%;
     height: 170px;
+    margin-top: 10px;
 }
 
 
 table tbody tr {
     background-color: #fff;
-}
-
-table tbody tr td {
-
 }
 
 table tbody tr td a {
@@ -152,10 +149,9 @@ table tbody tr td a {
 .table-header {
     overflow: hidden;
     zoom: 1;
-    width: 380px;
+    width: 89%;
     height: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
 }
 
 .table-header span:nth-child(1) {
@@ -179,8 +175,10 @@ table tbody tr td a {
 
 .table-detail {
     display: flex;
-    padding-bottom: 17px;
+    padding-bottom: 8px;
     border-bottom: 1px solid #ECECEE;
+    /*width: 89%;*/
+    justify-content: space-between;
 }
 
 .table-detail div {
@@ -206,7 +204,7 @@ table tbody tr td a {
 .table-time {
     height: 20px;
     margin-top: 11px;
-    margin-left: 10px;
+    margin-left: 15px;
     background: url('../assets/images/home_clock.png') no-repeat left center;
     background-size: 10px 10px;
     padding-left: 18px;
@@ -225,6 +223,6 @@ table tbody tr td a {
     font-size: 13px;
     line-height: 20px;
     text-align: left;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 

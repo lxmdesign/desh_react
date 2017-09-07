@@ -25,13 +25,13 @@ export default class GameInfo extends Component {
         setLang(lang);
 
         const body = {gameId: id};
-        document.title = I18n.t('app_name');
+
         getGameInfo(body, data => {
             console.log('GameInfo', data)
             this.setState({
                 game: data
             })
-
+            document.title = data.race.name;
             //微信二次分享
             // const url = {url: "http://www.deshpro.com:3000/race/91/zh"};
             // const url = {url: "http://h5-react.deshpro.com:3000/race/91/zh"};

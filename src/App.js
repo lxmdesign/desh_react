@@ -13,6 +13,7 @@ import Question from './pages/Question';
 import Download from './pages/Download';
 import PaySuccess from './pages/PaySuccess';
 import PayFail from './pages/PayFail';
+import activitiesInfo from './pages/activitiesInfo';
 
 import SharePage from './pages/SharePage';
 
@@ -35,8 +36,9 @@ class App extends Component {
                     <Route path="/pay/pay/fail" component={PayFail}/>
 
                     <Route path="/sharePage" component={SharePage}/>
+                    <Route path="/activities/:id/:lang" component={activitiesInfo}/>
 
-                    <Route path="/question" component={Question}/>
+                    {/*<Route path="/question" component={Question}/>*/}
 
                     {/*<Route path="/sharePage/question" component={Question}/>*/}
 

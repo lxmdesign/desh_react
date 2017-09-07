@@ -74,7 +74,7 @@ export default class RaceInfo extends Component {
     }
     message_desc = (location,begin_date,end_date) => {
         var time=convertDate(begin_date,"YYYY.MM.DD")+"-"+convertDate(end_date,"YYYY.MM.DD");
-        return (location+'\n'+time);
+        return (location+'\r\n'+time);
     }
 
     //html to markDown
