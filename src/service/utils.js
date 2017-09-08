@@ -1,4 +1,3 @@
-import React from 'react';
 import I18n from '../service/I18n';
 import {getWeiXinSign} from '../service/RaceDao';
 import moment from 'moment';

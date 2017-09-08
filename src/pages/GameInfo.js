@@ -3,9 +3,9 @@ import React, {Component} from 'react';
 import {getGameInfo, setLang} from '../service/RaceDao';
 import '../styles/GameInfo.css';
 import Time from 'react-time-format';
-import {isEmptyObject} from '../service/utils';
 import I18n from '../service/I18n';
-import {weiXinShare,convertDate} from '../service/utils';
+import {isEmptyObject,weiXinShare,convertDate} from '../service/utils';
+import {default_img} from '../components/constant';
 
 import {
 
@@ -40,7 +40,7 @@ export default class GameInfo extends Component {
                 title: name,
                 desc: this.message_desc(location,begin_date,end_date),//分享描述
                 link: window.location.href, // 分享链接，该链接域名必须与当前企业的可信域名一致
-                imgUrl: logo, // 分享图标
+                imgUrl: isEmptyObject(logo)?default_img:logo, // 分享图标
                 type: '', // 分享类型,music、video或link，不填默认为link
                 dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
             }

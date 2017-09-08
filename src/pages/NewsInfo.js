@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import markdown from 'marked';
 import {getNewsInfo,setLang} from '../service/RaceDao';
 import '../styles/NewsInfo.css';
-import {weiXinShare,convertDate} from '../service/utils';
+import {weiXinShare,convertDate,isEmptyObject} from '../service/utils';
+import {default_img} from '../components/constant';
 
 export default class NewsInfo extends Component {
 
@@ -30,7 +31,7 @@ export default class NewsInfo extends Component {
                 title: title,
                 desc: this.message_desc(source,date),//分享描述
                 link: window.location.href, // 分享链接，该链接域名必须与当前企业的可信域名一致
-                imgUrl: logo, // 分享图标
+                imgUrl: isEmptyObject(logo)?default_img:logo, // 分享图标
                 type: '', // 分享类型,music、video或link，不填默认为link
                 dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
             }

@@ -3,7 +3,7 @@ import '../styles/SharePage.css';
 import {weiXinShare} from '../service/utils';
 import {Route,Link} from 'react-router-dom';
 import {items,sharePage01,sharePage02,sharePage08,sharePage05,
-    person01,person02,person03,person04,character} from '../components/constant'
+    person01,person02,person03,person04,character,default_img} from '../components/constant'
 
 
 export default class SharePage extends Component {
@@ -23,7 +23,7 @@ export default class SharePage extends Component {
             title: 'PokerPro',
             desc: '',//分享描述
             link: window.location.href, // 分享链接，该链接域名必须与当前企业的可信域名一致
-            imgUrl: '', // 分享图标
+            imgUrl: default_img, // 分享图标
             type: '', // 分享类型,music、video或link，不填默认为link
             dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
         }

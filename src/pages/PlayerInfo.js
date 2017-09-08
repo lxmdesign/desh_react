@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import {getPlayerInfo,setLang} from '../service/RaceDao';
-import {moneyFormat,getGetOrdinal,strNotNull} from '../service/utils';
+import {moneyFormat,getGetOrdinal,strNotNull,weiXinShare,isEmptyObject} from '../service/utils';
 import Time from 'react-time-format';
 import {getRankInfo} from '../service/RaceDao';
 import '../styles/PlayerInfo.css';
 import I18n from '../service/I18n';
-import {weiXinShare} from '../service/utils';
+import {default_img} from '../components/constant';
 
 export default class PlayerInfo extends Component {
 
@@ -34,7 +34,7 @@ export default class PlayerInfo extends Component {
                 title: name,
                 desc: country,//分享描述
                 link: window.location.href, // 分享链接，该链接域名必须与当前企业的可信域名一致
-                imgUrl: logo, // 分享图标
+                imgUrl: isEmptyObject(logo)?default_img:logo, // 分享图标
                 type: '', // 分享类型,music、video或link，不填默认为link
                 dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
             }

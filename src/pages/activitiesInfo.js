@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {getActivitiesInfo,setLang} from '../service/RaceDao';
 import {weiXinShare,isEmptyObject} from '../service/utils';
+import {default_img} from '../components/constant';
 import MarkDown from '../components/MarkDown';
 
 export default class activitiesInfo extends Component {
@@ -22,13 +23,13 @@ export default class activitiesInfo extends Component {
             document.title = title;
 
             //微信二次分享
-            // const url = {url: "http://www.deshpro.com:3000/race/91/zh"};
-            // const url = {url: "http://h5-react.deshpro.com:3000/race/91/zh"};
+            // const url = {url: "http://www.deshpro.com:3000/activities/1/zh"};
+            // const url = {url: "http://h5-react.deshpro.com:3000/activities/1/zh"};
             const message = {
                 title: title,
                 desc: description,//分享描述
                 link: window.location.href, // 分享链接，该链接域名必须与当前企业的可信域名一致
-                imgUrl: banner, // 分享图标
+                imgUrl: isEmptyObject(banner)?default_img:banner, // 分享图标
                 type: '', // 分享类型,music、video或link，不填默认为link
                 dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
             }
