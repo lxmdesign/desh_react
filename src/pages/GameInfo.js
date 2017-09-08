@@ -6,11 +6,7 @@ import Time from 'react-time-format';
 import I18n from '../service/I18n';
 import {isEmptyObject,weiXinShare,message_desc} from '../service/utils';
 import {default_img} from '../components/constant';
-
-import {
-
-    Link
-} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 export default class GameInfo extends Component {
 
@@ -119,7 +115,8 @@ export default class GameInfo extends Component {
                         </tbody>
                     </table>
                 </div>
-
+                <footer><Link  to="/loadApp">
+                    {I18n.t('app_plant')}<span>{I18n.t('load_app')}</span></Link></footer>
             </div>
         )
     };

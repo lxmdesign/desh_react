@@ -5,6 +5,7 @@ import Time from 'react-time-format';
 import {getRankInfo} from '../service/RaceDao';
 import '../styles/PlayerInfo.css';
 import I18n from '../service/I18n';
+import {Link} from 'react-router-dom';
 import {default_img} from '../components/constant';
 
 export default class PlayerInfo extends Component {
@@ -174,7 +175,8 @@ export default class PlayerInfo extends Component {
             <div className='content'>
 
                 {this.content()}
-
+                <footer><Link  to="/loadApp">
+                    {I18n.t('app_plant')}<span>{I18n.t('load_app')}</span></Link></footer>
             </div>
         )
     };
