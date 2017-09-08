@@ -62,15 +62,15 @@ export default class SideRace extends PureComponent {
                 <span className="title">{name}</span>
                 <span
                     className="time">{I18n.t('time')}：{moment(begin_date).format('YYYY.MM.DD')}-{moment(end_date).format('YYYY.MM.DD')}</span>
-                <span className="location">{I18n.t('address')}：{location}</span>
+                <span className="location">{I18n.t('address')}{location}</span>
 
             </div>
 
             <div className="subInfo1">
-                <span>{I18n.t('prize')}：¥{prize}</span>
-                <span>{I18n.t('peoples')}：{participants}</span>
+                <span>{I18n.t('prize')}¥{prize}</span>
+                <span>{I18n.t('peoples')}{participants}</span>
                 <span>{I18n.t('Admission')}：{ticket_price}</span>
-                <span>{I18n.t('beginChip')}：{blind}</span>
+                <span>{I18n.t('beginChip')}{blind}</span>
             </div>
             <div className="line"></div>
             <div className="sideRace-body">
