@@ -111,7 +111,7 @@ export default class GameInfo extends Component {
                         </thead>
                         <tbody>
                         {ranks.map((item, key) => {
-                            return <tr >
+                            return <tr key={key}>
                                 <td>{item.ranking}</td>
                                 <td className="table-name">{item.player.name}</td>
                                 <td>{item.earning}¥</td>

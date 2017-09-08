@@ -24,9 +24,7 @@ class App extends Component {
 
                     <Route exact path="/race/:id/:lang" component={RaceInfo}/>
 
-                    <Route path="/race/:id/:lang/loadApp" component={Download}/>
-
-
+                    <Route path="/loadApp" component={Download}/>
                     <Route path="/news/:id/:lang" component={NewsInfo}/>
                     <Route path="/rankPlayer/:id/:lang" component={PlayerInfo}/>
                     <Route path="/rankGame/:id/:lang" component={GameInfo}/>

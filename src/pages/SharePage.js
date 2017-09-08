@@ -88,7 +88,7 @@ export default class SharePage extends Component {
                                 常见问题
                             </div>
                             <div className="android-app-download"  onClick={() => {
-                                this.props.history.push(`/race/${params.id}/${params.lang}/loadAPP`)
+                                this.props.history.push("/loadAPP")
                             }}>
                                 立即下载扑客
                             </div>

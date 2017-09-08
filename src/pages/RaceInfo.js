@@ -2,6 +2,7 @@
  * Created by lorne on 2017/8/24.
  */
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import {getRaceInfo, setLang, getSubRace} from '../service/RaceDao';
 import Time from 'react-time-format';
 import '../styles/RaceInfo.css';
@@ -205,11 +206,9 @@ export default class RaceInfo extends Component {
 
                 {this.content()}
 
-                <footer><a onClick={() => {
-                    this.props.history.push(`/race/${params.id}/${params.lang}/loadAPP`)
-                }}>
+                <footer><Link  to="/loadApp">
 
-                    {I18n.t('app_plant')}<span>{I18n.t('load_app')}</span></a></footer>
+                    {I18n.t('app_plant')}<span>{I18n.t('load_app')}</span></Link></footer>
 
             </div>
         )
