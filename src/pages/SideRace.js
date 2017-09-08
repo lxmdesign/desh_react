@@ -37,10 +37,10 @@ export default class SideRace extends PureComponent {
             //微信二次分享
             // const url = {url: "http://www.deshpro.com:3000/race/91/zh"};
             // const url = {url: "http://h5-react.deshpro.com:3000/race/91/zh"};
-            const{logo,location,begin_date,end_date} =data;
+            const{logo,begin_date,end_date} =data;
             const message = {
                 title: name,
-                desc: this.message_desc(location,begin_date,end_date),//分享描述
+                desc: this.message_desc("",begin_date,end_date),//分享描述
                 link: window.location.href, // 分享链接，该链接域名必须与当前企业的可信域名一致
                 imgUrl: isEmptyObject(logo)?default_img:logo, // 分享图标
                 type: '', // 分享类型,music、video或link，不填默认为link

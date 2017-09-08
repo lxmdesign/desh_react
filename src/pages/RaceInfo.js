@@ -105,7 +105,7 @@ export default class RaceInfo extends Component {
                                 <div className="menu1" onClick={() => {
                                     this.setState({
                                         menu: 0,
-                                        class_name1: 'txtMenu' + ' ' + 'imgMe',
+                                        class_name1: 'txtMenu imgMe',
                                         class_name2: 'txtMenu',
                                         class_name3: 'txtMenu'
                                     })
@@ -117,7 +117,7 @@ export default class RaceInfo extends Component {
                                          this.setState({
                                              menu: 1,
                                              class_name1: 'txtMenu',
-                                             class_name2: this.state.class_name2 + ' ' + 'imgMe',
+                                             class_name2: 'txtMenu imgMe',
                                              class_name3: 'txtMenu'
                                          })
                                      }}>
@@ -130,7 +130,7 @@ export default class RaceInfo extends Component {
                                              menu: 2,
                                              class_name1: 'txtMenu',
                                              class_name2: 'txtMenu',
-                                             class_name3: this.state.class_name3 + ' ' + 'imgMe'
+                                             class_name3: 'txtMenu imgMe'
                                          })
                                      }}>
                                     <span className={this.state.class_name3}>{I18n.t('SideInformation')}</span>

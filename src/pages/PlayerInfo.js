@@ -71,7 +71,7 @@ export default class PlayerInfo extends Component {
                 <div className="player">
                     <div className='player-head'>
                         <div className='player-head-top'>
-                            <h2></h2>
+
                         </div>
                         {this.image()}
 
@@ -109,11 +109,11 @@ export default class PlayerInfo extends Component {
         } = this.state.player;
         if(!this.isEmptyObject(avatar)){
             return(
-            <img className='personImg' src={avatar} />
+            <img className='personImg' src={avatar} alt=""/>
             )
         }else{
             return(
-                <img className='personImgHidden' src={avatar} />
+                <img className='personImgHidden' src={avatar} alt=""/>
             )
         }
     }
@@ -127,11 +127,11 @@ export default class PlayerInfo extends Component {
             return (
                 <table >
                     <tbody>
-                    {items.map(item =>{
+                    {items.map((item,i) =>{
                         const {race,rank} = item;
 
                         console.log('list',race,rank)
-                        return <tr>
+                        return <tr key={i}>
                             <td>
                                 <a>
                                     <div className="table-header">
