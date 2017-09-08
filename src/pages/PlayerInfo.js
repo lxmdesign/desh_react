@@ -71,7 +71,7 @@ export default class PlayerInfo extends Component {
                 <div className="player">
                     <div className='player-head'>
                         <div className='player-head-top'>
-
+                            <h2></h2>
                         </div>
                         {this.image()}
 

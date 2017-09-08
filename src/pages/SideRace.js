@@ -7,7 +7,7 @@ import {getSubInfo, setLang} from '../service/RaceDao'
 import moment from 'moment';
 import I18n from '../service/I18n';
 import RaceBlindList from '../components/RaceBlindList';
-import {convertDate,weiXinShare,isEmptyObject} from '../service/utils'
+import {weiXinShare,isEmptyObject,message_desc} from '../service/utils'
 import {default_img} from '../components/constant';
 
 export default class SideRace extends PureComponent {
@@ -40,7 +40,7 @@ export default class SideRace extends PureComponent {
             const{logo,begin_date,end_date} =data;
             const message = {
                 title: name,
-                desc: this.message_desc("",begin_date,end_date),//分享描述
+                desc: message_desc("",begin_date,end_date),//分享描述
                 link: window.location.href, // 分享链接，该链接域名必须与当前企业的可信域名一致
                 imgUrl: isEmptyObject(logo)?default_img:logo, // 分享图标
                 type: '', // 分享类型,music、video或link，不填默认为link
@@ -52,11 +52,6 @@ export default class SideRace extends PureComponent {
 
         });
     }
-    message_desc = (location,begin_date,end_date) => {
-        var time=convertDate(begin_date,"YYYY.MM.DD")+"-"+convertDate(end_date,"YYYY.MM.DD");
-        return (location+'\n'+time);
-    }
-
 
     render() {
         const {name, location, ticket_price, begin_date, end_date, participants, prize, blind} = this.state.data;

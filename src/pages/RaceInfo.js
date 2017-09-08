@@ -9,7 +9,7 @@ import '../styles/RaceInfo.css';
 import moment from 'moment';
 import I18n from '../service/I18n';
 import MarkDown from '../components/MarkDown';
-import {weiXinShare,convertDate,isEmptyObject} from '../service/utils';
+import {weiXinShare,message_desc,isEmptyObject} from '../service/utils';
 import RaceBlindList from '../components/RaceBlindList';
 import {default_img} from '../components/constant';
 
@@ -45,7 +45,7 @@ export default class RaceInfo extends Component {
             // const url = {url: "http://h5-react.deshpro.com:3000/race/91/zh"};
             const message = {
                 title: name,
-                desc: this.message_desc(location,begin_date,end_date),//分享描述
+                desc: message_desc(location,begin_date,end_date),//分享描述
                 link: window.location.href, // 分享链接，该链接域名必须与当前企业的可信域名一致
                 imgUrl: isEmptyObject(logo)?default_img:logo, // 分享图标
                 type: '', // 分享类型,music、video或link，不填默认为link
@@ -74,10 +74,7 @@ export default class RaceInfo extends Component {
             return !1;
         return !0
     }
-    message_desc = (location,begin_date,end_date) => {
-        var time=convertDate(begin_date,"YYYY.MM.DD")+"-"+convertDate(end_date,"YYYY.MM.DD");
-        return (location+'\n'+time);
-    }
+
 
     content = () => {
 

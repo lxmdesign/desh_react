@@ -4,7 +4,7 @@ import {getGameInfo, setLang} from '../service/RaceDao';
 import '../styles/GameInfo.css';
 import Time from 'react-time-format';
 import I18n from '../service/I18n';
-import {isEmptyObject,weiXinShare,convertDate} from '../service/utils';
+import {isEmptyObject,weiXinShare,message_desc} from '../service/utils';
 import {default_img} from '../components/constant';
 
 import {
@@ -38,7 +38,7 @@ export default class GameInfo extends Component {
             const{name,logo,location,begin_date,end_date} =data.race;
             const message = {
                 title: name,
-                desc: this.message_desc(location,begin_date,end_date),//分享描述
+                desc: message_desc(location,begin_date,end_date),//分享描述
                 link: window.location.href, // 分享链接，该链接域名必须与当前企业的可信域名一致
                 imgUrl: isEmptyObject(logo)?default_img:logo, // 分享图标
                 type: '', // 分享类型,music、video或link，不填默认为link
@@ -50,10 +50,7 @@ export default class GameInfo extends Component {
 
         })
     }
-    message_desc = (location,begin_date,end_date) => {
-        var time=convertDate(begin_date,"YYYY.MM.DD")+"-"+convertDate(end_date,"YYYY.MM.DD");
-        return (location+'\n'+time);
-    }
+
     render() {
 
         const {

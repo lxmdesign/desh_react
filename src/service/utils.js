@@ -102,4 +102,13 @@ export function weiXinShare(url,message){
     });
 }
 
+export function message_desc (location,begin_date,end_date) {
+    var time=convertDate(begin_date,"YYYY.MM.DD")+"-"+convertDate(end_date,"YYYY.MM.DD");
+    if(location===null){
+        return time;
+    }else{
+        return location;
+    }
+}
+
 

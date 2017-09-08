@@ -10,7 +10,7 @@ export default class Download extends Component {
         // const url = {url: "http://www.deshpro.com:3000/race/91/zh/loadApp"};
         const message = {
             title: 'PokerPro',
-            desc: '',//分享描述
+            desc: '德州扑客下载',//分享描述
             link: window.location.href, // 分享链接，该链接域名必须与当前企业的可信域名一致
             imgUrl: default_img, // 分享图标
             type: '', // 分享类型,music、video或link，不填默认为link

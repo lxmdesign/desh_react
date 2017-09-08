@@ -30,7 +30,7 @@ class App extends Component {
                     <Route path="/rankGame/:id/:lang" component={GameInfo}/>
                     <Route path="/race/:id/:lang/sidedetail/:subId" component={SubRace}/>
                     <Route path="/pay/success" component={PaySuccess}/>
-                    <Route path="/pay/pay/fail" component={PayFail}/>
+                    <Route path="/pay/fail" component={PayFail}/>
 
                     <Route path="/sharePage" component={SharePage}/>
                     <Route path="/activities/:id/:lang" component={activitiesInfo}/>
