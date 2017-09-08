@@ -18,7 +18,7 @@ export default class activitiesInfo extends Component {
             this.setState({
                 data: data
             });
-            const {title,id,banner,pushed_img,description,activity_time} = data.activity;
+            const {title,banner,description} = data.activity;
             document.title = title;
 
             //微信二次分享
@@ -45,7 +45,7 @@ export default class activitiesInfo extends Component {
         if(isEmptyObject(this.state.data.activity)) {
             return <div></div>;
         }
-        const {title,id,banner,pushed_img,description,activity_time} = this.state.data.activity;
+        const {description} = this.state.data.activity;
         return(
 
             <div className="activitiesInfo">

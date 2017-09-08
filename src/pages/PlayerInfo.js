@@ -60,8 +60,6 @@ export default class PlayerInfo extends Component {
             return !1;
         return !0
     }
-    //click事件
-
 
     content = () => {
         const {
@@ -73,11 +71,7 @@ export default class PlayerInfo extends Component {
                 <div className="player">
                     <div className='player-head'>
                         <div className='player-head-top'>
-                            {/*<img alt='' src={返回图标}/>*/}
-                            {/*<img alt='' src={Group2x}/>*/}
-                            {/*<h2>{I18n.t('domestic_ranking')}</h2>*/}
                             <h2></h2>
-                            {/*<img alt='' src={Group}/>*/}
                         </div>
                         {this.image()}
 
@@ -162,7 +156,7 @@ export default class PlayerInfo extends Component {
                                             <span>{rank.score}</span>
                                         </div>
                                     </div>
-                                    <div className="table-time"><Time value={race.begin_date} format="YYYY:MM:DD" />-<Time value={race.end_date} format="YYYY:MM:DD" /></div>
+                                    <div className="table-time"><Time value={race.begin_date} format="YYYY.MM.DD" />-<Time value={race.end_date} format="YYYY.MM.DD" /></div>
                                     <div className="table-location">{race.location}</div>
                                 </a>
                             </td>

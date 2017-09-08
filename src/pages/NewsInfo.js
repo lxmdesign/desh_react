@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import markdown from 'marked';
 import {getNewsInfo,setLang} from '../service/RaceDao';
 import '../styles/NewsInfo.css';
-import I18n from '../service/I18n';
 import {weiXinShare,convertDate} from '../service/utils';
 
 export default class NewsInfo extends Component {
@@ -22,7 +21,6 @@ export default class NewsInfo extends Component {
                 news: data
             })
             document.title = data.title;
-            // document.title = I18n.t('app_name');
 
             //微信二次分享
             // const url = {url: "http://www.deshpro.com:3000/race/91/zh"};
@@ -64,8 +62,7 @@ export default class NewsInfo extends Component {
     content = () => {
         if (!this.isEmptyObject(this.state.news)) {
             const {
-                title, type, date, source_type, source, image, image_thumb,
-                top, description
+                title,  date, source, description
             } = this.state.news;
             return (
                 <div className="App">

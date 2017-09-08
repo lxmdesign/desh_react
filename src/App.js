@@ -9,7 +9,6 @@ import NewsInfo from './pages/NewsInfo';
 import PlayerInfo from './pages/PlayerInfo';
 import GameInfo from './pages/GameInfo';
 import SubRace from './pages/SideRace';
-import Question from './pages/Question';
 import Download from './pages/Download';
 import PaySuccess from './pages/PaySuccess';
 import PayFail from './pages/PayFail';
@@ -38,9 +37,6 @@ class App extends Component {
                     <Route path="/sharePage" component={SharePage}/>
                     <Route path="/activities/:id/:lang" component={activitiesInfo}/>
 
-                    {/*<Route path="/question" component={Question}/>*/}
-
-                    {/*<Route path="/sharePage/question" component={Question}/>*/}
 
                 </div>
             </Router>

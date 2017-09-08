@@ -89,7 +89,7 @@ export default class RaceInfo extends Component {
                     <div className="mainNav">
                         <div className="ul-1">
                             <div className="title">{name}</div>
-                            <img src={logo}/>
+                            <img src={logo} alt=""/>
                             <ul className="ul-1-2">
                                 <li><Time value={begin_date} format="YYYY.MM.DD"/>—<Time value={end_date}
                                                                                          format="YYYY.MM.DD"/></li>

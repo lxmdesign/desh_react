@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../styles/SharePage.css';
 import {weiXinShare} from '../service/utils';
-import {Route} from 'react-router-dom';
+import {Route,Link} from 'react-router-dom';
 import {items,sharePage01,sharePage02,sharePage08,sharePage05,
     person01,person02,person03,person04,character} from '../components/constant'
 
@@ -12,6 +12,11 @@ export default class SharePage extends Component {
     }
 
     componentDidMount() {
+        if((window.location.href).toString().indexOf("question")!==-1){
+            this.setState({
+                visible: !this.state.visible
+            })
+        }
         //微信二次分享
         // const url = {url: "http://www.deshpro.com:3000/race/91/zh"};
         const message = {
@@ -81,11 +86,6 @@ export default class SharePage extends Component {
                                  }}>
                                 常见问题
                             </div>
-                            {/*<div className="sharePage-btn-question" >*/}
-                                {/*<Link to="/sharePage/question">*/}
-                                    {/*常见问题*/}
-                                {/*</Link>*/}
-                            {/*</div>*/}
                             <div className="android-app-download"  onClick={() => {
                                 this.props.history.push(`/race/${params.id}/${params.lang}/loadAPP`)
                             }}>
@@ -107,12 +107,11 @@ const Question=()=>(
 
             <div className="question-nav">
                 <a>常见问题</a>
-                <a onClick={() => {
-                    this.props.history.push("/sharePage")
+                <Link to="/sharePage" onClick={() => {
                     this.setState({
                         visible: !this.state.visible
                     })
-                }}>关闭</a>
+                }}>关闭</Link>
             </div>
 
             <div className="content">

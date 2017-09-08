@@ -197,7 +197,7 @@ export default class RaceBlindList extends PureComponent {
 
     //赛程格式化
     scheduleMessage = (schedule) => {
-        if (schedule.indexOf('|') == -1) {
+        if (schedule.indexOf('|') === -1) {
             return this.scheduleMessageOne(schedule);
         } else {
 
